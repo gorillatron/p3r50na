@@ -15,6 +15,11 @@
                  [ring/ring-core "1.4.0"]
                  [hiccup "1.0.5"]]
 
+  :plugins [[lein-less "1.7.5"]]
+
+  :less {:source-paths ["src/p3r50na/less/"]
+         :target-path "public/css/"}
+
   :main ^:skip-aot p3r50na.core
 
   :target-path "target/%s"
