@@ -1,4 +1,4 @@
-(defproject clj_p3r50na "0.1.0-SNAPSHOT"
+(defproject p3r50na "0.1.0-SNAPSHOT"
 
   :description "FIXME: write description"
 
@@ -12,9 +12,10 @@
                  [compojure "1.4.0"]
                  [javax.servlet/servlet-api "2.5"]
                  [ring/ring-devel "1.4.0"]
-                 [ring/ring-core "1.4.0"]]
+                 [ring/ring-core "1.4.0"]
+                 [hiccup "1.0.5"]]
 
-  :main ^:skip-aot clj-p3r50na.core
+  :main ^:skip-aot p3r50na.core
 
   :target-path "target/%s"
 
