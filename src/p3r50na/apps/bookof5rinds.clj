@@ -7,11 +7,16 @@
 
 
 
+(def namesofrind ["Rindosaurus" "Rindolorian" "Rindiana Jones"
+                  "Rindeus Ex" "Rindseeker"])
+
+
 (def templates
   {:index (fn [&attrs] (html5
     [:body
       [:h1 "Book of 5 Rinds"]
-      [:p "LOL"]])) })
+      [:ul
+        (for [name namesofrind] [:li name])]])) })
 
 
 (defn router []
