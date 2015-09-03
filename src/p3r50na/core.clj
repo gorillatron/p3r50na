@@ -4,6 +4,7 @@
 
   (:require [compojure.core :refer :all]
             [compojure.route :as route]
+            [com.stuartsierra.component :as component]
             [ring.middleware.reload :as reload]
             [p3r50na.apps.bookof5rinds :as bookof5rinds])
 
@@ -12,6 +13,16 @@
         [compojure.core :only [defroutes GET POST DELETE ANY context]]
         org.httpkit.server))
 
+
+(defn- start-server [handler port]
+  (let [server (run-server handler {:port port})]
+    (println (str "Started server on port:" port))
+    server))
+
+
+(defn- stop-server [server]
+  (when server
+    (server))) ;; run-server returns a fn that stops the server
 
 
 (defroutes all-routes
@@ -22,7 +33,14 @@
   (route/not-found "<p>Page not found.</p>")) ;; all other, return 404
 
 
+(defrecord p3r50na []
+  component/Lifecycle
+  (start [this]
+    (assoc this :server (start-server all-routes 8080)))
+  (stop [this]
+    (stop-server (:server this))
+    (dissoc this :server)))
 
-(defn -main [& args] ;; entry point, lein run will pick up and start from here
-  (let [handler (reload/wrap-reload (site #'all-routes))]
-  (run-server handler {:port 8080})))
+
+(defn -main [& args]
+  (.start (p3r50na.)))

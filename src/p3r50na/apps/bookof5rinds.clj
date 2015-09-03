@@ -14,13 +14,10 @@
 (def templates
   {:index (fn [&attrs] (html5
     [:head
-      [:link {:rel "stylesheet" :href "/static/css/bookof5rinds.css"}]
-      [:script {:src "/static/js/bookof5rinds.js"}]]
+      [:link {:rel "stylesheet" :href "/static/css/bookof5rinds.css"}]]
     [:body
-      [:div#app.col-group
-        [:h1.col-mb-12 "Book of 5 Rinds"]
-        [:ul.col-mb-12
-          (for [name namesofrind] [:li name])]]]))})
+      [:div#app.col-group]
+      [:script {:src "/static/js/bookof5rinds.js"}]]))})
 
 
 (defn router []
