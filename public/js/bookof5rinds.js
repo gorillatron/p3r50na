@@ -59294,45 +59294,45 @@ goog.require("cljs.core");
 goog.require("om.core");
 goog.require("om.dom");
 bookof5rinds.core.widget = function bookof5rinds$core$widget(data, owner) {
-  if (typeof bookof5rinds.core.t10997 !== "undefined") {
+  if (typeof bookof5rinds.core.t12294 !== "undefined") {
   } else {
-    bookof5rinds.core.t10997 = function(widget, data, owner, meta10998) {
+    bookof5rinds.core.t12294 = function(widget, data, owner, meta12295) {
       this.widget = widget;
       this.data = data;
       this.owner = owner;
-      this.meta10998 = meta10998;
+      this.meta12295 = meta12295;
       this.cljs$lang$protocol_mask$partition0$ = 393216;
       this.cljs$lang$protocol_mask$partition1$ = 0;
     };
-    bookof5rinds.core.t10997.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_10999, meta10998__$1) {
+    bookof5rinds.core.t12294.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = function(_12296, meta12295__$1) {
       var self__ = this;
-      var _10999__$1 = this;
-      return new bookof5rinds.core.t10997(self__.widget, self__.data, self__.owner, meta10998__$1);
+      var _12296__$1 = this;
+      return new bookof5rinds.core.t12294(self__.widget, self__.data, self__.owner, meta12295__$1);
     };
-    bookof5rinds.core.t10997.prototype.cljs$core$IMeta$_meta$arity$1 = function(_10999) {
+    bookof5rinds.core.t12294.prototype.cljs$core$IMeta$_meta$arity$1 = function(_12296) {
       var self__ = this;
-      var _10999__$1 = this;
-      return self__.meta10998;
+      var _12296__$1 = this;
+      return self__.meta12295;
     };
-    bookof5rinds.core.t10997.prototype.om$core$IRender$ = true;
-    bookof5rinds.core.t10997.prototype.om$core$IRender$render$arity$1 = function(this$) {
+    bookof5rinds.core.t12294.prototype.om$core$IRender$ = true;
+    bookof5rinds.core.t12294.prototype.om$core$IRender$render$arity$1 = function(this$) {
       var self__ = this;
       var this$__$1 = this;
       return React.DOM.h1(null, (new cljs.core.Keyword(null, "text", "text", -1790561697)).cljs$core$IFn$_invoke$arity$1(self__.data));
     };
-    bookof5rinds.core.t10997.getBasis = function() {
+    bookof5rinds.core.t12294.getBasis = function() {
       return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.with_meta(new cljs.core.Symbol(null, "widget", "widget", 786562584, null), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "arglists", "arglists", 1661989754), cljs.core.list(new cljs.core.Symbol(null, "quote", "quote", 1377916282, null), cljs.core.list(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null, "data", 
-      "data", 1407862150, null), new cljs.core.Symbol(null, "owner", "owner", 1247919588, null)], null)))], null)), new cljs.core.Symbol(null, "data", "data", 1407862150, null), new cljs.core.Symbol(null, "owner", "owner", 1247919588, null), new cljs.core.Symbol(null, "meta10998", "meta10998", 1410155594, null)], null);
+      "data", 1407862150, null), new cljs.core.Symbol(null, "owner", "owner", 1247919588, null)], null)))], null)), new cljs.core.Symbol(null, "data", "data", 1407862150, null), new cljs.core.Symbol(null, "owner", "owner", 1247919588, null), new cljs.core.Symbol(null, "meta12295", "meta12295", -2051828338, null)], null);
     };
-    bookof5rinds.core.t10997.cljs$lang$type = true;
-    bookof5rinds.core.t10997.cljs$lang$ctorStr = "bookof5rinds.core/t10997";
-    bookof5rinds.core.t10997.cljs$lang$ctorPrWriter = function(this__5105__auto__, writer__5106__auto__, opt__5107__auto__) {
-      return cljs.core._write.call(null, writer__5106__auto__, "bookof5rinds.core/t10997");
+    bookof5rinds.core.t12294.cljs$lang$type = true;
+    bookof5rinds.core.t12294.cljs$lang$ctorStr = "bookof5rinds.core/t12294";
+    bookof5rinds.core.t12294.cljs$lang$ctorPrWriter = function(this__5105__auto__, writer__5106__auto__, opt__5107__auto__) {
+      return cljs.core._write.call(null, writer__5106__auto__, "bookof5rinds.core/t12294");
     };
-    bookof5rinds.core.__GT_t10997 = function bookof5rinds$core$widget_$___GT_t10997(widget__$1, data__$1, owner__$1, meta10998) {
-      return new bookof5rinds.core.t10997(widget__$1, data__$1, owner__$1, meta10998);
+    bookof5rinds.core.__GT_t12294 = function bookof5rinds$core$widget_$___GT_t12294(widget__$1, data__$1, owner__$1, meta12295) {
+      return new bookof5rinds.core.t12294(widget__$1, data__$1, owner__$1, meta12295);
     };
   }
-  return new bookof5rinds.core.t10997(bookof5rinds$core$widget, data, owner, cljs.core.PersistentArrayMap.EMPTY);
+  return new bookof5rinds.core.t12294(bookof5rinds$core$widget, data, owner, cljs.core.PersistentArrayMap.EMPTY);
 };
-om.core.root.call(null, bookof5rinds.core.widget, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "text", "text", -1790561697), "Hello world!"], null), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "target", "target", 253001721), document.getElementById("app")], null));
+om.core.root.call(null, bookof5rinds.core.widget, new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "text", "text", -1790561697), "Hello worlds!"], null), new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null, "target", "target", 253001721), document.getElementById("app")], null));

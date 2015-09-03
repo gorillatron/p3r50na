@@ -8,7 +8,7 @@
 
 
 (def namesofrind ["Rindosaurus" "Rindolorian" "Rindiana Jones"
-                  "Rindeus Ex" "Rindseeker"])
+                  "Rindeus Ex" "Rindseeker" "Ringo Jin"])
 
 
 (def templates
@@ -16,6 +16,7 @@
     [:head
       [:link {:rel "stylesheet" :href "/static/css/bookof5rinds.css"}]]
     [:body
+      [:h1 "static"]
       [:div#app.col-group]
       [:script {:src "/static/js/bookof5rinds.js"}]]))})
 

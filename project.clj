@@ -16,6 +16,7 @@
                  [javax.servlet/servlet-api "2.5"]
                  [ring/ring-devel "1.4.0"]
                  [ring/ring-core "1.4.0"]
+                 [reloaded.repl "0.1.0"]
                  [hiccup "1.0.5"]]
 
   :plugins [[lein-less "1.7.5"]
@@ -33,8 +34,11 @@
                    :optimizations :whitespace
                    :pretty-print true}}]}
 
-  :main ^:skip-aot p3r50na.core
+  :main p3r50na.core
 
   :target-path "target/%s"
 
-  :profiles {:uberjar {:aot :all}})
+  :profiles {:uberjar {:aot :all}
+             :dev {:plugins []
+                   :dependencies []
+                   :source-paths ["dev"]}})

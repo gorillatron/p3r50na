@@ -15,7 +15,7 @@
 
 
 (defn- start-server [handler port]
-  (let [server (run-server handler {:port port})]
+  (let [server (run-server (reload/wrap-reload (site handler)) {:port port})]
     (println (str "Started server on port:" port))
     server))
 
@@ -36,11 +36,13 @@
 (defrecord p3r50na []
   component/Lifecycle
   (start [this]
-    (assoc this :server (start-server all-routes 8080)))
+    (assoc this :server (start-server #'all-routes 8080)))
   (stop [this]
     (stop-server (:server this))
     (dissoc this :server)))
 
+(defn create-system []
+  (p3r50na.))
 
 (defn -main [& args]
-  (.start (p3r50na.)))
+  (.start (create-system)))
