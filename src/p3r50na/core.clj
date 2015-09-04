@@ -6,7 +6,7 @@
             [compojure.route :as route]
             [com.stuartsierra.component :as component]
             [ring.middleware.reload :as reload]
-            [p3r50na.apps.bookof5rinds :as bookof5rinds])
+            [p3r50na.apps.bookof5rinds.core :as bookof5rinds])
 
   (:use [compojure.route :only [files not-found]]
         [compojure.handler :only [site]] ; form, query params decode; cookie; session, etc
@@ -41,8 +41,10 @@
     (stop-server (:server this))
     (dissoc this :server)))
 
+
 (defn create-system []
   (p3r50na.))
+
 
 (defn -main [& args]
   (.start (create-system)))
