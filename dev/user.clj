@@ -12,16 +12,16 @@
                       :lck "lucky"})
 
 
-(defprotocol Stats "A entity stats"
+(defprotocol Statable "A entity stats"
   (sort-by-value [this] "Get a list of stat pairs sorted by value")
   (lowest [this] "Get the stat with the lowest value")
   (greatest [this] "Get the greatest stat")
   (two-greatest [this] "Get the two greatest stats"))
 
 
-(defrecord Rindolorian-Stats [str agi int lck]
+(defrecord Stats [str agi int lck]
   clojure.lang.Seqable
-  Stats
+  Statable
   (sort-by-value [this]
     (sort (fn [a b]
       (if (< (last a) (last b))
@@ -52,8 +52,10 @@
 (extend Rindolorian
   Warrior
   {:battle-cry (fn [this target]
-    ("wat"))})
+    (str (:name this) " cries out at target" target))})
 
+(defn create-Rindolorian []
+  (new Rindolorian "Rindo" (new Stats 15 11 7 8)))
 
 (defrecord Rindiana-Jones [name stats])
 
@@ -62,7 +64,5 @@
   {:charm (fn [this]
     "So your body's a temple? how about you let me explore it")})
 
-
-(defn Rs []
-  [(new Rindolorian "Rindseeker" (new Rindolorian-Stats 15 11 7 8))
-   (new Rindiana-Jones "Rindy" (new Rindolorian-Stats 8 12 9 15))])
+(defn create-Rindiana []
+  (new Rindiana-Jones "Rindy" (new Stats 8 11 9 19)))
