@@ -23,11 +23,10 @@
 (def templates
   {:index (fn [&attrs] (html5
     [:head
-      [:link {:rel "stylesheet" :href "/static/css/bookof5rinds.css"}]]
+      [:link {:rel "stylesheet" :href "/css/bookof5rinds.css"}]]
     [:body
-      [:h1 "static"]
       [:div#app.col-group]
-      [:script {:src "/static/js/bookof5rinds.js"}]]))})
+      [:script {:src "/js/app.js"}]]))})
 
 
 (defn router []

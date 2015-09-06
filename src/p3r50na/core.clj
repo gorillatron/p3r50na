@@ -29,7 +29,7 @@
   (GET "/" [] "show-landing-page yooo")
   (context "/book-of-5-rinds" []
     (bookof5rinds/router))
-  (route/files "/static/") ;; static file url prefix /static, in `public` folder
+  (route/resources "/")
   (route/not-found "<p>Page not found.</p>")) ;; all other, return 404
 
 

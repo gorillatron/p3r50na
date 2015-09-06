@@ -19,26 +19,27 @@
                  [reloaded.repl "0.1.0"]
                  [hiccup "1.0.5"]]
 
-  :plugins [[lein-less "1.7.5"]
-            [lein-cljsbuild "1.1.0"]
-            [lein-npm "0.6.1"]]
+  :plugins []
 
   :less {:source-paths ["src/p3r50na/less/"]
          :target-path "public/css/"}
-
-  :cljsbuild {
-    :builds [
-      {:source-paths ["cljs/bookof5rinds"]
-        :compiler {:main 'bookof5rinds.core
-                   :output-to "public/js/bookof5rinds.js"
-                   :optimizations :whitespace
-                   :pretty-print true}}]}
 
   :main p3r50na.core
 
   :target-path "target/%s"
 
-  :profiles {:uberjar {:aot :all}
-             :dev {:plugins []
-                   :dependencies []
-                   :source-paths ["dev"]}})
+  :profiles {:dev {:plugins [[lein-less "1.7.5"]
+                             [lein-cljsbuild "1.1.0"]
+                             [lein-npm "0.6.1"]
+                             [lein-figwheel "0.3.9"]]
+                   :dependencies [[reloaded.repl "0.1.0"]]
+                   :source-paths ["dev"]
+                   :cljsbuild {:builds [{:source-paths ["src" "dev"]
+                                         :figwheel true
+                                         :compiler {:output-to "resources/public/js/app.js"
+                                                    :output-dir "resources/public/js/out"
+                                                    :optimizations :none
+                                                    :main "p3r50na.apps.bookof5rinds.client"
+                                                    :asset-path "/js/out"
+                                                    :recompile-dependents true
+                                                    :source-map true}}]}}})

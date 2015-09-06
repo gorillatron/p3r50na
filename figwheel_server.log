@@ -1,0 +1,178 @@
+Figwheel: focusing on build-ids (bookof5rinds)
+[0mCompiling "public/js/bookof5rinds.js" from ["cljs/bookof5rinds"]...
+[32mSuccessfully compiled "public/js/bookof5rinds.js" in 6.422 seconds.[0m
+notifying browser that file changed:  public/js/out/goog/deps.js
+notifying browser that file changed:  public/js/out/cljs_deps.js
+notifying browser that file changed:  \bookof5rinds\core.js
+[0mCompiling "public/js/bookof5rinds.js" from ["cljs/bookof5rinds"]...
+[32mSuccessfully compiled "public/js/bookof5rinds.js" in 0.136 seconds.[0m
+notifying browser that file changed:  \bookof5rinds\core.js
+Figwheel: focusing on build-ids (build_needs_id_910)
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "target/classes/public/app.js" in 0.198 seconds.[0m
+notifying browser that file changed:  target/classes/public/app.js
+notifying browser that file changed:  target/classes/public/out/goog/deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "target/classes/public/app.js" in 0.208 seconds.[0m
+notifying browser that file changed:  target/classes/public/app.js
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "target/classes/public/app.js" in 0.126 seconds.[0m
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[31mCompiling "target/classes/public/app.js" failed.[0m
+clojure.lang.Compiler$CompilerException: java.lang.RuntimeException: Unable to resolve symbol: resources in this context, compiling:(\p3r50na\apps\bookof5rinds\core.clj:38:5)
+ at clojure.lang.Compiler.analyze (Compiler.java:6543)
+    clojure.lang.Compiler.analyze (Compiler.java:6485)
+    clojure.lang.Compiler$InvokeExpr.parse (Compiler.java:3737)
+    clojure.lang.Compiler.analyzeSeq (Compiler.java:6725)
+    clojure.lang.Compiler.analyze (Compiler.java:6524)
+    clojure.lang.Compiler.analyze (Compiler.java:6485)
+    clojure.lang.Compiler$InvokeExpr.parse (Compiler.java:3791)
+    clojure.lang.Compiler.analyzeSeq (Compiler.java:6725)
+    clojure.lang.Compiler.analyze (Compiler.java:6524)
+    clojure.lang.Compiler.analyze (Compiler.java:6485)
+    clojure.lang.Compiler$BodyExpr$Parser.parse (Compiler.java:5861)
+    clojure.lang.Compiler$FnMethod.parse (Compiler.java:5296)
+    clojure.lang.Compiler$FnExpr.parse (Compiler.java:3925)
+    clojure.lang.Compiler.analyzeSeq (Compiler.java:6721)
+    clojure.lang.Compiler.analyze (Compiler.java:6524)
+    clojure.lang.Compiler.analyzeSeq (Compiler.java:6711)
+    clojure.lang.Compiler.analyze (Compiler.java:6524)
+    clojure.lang.Compiler.access$300 (Compiler.java:38)
+    clojure.lang.Compiler$DefExpr$Parser.parse (Compiler.java:577)
+    clojure.lang.Compiler.analyzeSeq (Compiler.java:6723)
+    clojure.lang.Compiler.analyze (Compiler.java:6524)
+    clojure.lang.Compiler.analyze (Compiler.java:6485)
+    clojure.lang.Compiler.eval (Compiler.java:6786)
+    clojure.lang.Compiler.load (Compiler.java:7227)
+    clojure.lang.RT.loadResourceScript (RT.java:371)
+    clojure.lang.RT.loadResourceScript (RT.java:362)
+    clojure.lang.RT.load (RT.java:446)
+    clojure.lang.RT.load (RT.java:412)
+    clojure.core$load$fn__5448.invoke (core.clj:5866)
+    clojure.core$load.doInvoke (core.clj:5865)
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "target/classes/public/app.js" in 0.153 seconds.[0m
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "target/classes/public/app.js" in 0.122 seconds.[0m
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "target/classes/public/app.js" in 0.134 seconds.[0m
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "target/classes/public/app.js" in 0.145 seconds.[0m
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "target/classes/public/app.js" in 0.118 seconds.[0m
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "target/classes/public/app.js" in 0.111 seconds.[0m
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "target/classes/public/app.js" in 0.147 seconds.[0m
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[31mCompiling "target/classes/public/app.js" failed.[0m
+clojure.lang.Compiler$CompilerException: java.lang.RuntimeException: Unable to resolve symbol: resources in this context, compiling:(\p3r50na\core.clj:32:3)
+ at clojure.lang.Compiler.analyze (Compiler.java:6543)
+    clojure.lang.Compiler.analyze (Compiler.java:6485)
+    clojure.lang.Compiler$InvokeExpr.parse (Compiler.java:3737)
+    clojure.lang.Compiler.analyzeSeq (Compiler.java:6725)
+    clojure.lang.Compiler.analyze (Compiler.java:6524)
+    clojure.lang.Compiler.analyze (Compiler.java:6485)
+    clojure.lang.Compiler$InvokeExpr.parse (Compiler.java:3791)
+    clojure.lang.Compiler.analyzeSeq (Compiler.java:6725)
+    clojure.lang.Compiler.analyze (Compiler.java:6524)
+    clojure.lang.Compiler.access$300 (Compiler.java:38)
+    clojure.lang.Compiler$DefExpr$Parser.parse (Compiler.java:577)
+    clojure.lang.Compiler.analyzeSeq (Compiler.java:6723)
+    clojure.lang.Compiler.analyze (Compiler.java:6524)
+    clojure.lang.Compiler.analyze (Compiler.java:6485)
+    clojure.lang.Compiler.eval (Compiler.java:6786)
+    clojure.lang.Compiler.load (Compiler.java:7227)
+    clojure.lang.RT.loadResourceScript (RT.java:371)
+    clojure.lang.RT.loadResourceScript (RT.java:362)
+    clojure.lang.RT.load (RT.java:446)
+    clojure.lang.RT.load (RT.java:412)
+    clojure.core$load$fn__5448.invoke (core.clj:5866)
+    clojure.core$load.doInvoke (core.clj:5865)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojurescript_build.core$reload_lib.invoke (core.clj:46)
+    clojurescript_build.core$handle_source_reloading_STAR_.invoke (core.clj:139)
+    clojurescript_build.core$handle_source_reloading.invoke (core.clj:145)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:158)
+    figwheel_sidecar.auto_builder$default_build_options$fn__19044.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__19090.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__19041.invoke (auto_builder.clj:57)
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[31mCompiling "target/classes/public/app.js" failed.[0m
+clojure.lang.Compiler$CompilerException: java.lang.RuntimeException: Unable to resolve symbol: resources in this context, compiling:(\p3r50na\core.clj:32:3)
+ at clojure.lang.Compiler.analyze (Compiler.java:6543)
+    clojure.lang.Compiler.analyze (Compiler.java:6485)
+    clojure.lang.Compiler$InvokeExpr.parse (Compiler.java:3737)
+    clojure.lang.Compiler.analyzeSeq (Compiler.java:6725)
+    clojure.lang.Compiler.analyze (Compiler.java:6524)
+    clojure.lang.Compiler.analyze (Compiler.java:6485)
+    clojure.lang.Compiler$InvokeExpr.parse (Compiler.java:3791)
+    clojure.lang.Compiler.analyzeSeq (Compiler.java:6725)
+    clojure.lang.Compiler.analyze (Compiler.java:6524)
+    clojure.lang.Compiler.access$300 (Compiler.java:38)
+    clojure.lang.Compiler$DefExpr$Parser.parse (Compiler.java:577)
+    clojure.lang.Compiler.analyzeSeq (Compiler.java:6723)
+    clojure.lang.Compiler.analyze (Compiler.java:6524)
+    clojure.lang.Compiler.analyze (Compiler.java:6485)
+    clojure.lang.Compiler.eval (Compiler.java:6786)
+    clojure.lang.Compiler.load (Compiler.java:7227)
+    clojure.lang.RT.loadResourceScript (RT.java:371)
+    clojure.lang.RT.loadResourceScript (RT.java:362)
+    clojure.lang.RT.load (RT.java:446)
+    clojure.lang.RT.load (RT.java:412)
+    clojure.core$load$fn__5448.invoke (core.clj:5866)
+    clojure.core$load.doInvoke (core.clj:5865)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojurescript_build.core$reload_lib.invoke (core.clj:46)
+    clojurescript_build.core$handle_source_reloading_STAR_.invoke (core.clj:139)
+    clojurescript_build.core$handle_source_reloading.invoke (core.clj:145)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:158)
+    figwheel_sidecar.auto_builder$default_build_options$fn__19044.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__19090.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__19041.invoke (auto_builder.clj:57)
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "target/classes/public/app.js" in 0.127 seconds.[0m
+Figwheel: focusing on build-ids (build_needs_id_910)
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "target/classes/public/app.js" in 0.856 seconds.[0m
+notifying browser that file changed:  target/classes/public/out/goog/deps.js
+notifying browser that file changed:  target/classes/public/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "target/classes/public/app.js" in 0.204 seconds.[0m
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "target/classes/public/app.js" in 0.154 seconds.[0m
+Figwheel: focusing on build-ids (build_needs_id_910)
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "target/classes/public/app.js" in 0.732 seconds.[0m
+notifying browser that file changed:  target/classes/public/out/goog/deps.js
+notifying browser that file changed:  target/classes/public/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "target/classes/public/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "target/classes/public/app.js" in 0.154 seconds.[0m
+Figwheel: focusing on build-ids (build_needs_id_910)
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.25 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.172 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.15 seconds.[0m
+Figwheel: focusing on build-ids (build_needs_id_910)
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.753 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.241 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.188 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.129 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
