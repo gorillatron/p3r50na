@@ -176,3 +176,141 @@ notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
 [0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
 [32mSuccessfully compiled "resources/public/js/app.js" in 0.129 seconds.[0m
 notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.149 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+WARNING: Wrong number of args (0) passed to p3r50na.apps.bookof5rinds.client/Rindidates at line 17 src\p3r50na\apps\bookof5rinds\client.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.199 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.137 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.149 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.136 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.149 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.212 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+WARNING: Wrong number of args (1) passed to om.core/build at line 18 src\p3r50na\apps\bookof5rinds\client.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.158 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.143 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.125 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.13 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.153 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.113 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.109 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.128 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.116 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.127 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.118 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ) on file C:\cygwin64\progg\p3r50na\src\p3r50na\apps\bookof5rinds\client.cljs, line 13, column 27
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.132 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.125 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.112 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ] on file C:\cygwin64\progg\p3r50na\src\p3r50na\apps\bookof5rinds\client.cljs, line 16, column 10
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.116 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.127 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.121 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.109 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.118 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.137 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 7 and column 1 on file C:\cygwin64\progg\p3r50na\src\p3r50na\apps\bookof5rinds\client.cljs, line 23, column 1
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.125 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.117 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.134 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.111 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.125 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.11 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.163 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.115 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.126 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.172 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
