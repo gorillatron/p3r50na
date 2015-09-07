@@ -6,7 +6,8 @@
 
 (defn rindidates [data]
   (dom/ul nil
-    (map (fn [name] (dom/li nil name)) (:rindidates data))))
+    (for [rindidate (:rindidates data)]
+      (dom/li nil rindidate))))
 
 
 (defn widget [data owner]

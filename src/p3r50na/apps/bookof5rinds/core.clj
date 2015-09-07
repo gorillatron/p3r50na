@@ -11,8 +11,10 @@
 (def namesofrind ["Rindosaurus" "Rindolorian" "Rindiana Jones"
                   "Rindeus Ex" "Rindseeker" "Ringo Jin"])
 
+
 (defprotocol Rind "rinder"
   (shout [this] "shout my power"))
+
 
 (defrecord Rinder [name stats]
   Rind
