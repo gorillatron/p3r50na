@@ -7,21 +7,6 @@
         [compojure.core :only [routes GET POST DELETE ANY context]]))
 
 
-
-(def namesofrind ["Rindosaurus" "Rindolorian" "Rindiana Jones"
-                  "Rindeus Ex" "Rindseeker" "Ringo Jin"])
-
-
-(defprotocol Rind "rinder"
-  (shout [this] "shout my power"))
-
-
-(defrecord Rinder [name stats]
-  Rind
-  (shout [this]
-    (println (str "I AM " name))))
-
-
 (def templates
   {:index (fn [&attrs] (html5
     [:head

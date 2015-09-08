@@ -343,3 +343,385 @@ notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
 [32mSuccessfully compiled "resources/public/js/app.js" in 0.14 seconds.[0m
 notifying browser that file changed:  resources/public/js/out/cljs_deps.js
 notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+Figwheel: focusing on build-ids (build_needs_id_910)
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.749 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+clojure.lang.ExceptionInfo: :refer must be followed by a sequence of symbols in :require / :require-macros; offending spec: [clojure.async :refer all] at line 1 src\p3r50na\apps\bookof5rinds\client.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.analyzer$error.invoke (analyzer.cljc:535)
+    cljs.analyzer$error.invoke (analyzer.cljc:533)
+    cljs.analyzer$parse_require_spec.invoke (analyzer.cljc:1744)
+    clojure.lang.AFn.applyToHelper (AFn.java:171)
+    clojure.lang.AFn.applyTo (AFn.java:144)
+    clojure.core$apply.invoke (core.clj:636)
+    clojure.core$partial$fn__4533.doInvoke (core.clj:2512)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojure.core$map$fn__4553.invoke (core.clj:2624)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:674)
+    clojure.core/next (core.clj:64)
+    clojure.core$reduce1.invoke (core.clj:909)
+    clojure.core$reduce1.invoke (core.clj:900)
+    clojure.core$merge_with.doInvoke (core.clj:2936)
+    clojure.lang.RestFn.applyTo (RestFn.java:139)
+    clojure.core$apply.invoke (core.clj:634)
+    cljs.analyzer$eval6884$fn__6886$fn__6891.invoke (analyzer.cljc:1907)
+    clojure.core.protocols/fn (protocols.clj:167)
+    clojure.core.protocols$fn__6478$G__6473__6487.invoke (protocols.clj:19)
+    clojure.core.protocols$seq_reduce.invoke (protocols.clj:31)
+    clojure.core.protocols/fn (protocols.clj:101)
+    clojure.core.protocols$fn__6452$G__6447__6465.invoke (protocols.clj:13)
+    clojure.core$reduce.invoke (core.clj:6519)
+    cljs.analyzer$eval6884$fn__6886.invoke (analyzer.cljc:1890)
+    clojure.lang.MultiFn.invoke (MultiFn.java:251)
+    cljs.analyzer$analyze_seq_STAR_.invoke (analyzer.cljc:2368)
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+clojure.lang.ExceptionInfo: :refer must be followed by a sequence of symbols in :require / :require-macros; offending spec: [clojure.async :refer :all] at line 1 src\p3r50na\apps\bookof5rinds\client.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.analyzer$error.invoke (analyzer.cljc:535)
+    cljs.analyzer$error.invoke (analyzer.cljc:533)
+    cljs.analyzer$parse_require_spec.invoke (analyzer.cljc:1744)
+    clojure.lang.AFn.applyToHelper (AFn.java:171)
+    clojure.lang.AFn.applyTo (AFn.java:144)
+    clojure.core$apply.invoke (core.clj:636)
+    clojure.core$partial$fn__4533.doInvoke (core.clj:2512)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojure.core$map$fn__4553.invoke (core.clj:2624)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:674)
+    clojure.core/next (core.clj:64)
+    clojure.core$reduce1.invoke (core.clj:909)
+    clojure.core$reduce1.invoke (core.clj:900)
+    clojure.core$merge_with.doInvoke (core.clj:2936)
+    clojure.lang.RestFn.applyTo (RestFn.java:139)
+    clojure.core$apply.invoke (core.clj:634)
+    cljs.analyzer$eval6884$fn__6886$fn__6891.invoke (analyzer.cljc:1907)
+    clojure.core.protocols/fn (protocols.clj:167)
+    clojure.core.protocols$fn__6478$G__6473__6487.invoke (protocols.clj:19)
+    clojure.core.protocols$seq_reduce.invoke (protocols.clj:31)
+    clojure.core.protocols/fn (protocols.clj:101)
+    clojure.core.protocols$fn__6452$G__6447__6465.invoke (protocols.clj:13)
+    clojure.core$reduce.invoke (core.clj:6519)
+    cljs.analyzer$eval6884$fn__6886.invoke (analyzer.cljc:1890)
+    clojure.lang.MultiFn.invoke (MultiFn.java:251)
+    cljs.analyzer$analyze_seq_STAR_.invoke (analyzer.cljc:2368)
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+clojure.lang.ExceptionInfo: :refer must be followed by a sequence of symbols in :require / :require-macros; offending spec: [clojure.async :refer :all] at line 1 src\p3r50na\apps\bookof5rinds\client.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.analyzer$error.invoke (analyzer.cljc:535)
+    cljs.analyzer$error.invoke (analyzer.cljc:533)
+    cljs.analyzer$parse_require_spec.invoke (analyzer.cljc:1744)
+    clojure.lang.AFn.applyToHelper (AFn.java:171)
+    clojure.lang.AFn.applyTo (AFn.java:144)
+    clojure.core$apply.invoke (core.clj:636)
+    clojure.core$partial$fn__4533.doInvoke (core.clj:2512)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojure.core$map$fn__4553.invoke (core.clj:2624)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:674)
+    clojure.core/next (core.clj:64)
+    clojure.core$reduce1.invoke (core.clj:909)
+    clojure.core$reduce1.invoke (core.clj:900)
+    clojure.core$merge_with.doInvoke (core.clj:2936)
+    clojure.lang.RestFn.applyTo (RestFn.java:139)
+    clojure.core$apply.invoke (core.clj:634)
+    cljs.analyzer$eval6884$fn__6886$fn__6891.invoke (analyzer.cljc:1907)
+    clojure.core.protocols/fn (protocols.clj:167)
+    clojure.core.protocols$fn__6478$G__6473__6487.invoke (protocols.clj:19)
+    clojure.core.protocols$seq_reduce.invoke (protocols.clj:31)
+    clojure.core.protocols/fn (protocols.clj:101)
+    clojure.core.protocols$fn__6452$G__6447__6465.invoke (protocols.clj:13)
+    clojure.core$reduce.invoke (core.clj:6519)
+    cljs.analyzer$eval6884$fn__6886.invoke (analyzer.cljc:1890)
+    clojure.lang.MultiFn.invoke (MultiFn.java:251)
+    cljs.analyzer$analyze_seq_STAR_.invoke (analyzer.cljc:2368)
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src\p3r50na\apps\bookof5rinds\client.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__8153.invoke (compiler.cljc:1254)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1216)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1291)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval8596$fn__8597.invoke (closure.clj:478)
+    cljs.closure$eval8548$fn__8549$G__8539__8556.invoke (closure.clj:383)
+    cljs.closure$eval8609$fn__8610.invoke (closure.clj:492)
+    cljs.closure$eval8548$fn__8549$G__8539__8556.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1671)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__18999.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__19045.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__18996.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__18799.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__18805.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__18805.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__18808.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__18802.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__18820.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__18906$state_machine__14360__auto____18907$fn__18912.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__18906$state_machine__14360__auto____18907.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src\p3r50na\apps\bookof5rinds\client.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__8153.invoke (compiler.cljc:1254)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1216)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1291)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval8596$fn__8597.invoke (closure.clj:478)
+    cljs.closure$eval8548$fn__8549$G__8539__8556.invoke (closure.clj:383)
+    cljs.closure$eval8609$fn__8610.invoke (closure.clj:492)
+    cljs.closure$eval8548$fn__8549$G__8539__8556.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1671)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__18999.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__19045.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__18996.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__18799.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__18805.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__18805.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__18808.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__18802.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__18820.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__18906$state_machine__14360__auto____18907$fn__18912.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__18906$state_machine__14360__auto____18907.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src\p3r50na\apps\bookof5rinds\client.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__8153.invoke (compiler.cljc:1254)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1216)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1291)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval8596$fn__8597.invoke (closure.clj:478)
+    cljs.closure$eval8548$fn__8549$G__8539__8556.invoke (closure.clj:383)
+    cljs.closure$eval8609$fn__8610.invoke (closure.clj:492)
+    cljs.closure$eval8548$fn__8549$G__8539__8556.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1671)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__18999.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__19045.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__18996.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__18799.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__18805.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__18805.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__18808.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__18802.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__18820.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__18906$state_machine__14360__auto____18907$fn__18912.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__18906$state_machine__14360__auto____18907.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src\p3r50na\apps\bookof5rinds\client.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__8153.invoke (compiler.cljc:1254)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1216)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1291)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval8596$fn__8597.invoke (closure.clj:478)
+    cljs.closure$eval8548$fn__8549$G__8539__8556.invoke (closure.clj:383)
+    cljs.closure$eval8609$fn__8610.invoke (closure.clj:492)
+    cljs.closure$eval8548$fn__8549$G__8539__8556.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1671)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__18999.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__19045.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__18996.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__18799.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__18805.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__18805.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__18808.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__18802.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__18820.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__18906$state_machine__14360__auto____18907$fn__18912.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__18906$state_machine__14360__auto____18907.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src\p3r50na\apps\bookof5rinds\client.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__8153.invoke (compiler.cljc:1254)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1216)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1291)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval8596$fn__8597.invoke (closure.clj:478)
+    cljs.closure$eval8548$fn__8549$G__8539__8556.invoke (closure.clj:383)
+    cljs.closure$eval8609$fn__8610.invoke (closure.clj:492)
+    cljs.closure$eval8548$fn__8549$G__8539__8556.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1671)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__18999.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__19045.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__18996.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__18799.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__18805.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__18805.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__18808.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__18802.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__18820.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__18906$state_machine__14360__auto____18907$fn__18912.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__18906$state_machine__14360__auto____18907.invoke (auto.clj:178)
+Figwheel: focusing on build-ids (build_needs_id_910)
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.61 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.222 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src\p3r50na\apps\bookof5rinds\client.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__8153.invoke (compiler.cljc:1254)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1216)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1291)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval8596$fn__8597.invoke (closure.clj:478)
+    cljs.closure$eval8548$fn__8549$G__8539__8556.invoke (closure.clj:383)
+    cljs.closure$eval8609$fn__8610.invoke (closure.clj:492)
+    cljs.closure$eval8548$fn__8549$G__8539__8556.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1671)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__18999.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__19045.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__18996.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__18799.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__18805.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__18805.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__18808.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__18802.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__18820.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__18906$state_machine__14360__auto____18907$fn__18912.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__18906$state_machine__14360__auto____18907.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.173 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.151 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.149 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.152 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.224 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.236 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+WARNING: Wrong number of args (4) passed to cljs.core.async.impl.ioc-helpers/take! at line 27 src\p3r50na\apps\bookof5rinds\client.cljs
+WARNING: Wrong number of args (4) passed to cljs.core.async.impl.ioc-helpers/take! at line 27 src\p3r50na\apps\bookof5rinds\client.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.287 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.2 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.2 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+WARNING: seq already refers to: cljs.core/seq being replaced by: p3r50na.apps.bookof5rinds.client/seq at line 23 src\p3r50na\apps\bookof5rinds\client.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.244 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.174 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.197 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client/>! at line 39 src\p3r50na\apps\bookof5rinds\client.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client/>! at line 39 src\p3r50na\apps\bookof5rinds\client.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.249 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.242 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: Unmatched delimiter ] on file C:\cygwin64\progg\p3r50na\src\p3r50na\apps\bookof5rinds\client.cljs, line 38, column 30
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.194 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.215 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.229 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
