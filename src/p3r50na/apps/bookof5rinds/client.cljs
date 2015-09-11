@@ -4,6 +4,28 @@
             [om.dom :as dom]
             [cljs.core.async :refer [put! chan <! timeout]]))
 
+(defn- now []
+  (quot (.getTime (js/Date.)) 1000))
+
+(def max-id (atom 0))
+
+(def conn
+  (js/WebSocket. "ws://localhost:8080/book-of-5-rinds/ws"))
+
+(set! (.-onopen conn)
+  (fn [e]
+    (.send conn
+      (.stringify js/JSON (js-obj "command" "getall")))))
+
+(set! (.-onerror conn)
+  (fn []
+    (js/alert "error")
+    (.log js/console js/arguments)))
+
+(set! (.-onmessage conn)
+  (fn [e]
+    (let [msgs (.parse js/JSON (.-data e))]
+      (js/console.log "MESSAGE:" msgs))))
 
 
 (defn rindidates [data]
@@ -20,23 +42,6 @@
         (rindidates {:rindidates ["a" "b"]})
         (dom/h1 nil (:text data))))))
 
-(def mseq (seq ["foo" "bar" "wat" "lol"]))
-(def q (chan 5))
-
-
-(go
-  (doseq [item mseq]
-    (>! q item)
-    (<! (timeout 1000))))
-
-(go
-  (while true
-    (let [i (<! q)]
-      (js/console.log i))))
-
-(go
-  (doseq [x (seq [1 2 3 4 5])]
-    (>! q x)))
 
 (om/root widget {:text "Hello worlds waaat!"}
   {:target (. js/document (getElementById "app"))})
