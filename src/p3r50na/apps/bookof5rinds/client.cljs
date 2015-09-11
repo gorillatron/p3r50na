@@ -42,7 +42,6 @@
             (let [event (<! comm)]
               (doseq []
                 (let [newstate (:state event)]
-                  (js/console.log newstate)
                   (om/update-state! owner (fn [] newstate))))))))
     om/IRenderState
     (render-state [this state]

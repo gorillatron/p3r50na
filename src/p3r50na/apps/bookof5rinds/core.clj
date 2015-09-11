@@ -61,7 +61,6 @@
         (on-receive channel
           (fn [json-data]
             (let [data (read-str json-data :key-fn clojure.core/keyword)]
-              (doseq []
-                (handle-command (:command data) (:data data)))))))))
+              (handle-command (:command data) (:data data))))))))
 
     ))

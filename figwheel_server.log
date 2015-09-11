@@ -2076,3 +2076,9 @@ clojure.lang.Compiler$CompilerException: java.lang.RuntimeException: EOF while r
 [32mSuccessfully compiled "resources/public/js/app.js" in 0.183 seconds.[0m
 [0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
 [32mSuccessfully compiled "resources/public/js/app.js" in 0.127 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.105 seconds.[0m
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.222 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
