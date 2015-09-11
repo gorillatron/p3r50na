@@ -5,6 +5,7 @@
             [org.httpkit.server :refer :all])
 
   (:use [hiccup.page]
+        [clojure.data.json :only [write-str read-str]]
         [compojure.core :only [routes GET POST DELETE ANY context]]))
 
 
@@ -17,6 +18,32 @@
       [:script {:src "/js/app.js"}]]))})
 
 
+(def app-state (atom {
+  :rindidates [
+    {:name "Rindiana Jonas"}
+    {:name "Rindseeker"}
+  ]}))
+
+
+(def socket-clients (atom {}))
+
+
+(defn broadcast-state []
+  (doseq [client (keys @socket-clients)]
+    (send! client (write-str {:type "state" :state @app-state }))))
+
+
+(defn create-rind [new-rind]
+  (swap! app-state assoc :rindidates (conj (:rindidates @app-state) new-rind)))
+
+
+(defn handle-command [command data]
+  (doseq []
+    (case command
+      "create-rind" (create-rind data))
+    (broadcast-state)))
+
+
 (defn router []
   (routes
 
@@ -26,11 +53,15 @@
 
     (GET "/ws" [] (fn [req]
       (with-channel req channel
+        (swap! socket-clients assoc channel true)
+        (send! channel (write-str {:type "state" :state @app-state }))
         (on-close channel
           (fn [status]
             (println "channel closed")))
         (on-receive channel
-          (fn [data]
-            (send! channel data))))))
+          (fn [json-data]
+            (let [data (read-str json-data :key-fn clojure.core/keyword)]
+              (doseq []
+                (handle-command (:command data) (:data data)))))))))
 
     ))
