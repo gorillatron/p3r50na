@@ -30,17 +30,23 @@
 
 (defn broadcast-state []
   (doseq [client (keys @socket-clients)]
-    (send! client (write-str {:type "state" :state @app-state }))))
+    (send! client (write-str {:type "state" :state @app-state}))))
 
 
-(defn create-rind [new-rind]
-  (swap! app-state assoc :rindidates (conj (:rindidates @app-state) new-rind)))
+(defn create-rind [state new-rind]
+  (assoc state :rindidates (conj (:rindidates state) new-rind)))
+
+
+(defn remove-rind [state rind-to-remove]
+  (assoc state :rindidates (remove #(= (:name %) (:name rind-to-remove)) (:rindidates state))))
 
 
 (defn handle-command [command data]
   (doseq []
-    (case command
-      "create-rind" (create-rind data))
+    (swap! app-state
+      (case command
+        "create-rind" create-rind
+        "remove-rind" remove-rind) data)
     (broadcast-state)))
 
 

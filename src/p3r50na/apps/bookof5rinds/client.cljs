@@ -16,12 +16,6 @@
   (js/WebSocket. "ws://localhost:8080/book-of-5-rinds/ws"))
 
 
-(defn rindidate-list [rindidates]
-  (dom/ul nil
-    (for [rindidate rindidates]
-      (dom/li nil (:name rindidate)))))
-
-
 (defn handle-new-rind-keydown [e state owner]
   (if (== (.-keyCode e) 13)
     (let [name (.-value (.-target e))]
@@ -32,6 +26,20 @@
                         :data new-rind}]
           (.send socket
             (js/JSON.stringify (clj->js message))))))))
+
+
+(defn on-delete-rind-handler [e rindidate]
+  (.send socket
+    (js/JSON.stringify (clj->js {:command "remove-rind"
+                                 :data rindidate}))))
+
+
+(defn rindidate-list [rindidates]
+  (dom/ul nil
+    (for [rindidate rindidates]
+      (dom/li nil
+        (:name rindidate)
+        (dom/button #js {:onClick #(on-delete-rind-handler % rindidate)} "delete")))))
 
 
 (defn app [state owner]
