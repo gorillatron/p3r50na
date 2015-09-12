@@ -7,9 +7,6 @@
 (enable-console-print!)
 
 
-(def app-state (atom {
-  :rindidates [ {:name "wat"} ]}))
-
 (def comm (chan))
 
 (def socket
@@ -58,7 +55,7 @@
         (rindidate-list (:rindidates state))))))
 
 
-(om/root app app-state
+(om/root app {}
   {:target (. js/document (getElementById "app"))})
 
 

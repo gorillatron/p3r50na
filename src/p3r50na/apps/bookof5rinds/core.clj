@@ -38,7 +38,7 @@
 
 
 (defn remove-rind [state rind-to-remove]
-  (assoc state :rindidates (remove #(= (:name %) (:name rind-to-remove)) (:rindidates state))))
+  (assoc state :rindidates (remove #(= % rind-to-remove) (:rindidates state))))
 
 
 (defn handle-command [command data]
