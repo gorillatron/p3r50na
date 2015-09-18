@@ -15,7 +15,7 @@
       [:link {:rel "stylesheet" :href "/css/bookof5rinds.css"}]]
     [:body
       [:div#app.col-group]
-      [:script {:src "/js/app.js"}]]))})
+      [:script {:src "/js/bookof5rinds.client.core.js"}]]))})
 
 
 (def app-state (atom {

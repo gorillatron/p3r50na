@@ -2192,3 +2192,781 @@ notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
 [32mSuccessfully compiled "resources/public/js/app.js" in 0.164 seconds.[0m
 [0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
 [32mSuccessfully compiled "resources/public/js/app.js" in 0.155 seconds.[0m
+Figwheel: focusing on build-ids (build_needs_id_910)
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.875 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.297 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.147 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/app.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.118 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+Figwheel: focusing on build-ids (build_needs_id_910)
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Required namespace not provided for p3r50na.apps.bookof5rinds.client.core
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.722 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.26 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\core.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.core/game at line 72 src\p3r50na\apps\bookof5rinds\client\core.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.293 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\core.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+java.lang.AssertionError: No ns form found in src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+ at cljs.analyzer$parse_ns$fn__7185.invoke (analyzer.cljc:2706)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2660)
+    cljs.analyzer$parse_ns.invoke (analyzer.cljc:2651)
+    cljs.compiler$compile_root$fn__8205.invoke (compiler.cljc:1284)
+    clojure.core$map$fn__4553.invoke (core.clj:2624)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.RT.seq (RT.java:507)
+    clojure.core/seq (core.clj:137)
+    clojure.core$map$fn__4553.invoke (core.clj:2616)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:674)
+    clojure.core/next (core.clj:64)
+    clojure.core.protocols/fn (protocols.clj:170)
+    clojure.core.protocols$fn__6478$G__6473__6487.invoke (protocols.clj:19)
+    clojure.core.protocols$seq_reduce.invoke (protocols.clj:31)
+    clojure.core.protocols/fn (protocols.clj:101)
+    clojure.core.protocols$fn__6452$G__6447__6465.invoke (protocols.clj:13)
+    clojure.core$reduce.invoke (core.clj:6519)
+    cljs.js_deps$build_index.invoke (js_deps.cljc:128)
+    cljs.js_deps$dependency_order.invoke (js_deps.cljc:168)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1283)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval8624$fn__8625.invoke (closure.clj:478)
+    cljs.closure$eval8576$fn__8577$G__8567__8584.invoke (closure.clj:383)
+    cljs.closure$eval8637$fn__8638.invoke (closure.clj:492)
+    cljs.closure$eval8576$fn__8577$G__8567__8584.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.165 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.186 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+clojure.lang.ExceptionInfo: :refer must be followed by a sequence of symbols in :require / :require-macros; offending spec: [p3r50na.apps.bookof5rinds.client.game.component :refer game-component] at line 1 src\p3r50na\apps\bookof5rinds\client\core.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.analyzer$error.invoke (analyzer.cljc:535)
+    cljs.analyzer$error.invoke (analyzer.cljc:533)
+    cljs.analyzer$parse_require_spec.invoke (analyzer.cljc:1744)
+    clojure.lang.AFn.applyToHelper (AFn.java:171)
+    clojure.lang.AFn.applyTo (AFn.java:144)
+    clojure.core$apply.invoke (core.clj:636)
+    clojure.core$partial$fn__4533.doInvoke (core.clj:2512)
+    clojure.lang.RestFn.invoke (RestFn.java:408)
+    clojure.core$map$fn__4553.invoke (core.clj:2624)
+    clojure.lang.LazySeq.sval (LazySeq.java:40)
+    clojure.lang.LazySeq.seq (LazySeq.java:49)
+    clojure.lang.Cons.next (Cons.java:39)
+    clojure.lang.RT.next (RT.java:674)
+    clojure.core/next (core.clj:64)
+    clojure.core$reduce1.invoke (core.clj:909)
+    clojure.core$reduce1.invoke (core.clj:900)
+    clojure.core$merge_with.doInvoke (core.clj:2936)
+    clojure.lang.RestFn.applyTo (RestFn.java:139)
+    clojure.core$apply.invoke (core.clj:634)
+    cljs.analyzer$eval6912$fn__6914$fn__6919.invoke (analyzer.cljc:1907)
+    clojure.core.protocols/fn (protocols.clj:167)
+    clojure.core.protocols$fn__6478$G__6473__6487.invoke (protocols.clj:19)
+    clojure.core.protocols$seq_reduce.invoke (protocols.clj:31)
+    clojure.core.protocols/fn (protocols.clj:101)
+    clojure.core.protocols$fn__6452$G__6447__6465.invoke (protocols.clj:13)
+    clojure.core$reduce.invoke (core.clj:6519)
+    cljs.analyzer$eval6912$fn__6914.invoke (analyzer.cljc:1890)
+    clojure.lang.MultiFn.invoke (MultiFn.java:251)
+    cljs.analyzer$analyze_seq_STAR_.invoke (analyzer.cljc:2368)
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Wrong number of args (0) passed to p3r50na.apps.bookof5rinds.client.game.component/game-component at line 73 src\p3r50na\apps\bookof5rinds\client\core.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.316 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\core.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Wrong number of args (0) passed to p3r50na.apps.bookof5rinds.client.game.component/game-component at line 73 src\p3r50na\apps\bookof5rinds\client\core.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.254 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.364 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.248 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.292 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.191 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\core.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.217 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\core.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.core/game-componen at line 57 src\p3r50na\apps\bookof5rinds\core.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.243 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\core.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.167 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\core.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.185 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.158 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__8181.invoke (compiler.cljc:1254)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1216)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1291)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval8624$fn__8625.invoke (closure.clj:478)
+    cljs.closure$eval8576$fn__8577$G__8567__8584.invoke (closure.clj:383)
+    cljs.closure$eval8637$fn__8638.invoke (closure.clj:492)
+    cljs.closure$eval8576$fn__8577$G__8567__8584.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1671)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__19027.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__19073.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__19024.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__18827.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__18833.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__18833.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__18836.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__18830.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__18848.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__18934$state_machine__14388__auto____18935$fn__18940.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__18934$state_machine__14388__auto____18935.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.189 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__8181.invoke (compiler.cljc:1254)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1216)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1291)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval8624$fn__8625.invoke (closure.clj:478)
+    cljs.closure$eval8576$fn__8577$G__8567__8584.invoke (closure.clj:383)
+    cljs.closure$eval8637$fn__8638.invoke (closure.clj:492)
+    cljs.closure$eval8576$fn__8577$G__8567__8584.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1671)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__19027.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__19073.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__19024.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__18827.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__18833.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__18833.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__18836.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__18830.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__18848.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__18934$state_machine__14388__auto____18935$fn__18940.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__18934$state_machine__14388__auto____18935.invoke (auto.clj:178)
+Figwheel: focusing on build-ids (build_needs_id_910)
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.328 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\core.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.186 seconds.[0m
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.223 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\core.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.311 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\core.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.292 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\core.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.187 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.23 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.158 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.18 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.201 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.223 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Bad method signature in protocol implementation, om/IRenderState does not declare method called dom/div at line 24 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__8181.invoke (compiler.cljc:1254)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1216)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1291)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval8624$fn__8625.invoke (closure.clj:478)
+    cljs.closure$eval8576$fn__8577$G__8567__8584.invoke (closure.clj:383)
+    cljs.closure$eval8637$fn__8638.invoke (closure.clj:492)
+    cljs.closure$eval8576$fn__8577$G__8567__8584.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1671)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__19027.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__19073.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__19024.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__18827.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__18833.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__18833.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__18836.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__18830.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__18848.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__18934$state_machine__14388__auto____18935$fn__18940.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__18934$state_machine__14388__auto____18935.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Bad method signature in protocol implementation, om/IRenderState does not declare method called dom/div at line 24 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__8181.invoke (compiler.cljc:1254)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1216)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1291)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval8624$fn__8625.invoke (closure.clj:478)
+    cljs.closure$eval8576$fn__8577$G__8567__8584.invoke (closure.clj:383)
+    cljs.closure$eval8637$fn__8638.invoke (closure.clj:492)
+    cljs.closure$eval8576$fn__8577$G__8567__8584.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1671)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__19027.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__19073.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__19024.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__18827.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__18833.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__18833.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__18836.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__18830.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__18848.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__18934$state_machine__14388__auto____18935$fn__18940.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__18934$state_machine__14388__auto____18935.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Bad method signature in protocol implementation, om/IRenderState render-state does not declare arity 1 at line 24 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.291 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.254 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.197 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Bad method signature in protocol implementation, om/IDidMount did-mount does not declare arity 2 at line 24 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.253 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.216 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.223 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.187 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.197 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.255 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.219 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Bad method signature in protocol implementation, om/IRender render does not declare arity 2 at line 24 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.228 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.216 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.184 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Wrong number of args (1) passed to om.core/build at line 73 src\p3r50na\apps\bookof5rinds\client\core.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.202 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\core.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.192 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\core.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.242 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.223 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.215 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.223 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.19 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.193 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+ERROR: EOF while reading, starting at line 15 and column 1 on file C:\cygwin64\progg\p3r50na\src\p3r50na\apps\bookof5rinds\client\game\component.cljs, line 39, column 1
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.227 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.198 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.194 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.231 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.188 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.195 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.286 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.217 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.216 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/player-state at line 19 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/player-state at line 20 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.266 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.21 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.226 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.22 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.209 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.232 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.205 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.198 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.187 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.19 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.195 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.226 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.214 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.39 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.182 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.211 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.203 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.208 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.261 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+ERROR: Unmatched delimiter ) on file C:\cygwin64\progg\p3r50na\src\p3r50na\apps\bookof5rinds\client\game\component.cljs, line 30, column 41
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.237 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/key-released at line 38 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/key-released at line 38 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/key-released at line 38 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.253 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.228 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.263 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.224 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.232 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.219 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.219 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.265 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.232 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.263 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.22 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.219 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.235 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.252 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.208 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.235 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.204 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+ERROR: Invalid number format [100wds] on file C:\cygwin64\progg\p3r50na\src\p3r50na\apps\bookof5rinds\client\game\component.cljs, line 27, column 62
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.201 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.217 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.224 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.217 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.22 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.232 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: update already refers to: cljs.core/update being replaced by: p3r50na.apps.bookof5rinds.client.game.component/update at line 33 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.253 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.23 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.229 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/xdir at line 47 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/ydir at line 48 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.258 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/xdir at line 47 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/ydir at line 48 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.3 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.241 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.219 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.232 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.289 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.226 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/eevnt at line 34 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.242 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/evnt at line 34 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.29 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.21 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.241 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__8181.invoke (compiler.cljc:1254)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1216)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1291)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval8624$fn__8625.invoke (closure.clj:478)
+    cljs.closure$eval8576$fn__8577$G__8567__8584.invoke (closure.clj:383)
+    cljs.closure$eval8637$fn__8638.invoke (closure.clj:492)
+    cljs.closure$eval8576$fn__8577$G__8567__8584.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1671)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__19027.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__19073.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__19024.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__18827.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__18833.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__18833.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__18836.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__18830.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__18848.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__18934$state_machine__14388__auto____18935$fn__18940.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__18934$state_machine__14388__auto____18935.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__8181.invoke (compiler.cljc:1254)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1216)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1291)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval8624$fn__8625.invoke (closure.clj:478)
+    cljs.closure$eval8576$fn__8577$G__8567__8584.invoke (closure.clj:383)
+    cljs.closure$eval8637$fn__8638.invoke (closure.clj:492)
+    cljs.closure$eval8576$fn__8577$G__8567__8584.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1671)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__19027.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__19073.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__19024.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__18827.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__18833.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__18833.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__18836.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__18830.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__18848.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__18934$state_machine__14388__auto____18935$fn__18940.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__18934$state_machine__14388__auto____18935.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.222 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__8181.invoke (compiler.cljc:1254)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1216)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1291)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval8624$fn__8625.invoke (closure.clj:478)
+    cljs.closure$eval8576$fn__8577$G__8567__8584.invoke (closure.clj:383)
+    cljs.closure$eval8637$fn__8638.invoke (closure.clj:492)
+    cljs.closure$eval8576$fn__8577$G__8567__8584.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1671)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__19027.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__19073.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__19024.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__18827.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__18833.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__18833.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__18836.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__18830.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__18848.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__18934$state_machine__14388__auto____18935$fn__18940.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__18934$state_machine__14388__auto____18935.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.28 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.246 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.244 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.212 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var quil.core/noloop at line 13 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/key-pressed at line 40 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/key-pressed at line 40 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/key-pressed at line 40 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/key-released at line 41 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/key-released at line 41 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/key-released at line 41 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.355 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/key-pressed at line 40 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/key-pressed at line 40 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/key-pressed at line 40 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/key-released at line 41 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/key-released at line 41 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/key-released at line 41 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.279 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.206 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
