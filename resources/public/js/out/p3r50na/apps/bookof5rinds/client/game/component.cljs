@@ -8,45 +8,71 @@
 
 (enable-console-print!)
 
+
+
 ; Game Objects
-(defprotocol GameObject
-  (velocity [this])
-  (direction [this]))
+(defprotocol GameObject)
 
+(defprotocol Movable)
 
-(defrecord Player [x y angle]
+(defprotocol Static)
+
+(defrecord Player [x y size speed]
   GameObject
-  (velocity [this] 10)
-  (direction [this] 12))
+  Movable)
 
 
 
+(def map-matrix [
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :w} {:type :w} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+])
+
+(def blocksize (int 10))
+
+(defn map-size [map-matrix blocksize]
+  (println (count (first map-matrix)))
+  (let [x (* blocksize (count (first map-matrix)))
+        y (* blocksize (count (first (first map-matrix))))]
+    [x y]))
 
 
 ; Rendering
 (defn setup []
   (q/frame-rate 60)
-  { :player {:x 30 :y 30 :angle 180}
+  { :player (new Player 30 30 10 2)
     :controlls #{} })
-
 
 (defn draw [state]
   (q/background 255)
   (q/fill 0)
-  (let [x (:x (:player state))
-        y (:y (:player state))]
-    (q/rect x y 10 10)))
+  ; (doseq [row map-matrix
+  ;         block row]
+  ;   (println block))
+  (let [{x :x y :y size :size} (:player state)]
+    (q/rect x y size size)))
 
 
 (defn apply-controll [state]
   (if (empty? (:controlls state))
-    (identity state)
-    (reduce (fn [state controll]
-      (case controll
-        :w (update-in state [:player :y] - 2)
-        :s (update-in state [:player :y] + 2)
-        :a (update-in state [:player :x] - 2)
-        :d (update-in state [:player :x] + 2))) state (:controlls state))))
+    state
+    (let [{x :x y :y speed :speed} (:player state)]
+      (reduce (fn [state controll]
+        (case controll
+          :w (update-in state [:player :y] - speed)
+          :s (update-in state [:player :y] + speed)
+          :a (update-in state [:player :x] - speed)
+          :d (update-in state [:player :x] + speed)
+             state)) state (:controlls state)))))
 
 (defn cupdate [state]
   (-> state
@@ -61,18 +87,17 @@
   (let [keycode (q/key-as-keyword)]
     (update-in state [:controlls] disj keycode)))
 
+(println (map-size map-matrix))
 
 (q/defsketch hello
   :setup setup
   :update cupdate
   :draw draw
   :host "game-canvas"
-  :size [300 300]
+  :size (map-size map-matrix blocksize)
   :key-pressed on-key-down
   :key-released on-key-up
   :middleware [m/fun-mode])
-
-
 
 
 
