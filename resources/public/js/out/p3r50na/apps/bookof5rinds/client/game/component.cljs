@@ -49,6 +49,9 @@
 (defn setup []
   (q/frame-rate 60)
   { :player (new Player 0 0 10 2)
+    :remote-players [
+      (new Player 100 50 10 2)
+    ]
     :controlls #{} })
 
 (def walls
@@ -71,6 +74,9 @@
   (doseq [wall walls]
     (q/rect (:x wall) (:y wall) blocksize blocksize))
   (q/fill 0)
+  (doseq [remote-player (:remote-players state)]
+    (let [{x :x y :y size :size} remote-player]
+      (q/rect x y size size)))
   (let [{x :x y :y size :size} (:player state)]
     (q/rect x y size size)))
 
