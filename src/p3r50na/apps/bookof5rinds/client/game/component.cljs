@@ -95,16 +95,16 @@
     state
     (let [{x :x y :y speed :speed} (:player state)]
       (let [newstate (reduce (fn [state controll]
-                        (case controll
-                          :w (update-in state [:player :y] - speed)
-                          :s (update-in state [:player :y] + speed)
-                          :a (update-in state [:player :x] - speed)
-                          :d (update-in state [:player :x] + speed)
-                             state)) state (:controlls state))]
-        (println (intersects-wall? state))
-        (if (intersects-wall? state)
-          (identity state)
-          (identity newstate))))))
+                        (let [newstate (case controll
+                                :w (update-in state [:player :y] - speed)
+                                :s (update-in state [:player :y] + speed)
+                                :a (update-in state [:player :x] - speed)
+                                :d (update-in state [:player :x] + speed)
+                                   state)]
+                          (if (intersects-wall? newstate)
+                            state
+                            newstate))) state (:controlls state))]
+        newstate))))
 
 (defn cupdate [state]
   (-> state
