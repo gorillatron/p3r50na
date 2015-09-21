@@ -25,39 +25,52 @@
 
 (def map-matrix [
   [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :w} {:type :w} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :w} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :w} {:type :w} {:type :w} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :w} {:type :w} {:type :w} {:type :g} {:type :w} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :g}]
   [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
 ])
 
-(def blocksize (int 10))
+(def blocksize (int 20))
 
 (defn map-size [map-matrix blocksize]
-  (println (count (first map-matrix)))
   (let [x (* blocksize (count (first map-matrix)))
-        y (* blocksize (count (first (first map-matrix))))]
+        y (* blocksize (count map-matrix))]
     [x y]))
 
 
 ; Rendering
 (defn setup []
   (q/frame-rate 60)
-  { :player (new Player 30 30 10 2)
+  { :player (new Player 0 0 10 2)
     :controlls #{} })
+
+(def walls
+  (remove nil?
+    (flatten
+      (map-indexed (fn [ydx row]
+        (map-indexed (fn [xdx block]
+          (let [y (* ydx blocksize)
+                x (* xdx blocksize)]
+            (if (= :w (:type block))
+              {:x x :y y}))) row)) map-matrix))))
+
+
+(doseq [wall walls]
+  (println wall))
 
 (defn draw [state]
   (q/background 255)
+  (q/fill 200 200 200)
   (q/fill 0)
-  ; (doseq [row map-matrix
-  ;         block row]
-  ;   (println block))
+  (doseq [wall walls]
+    (q/rect (:x wall) (:y wall) blocksize blocksize))
   (let [{x :x y :y size :size} (:player state)]
     (q/rect x y size size)))
 
@@ -87,7 +100,7 @@
   (let [keycode (q/key-as-keyword)]
     (update-in state [:controlls] disj keycode)))
 
-(println (map-size map-matrix))
+(println (map-size map-matrix blocksize))
 
 (q/defsketch hello
   :setup setup
@@ -111,4 +124,4 @@
     (render [this]
       (dom/div nil
         (dom/h1 nil "game")
-        (dom/canvas #js {:id "game-canvas"})))))
+        (dom/canvas #js {:id "game-canvas" :style #js {:border "1px solid gray"}})))))
