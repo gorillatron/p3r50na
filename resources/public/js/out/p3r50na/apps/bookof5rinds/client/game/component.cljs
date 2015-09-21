@@ -24,17 +24,19 @@
 
 
 (def map-matrix [
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :w} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :g} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :g} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :w} {:type :w} {:type :w} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :w} {:type :w} {:type :w} {:type :g} {:type :w} {:type :g}]
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :g}]
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :g}]
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :g} {:type :w} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :w} {:type :w} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :w} {:type :w} {:type :g} {:type :g} {:type :g} {:type :w} {:type :g} {:type :g} {:type :g} {:type :w} {:type :w} {:type :w} {:type :g} {:type :g}]
+  [{:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :w} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :w} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :w}]
+  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :w}]
 ])
 
 (def blocksize (int 20))
