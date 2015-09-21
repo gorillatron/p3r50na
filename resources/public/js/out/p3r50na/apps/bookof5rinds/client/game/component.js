@@ -47,11 +47,11 @@ var this__20147__auto____$1 = this;
 return cljs.core._lookup.call(null,this__20147__auto____$1,k__20148__auto__,null);
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__20149__auto__,k49328,else__20150__auto__){
+p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__20149__auto__,k61375,else__20150__auto__){
 var self__ = this;
 var this__20149__auto____$1 = this;
-var G__49330 = (((k49328 instanceof cljs.core.Keyword))?k49328.fqn:null);
-switch (G__49330) {
+var G__61377 = (((k61375 instanceof cljs.core.Keyword))?k61375.fqn:null);
+switch (G__61377) {
 case "x":
 return self__.x;
 
@@ -69,7 +69,7 @@ return self__.speed;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k49328,else__20150__auto__);
+return cljs.core.get.call(null,self__.__extmap,k61375,else__20150__auto__);
 
 }
 });
@@ -87,10 +87,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__20162__auto__,pr_pair__2
 
 p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$IIterable$ = true;
 
-p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__49327){
+p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__61374){
 var self__ = this;
-var G__49327__$1 = this;
-return (new cljs.core.RecordIter((0),G__49327__$1,4,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"x","x",2099068185),new cljs.core.Keyword(null,"y","y",-1757859776),new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.Keyword(null,"speed","speed",1257663751)], null),cljs.core._iterator.call(null,self__.__extmap)));
+var G__61374__$1 = this;
+return (new cljs.core.RecordIter((0),G__61374__$1,4,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"x","x",2099068185),new cljs.core.Keyword(null,"y","y",-1757859776),new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.Keyword(null,"speed","speed",1257663751)], null),cljs.core._iterator.call(null,self__.__extmap)));
 });
 
 p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.p3r50na$apps$bookof5rinds$client$game$component$GameObject$ = true;
@@ -160,24 +160,24 @@ return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self
 }
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__20154__auto__,k__20155__auto__,G__49327){
+p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__20154__auto__,k__20155__auto__,G__61374){
 var self__ = this;
 var this__20154__auto____$1 = this;
-var pred__49331 = cljs.core.keyword_identical_QMARK_;
-var expr__49332 = k__20155__auto__;
-if(cljs.core.truth_(pred__49331.call(null,new cljs.core.Keyword(null,"x","x",2099068185),expr__49332))){
-return (new p3r50na.apps.bookof5rinds.client.game.component.Player(G__49327,self__.y,self__.size,self__.speed,self__.__meta,self__.__extmap,null));
+var pred__61378 = cljs.core.keyword_identical_QMARK_;
+var expr__61379 = k__20155__auto__;
+if(cljs.core.truth_(pred__61378.call(null,new cljs.core.Keyword(null,"x","x",2099068185),expr__61379))){
+return (new p3r50na.apps.bookof5rinds.client.game.component.Player(G__61374,self__.y,self__.size,self__.speed,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__49331.call(null,new cljs.core.Keyword(null,"y","y",-1757859776),expr__49332))){
-return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,G__49327,self__.size,self__.speed,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__61378.call(null,new cljs.core.Keyword(null,"y","y",-1757859776),expr__61379))){
+return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,G__61374,self__.size,self__.speed,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__49331.call(null,new cljs.core.Keyword(null,"size","size",1098693007),expr__49332))){
-return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self__.y,G__49327,self__.speed,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__61378.call(null,new cljs.core.Keyword(null,"size","size",1098693007),expr__61379))){
+return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self__.y,G__61374,self__.speed,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__49331.call(null,new cljs.core.Keyword(null,"speed","speed",1257663751),expr__49332))){
-return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self__.y,self__.size,G__49327,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__61378.call(null,new cljs.core.Keyword(null,"speed","speed",1257663751),expr__61379))){
+return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self__.y,self__.size,G__61374,self__.__meta,self__.__extmap,null));
 } else {
-return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self__.y,self__.size,self__.speed,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__20155__auto__,G__49327),null));
+return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self__.y,self__.size,self__.speed,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__20155__auto__,G__61374),null));
 }
 }
 }
@@ -190,10 +190,10 @@ var this__20159__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"x","x",2099068185),self__.x],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"y","y",-1757859776),self__.y],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"size","size",1098693007),self__.size],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"speed","speed",1257663751),self__.speed],null))], null),self__.__extmap));
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__20146__auto__,G__49327){
+p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__20146__auto__,G__61374){
 var self__ = this;
 var this__20146__auto____$1 = this;
-return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self__.y,self__.size,self__.speed,G__49327,self__.__extmap,self__.__hash));
+return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self__.y,self__.size,self__.speed,G__61374,self__.__extmap,self__.__hash));
 });
 
 p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__20152__auto__,entry__20153__auto__){
@@ -224,8 +224,8 @@ p3r50na.apps.bookof5rinds.client.game.component.__GT_Player = (function p3r50na$
 return (new p3r50na.apps.bookof5rinds.client.game.component.Player(x,y,size,speed,null,null,null));
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.map__GT_Player = (function p3r50na$apps$bookof5rinds$client$game$component$map__GT_Player(G__49329){
-return (new p3r50na.apps.bookof5rinds.client.game.component.Player(new cljs.core.Keyword(null,"x","x",2099068185).cljs$core$IFn$_invoke$arity$1(G__49329),new cljs.core.Keyword(null,"y","y",-1757859776).cljs$core$IFn$_invoke$arity$1(G__49329),new cljs.core.Keyword(null,"size","size",1098693007).cljs$core$IFn$_invoke$arity$1(G__49329),new cljs.core.Keyword(null,"speed","speed",1257663751).cljs$core$IFn$_invoke$arity$1(G__49329),null,cljs.core.dissoc.call(null,G__49329,new cljs.core.Keyword(null,"x","x",2099068185),new cljs.core.Keyword(null,"y","y",-1757859776),new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.Keyword(null,"speed","speed",1257663751)),null));
+p3r50na.apps.bookof5rinds.client.game.component.map__GT_Player = (function p3r50na$apps$bookof5rinds$client$game$component$map__GT_Player(G__61376){
+return (new p3r50na.apps.bookof5rinds.client.game.component.Player(new cljs.core.Keyword(null,"x","x",2099068185).cljs$core$IFn$_invoke$arity$1(G__61376),new cljs.core.Keyword(null,"y","y",-1757859776).cljs$core$IFn$_invoke$arity$1(G__61376),new cljs.core.Keyword(null,"size","size",1098693007).cljs$core$IFn$_invoke$arity$1(G__61376),new cljs.core.Keyword(null,"speed","speed",1257663751).cljs$core$IFn$_invoke$arity$1(G__61376),null,cljs.core.dissoc.call(null,G__61376,new cljs.core.Keyword(null,"x","x",2099068185),new cljs.core.Keyword(null,"y","y",-1757859776),new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.Keyword(null,"speed","speed",1257663751)),null));
 });
 
 p3r50na.apps.bookof5rinds.client.game.component.map_matrix = new cljs.core.PersistentVector(null, 11, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null)], null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"w","w",354169001)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null)], null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"w","w",354169001)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null)], null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"w","w",354169001)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"w","w",354169001)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null)], null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"w","w",354169001)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null)], null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"w","w",354169001)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null)], null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"w","w",354169001)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"w","w",354169001)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"w","w",354169001)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null)], null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"w","w",354169001)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"w","w",354169001)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"w","w",354169001)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"w","w",354169001)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null)], null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"w","w",354169001)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null)], null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"w","w",354169001)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null)], null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"g","g",1738089905)], null)], null)], null);
@@ -251,51 +251,51 @@ return null;
 }
 }),row);
 }),p3r50na.apps.bookof5rinds.client.game.component.map_matrix)));
-var seq__49335_49339 = cljs.core.seq.call(null,p3r50na.apps.bookof5rinds.client.game.component.walls);
-var chunk__49336_49340 = null;
-var count__49337_49341 = (0);
-var i__49338_49342 = (0);
+var seq__61382_61386 = cljs.core.seq.call(null,p3r50na.apps.bookof5rinds.client.game.component.walls);
+var chunk__61383_61387 = null;
+var count__61384_61388 = (0);
+var i__61385_61389 = (0);
 while(true){
-if((i__49338_49342 < count__49337_49341)){
-var wall_49343 = cljs.core._nth.call(null,chunk__49336_49340,i__49338_49342);
-cljs.core.println.call(null,wall_49343);
+if((i__61385_61389 < count__61384_61388)){
+var wall_61390 = cljs.core._nth.call(null,chunk__61383_61387,i__61385_61389);
+cljs.core.println.call(null,wall_61390);
 
-var G__49344 = seq__49335_49339;
-var G__49345 = chunk__49336_49340;
-var G__49346 = count__49337_49341;
-var G__49347 = (i__49338_49342 + (1));
-seq__49335_49339 = G__49344;
-chunk__49336_49340 = G__49345;
-count__49337_49341 = G__49346;
-i__49338_49342 = G__49347;
+var G__61391 = seq__61382_61386;
+var G__61392 = chunk__61383_61387;
+var G__61393 = count__61384_61388;
+var G__61394 = (i__61385_61389 + (1));
+seq__61382_61386 = G__61391;
+chunk__61383_61387 = G__61392;
+count__61384_61388 = G__61393;
+i__61385_61389 = G__61394;
 continue;
 } else {
-var temp__4425__auto___49348 = cljs.core.seq.call(null,seq__49335_49339);
-if(temp__4425__auto___49348){
-var seq__49335_49349__$1 = temp__4425__auto___49348;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__49335_49349__$1)){
-var c__20336__auto___49350 = cljs.core.chunk_first.call(null,seq__49335_49349__$1);
-var G__49351 = cljs.core.chunk_rest.call(null,seq__49335_49349__$1);
-var G__49352 = c__20336__auto___49350;
-var G__49353 = cljs.core.count.call(null,c__20336__auto___49350);
-var G__49354 = (0);
-seq__49335_49339 = G__49351;
-chunk__49336_49340 = G__49352;
-count__49337_49341 = G__49353;
-i__49338_49342 = G__49354;
+var temp__4425__auto___61395 = cljs.core.seq.call(null,seq__61382_61386);
+if(temp__4425__auto___61395){
+var seq__61382_61396__$1 = temp__4425__auto___61395;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__61382_61396__$1)){
+var c__20336__auto___61397 = cljs.core.chunk_first.call(null,seq__61382_61396__$1);
+var G__61398 = cljs.core.chunk_rest.call(null,seq__61382_61396__$1);
+var G__61399 = c__20336__auto___61397;
+var G__61400 = cljs.core.count.call(null,c__20336__auto___61397);
+var G__61401 = (0);
+seq__61382_61386 = G__61398;
+chunk__61383_61387 = G__61399;
+count__61384_61388 = G__61400;
+i__61385_61389 = G__61401;
 continue;
 } else {
-var wall_49355 = cljs.core.first.call(null,seq__49335_49349__$1);
-cljs.core.println.call(null,wall_49355);
+var wall_61402 = cljs.core.first.call(null,seq__61382_61396__$1);
+cljs.core.println.call(null,wall_61402);
 
-var G__49356 = cljs.core.next.call(null,seq__49335_49349__$1);
-var G__49357 = null;
-var G__49358 = (0);
-var G__49359 = (0);
-seq__49335_49339 = G__49356;
-chunk__49336_49340 = G__49357;
-count__49337_49341 = G__49358;
-i__49338_49342 = G__49359;
+var G__61403 = cljs.core.next.call(null,seq__61382_61396__$1);
+var G__61404 = null;
+var G__61405 = (0);
+var G__61406 = (0);
+seq__61382_61386 = G__61403;
+chunk__61383_61387 = G__61404;
+count__61384_61388 = G__61405;
+i__61385_61389 = G__61406;
 continue;
 }
 } else {
@@ -308,53 +308,51 @@ quil.core.background.call(null,(255));
 
 quil.core.fill.call(null,(200),(200),(200));
 
-quil.core.fill.call(null,(0));
-
-var seq__49366_49372 = cljs.core.seq.call(null,p3r50na.apps.bookof5rinds.client.game.component.walls);
-var chunk__49367_49373 = null;
-var count__49368_49374 = (0);
-var i__49369_49375 = (0);
+var seq__61413_61419 = cljs.core.seq.call(null,p3r50na.apps.bookof5rinds.client.game.component.walls);
+var chunk__61414_61420 = null;
+var count__61415_61421 = (0);
+var i__61416_61422 = (0);
 while(true){
-if((i__49369_49375 < count__49368_49374)){
-var wall_49376 = cljs.core._nth.call(null,chunk__49367_49373,i__49369_49375);
-quil.core.rect.call(null,new cljs.core.Keyword(null,"x","x",2099068185).cljs$core$IFn$_invoke$arity$1(wall_49376),new cljs.core.Keyword(null,"y","y",-1757859776).cljs$core$IFn$_invoke$arity$1(wall_49376),p3r50na.apps.bookof5rinds.client.game.component.blocksize,p3r50na.apps.bookof5rinds.client.game.component.blocksize);
+if((i__61416_61422 < count__61415_61421)){
+var wall_61423 = cljs.core._nth.call(null,chunk__61414_61420,i__61416_61422);
+quil.core.rect.call(null,new cljs.core.Keyword(null,"x","x",2099068185).cljs$core$IFn$_invoke$arity$1(wall_61423),new cljs.core.Keyword(null,"y","y",-1757859776).cljs$core$IFn$_invoke$arity$1(wall_61423),p3r50na.apps.bookof5rinds.client.game.component.blocksize,p3r50na.apps.bookof5rinds.client.game.component.blocksize);
 
-var G__49377 = seq__49366_49372;
-var G__49378 = chunk__49367_49373;
-var G__49379 = count__49368_49374;
-var G__49380 = (i__49369_49375 + (1));
-seq__49366_49372 = G__49377;
-chunk__49367_49373 = G__49378;
-count__49368_49374 = G__49379;
-i__49369_49375 = G__49380;
+var G__61424 = seq__61413_61419;
+var G__61425 = chunk__61414_61420;
+var G__61426 = count__61415_61421;
+var G__61427 = (i__61416_61422 + (1));
+seq__61413_61419 = G__61424;
+chunk__61414_61420 = G__61425;
+count__61415_61421 = G__61426;
+i__61416_61422 = G__61427;
 continue;
 } else {
-var temp__4425__auto___49381 = cljs.core.seq.call(null,seq__49366_49372);
-if(temp__4425__auto___49381){
-var seq__49366_49382__$1 = temp__4425__auto___49381;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__49366_49382__$1)){
-var c__20336__auto___49383 = cljs.core.chunk_first.call(null,seq__49366_49382__$1);
-var G__49384 = cljs.core.chunk_rest.call(null,seq__49366_49382__$1);
-var G__49385 = c__20336__auto___49383;
-var G__49386 = cljs.core.count.call(null,c__20336__auto___49383);
-var G__49387 = (0);
-seq__49366_49372 = G__49384;
-chunk__49367_49373 = G__49385;
-count__49368_49374 = G__49386;
-i__49369_49375 = G__49387;
+var temp__4425__auto___61428 = cljs.core.seq.call(null,seq__61413_61419);
+if(temp__4425__auto___61428){
+var seq__61413_61429__$1 = temp__4425__auto___61428;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__61413_61429__$1)){
+var c__20336__auto___61430 = cljs.core.chunk_first.call(null,seq__61413_61429__$1);
+var G__61431 = cljs.core.chunk_rest.call(null,seq__61413_61429__$1);
+var G__61432 = c__20336__auto___61430;
+var G__61433 = cljs.core.count.call(null,c__20336__auto___61430);
+var G__61434 = (0);
+seq__61413_61419 = G__61431;
+chunk__61414_61420 = G__61432;
+count__61415_61421 = G__61433;
+i__61416_61422 = G__61434;
 continue;
 } else {
-var wall_49388 = cljs.core.first.call(null,seq__49366_49382__$1);
-quil.core.rect.call(null,new cljs.core.Keyword(null,"x","x",2099068185).cljs$core$IFn$_invoke$arity$1(wall_49388),new cljs.core.Keyword(null,"y","y",-1757859776).cljs$core$IFn$_invoke$arity$1(wall_49388),p3r50na.apps.bookof5rinds.client.game.component.blocksize,p3r50na.apps.bookof5rinds.client.game.component.blocksize);
+var wall_61435 = cljs.core.first.call(null,seq__61413_61429__$1);
+quil.core.rect.call(null,new cljs.core.Keyword(null,"x","x",2099068185).cljs$core$IFn$_invoke$arity$1(wall_61435),new cljs.core.Keyword(null,"y","y",-1757859776).cljs$core$IFn$_invoke$arity$1(wall_61435),p3r50na.apps.bookof5rinds.client.game.component.blocksize,p3r50na.apps.bookof5rinds.client.game.component.blocksize);
 
-var G__49389 = cljs.core.next.call(null,seq__49366_49382__$1);
-var G__49390 = null;
-var G__49391 = (0);
-var G__49392 = (0);
-seq__49366_49372 = G__49389;
-chunk__49367_49373 = G__49390;
-count__49368_49374 = G__49391;
-i__49369_49375 = G__49392;
+var G__61436 = cljs.core.next.call(null,seq__61413_61429__$1);
+var G__61437 = null;
+var G__61438 = (0);
+var G__61439 = (0);
+seq__61413_61419 = G__61436;
+chunk__61414_61420 = G__61437;
+count__61415_61421 = G__61438;
+i__61416_61422 = G__61439;
 continue;
 }
 } else {
@@ -363,26 +361,97 @@ continue;
 break;
 }
 
-var map__49370 = new cljs.core.Keyword(null,"player","player",-97687400).cljs$core$IFn$_invoke$arity$1(state);
-var map__49370__$1 = ((((!((map__49370 == null)))?((((map__49370.cljs$lang$protocol_mask$partition0$ & (64))) || (map__49370.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__49370):map__49370);
-var x = cljs.core.get.call(null,map__49370__$1,new cljs.core.Keyword(null,"x","x",2099068185));
-var y = cljs.core.get.call(null,map__49370__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
-var size = cljs.core.get.call(null,map__49370__$1,new cljs.core.Keyword(null,"size","size",1098693007));
+quil.core.fill.call(null,(0));
+
+var map__61417 = new cljs.core.Keyword(null,"player","player",-97687400).cljs$core$IFn$_invoke$arity$1(state);
+var map__61417__$1 = ((((!((map__61417 == null)))?((((map__61417.cljs$lang$protocol_mask$partition0$ & (64))) || (map__61417.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__61417):map__61417);
+var x = cljs.core.get.call(null,map__61417__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var y = cljs.core.get.call(null,map__61417__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+var size = cljs.core.get.call(null,map__61417__$1,new cljs.core.Keyword(null,"size","size",1098693007));
 return quil.core.rect.call(null,x,y,size,size);
+});
+p3r50na.apps.bookof5rinds.client.game.component.comp_intersections = (function p3r50na$apps$bookof5rinds$client$game$component$comp_intersections(walls,player){
+var iter__20305__auto__ = (function p3r50na$apps$bookof5rinds$client$game$component$comp_intersections_$_iter__61460(s__61461){
+return (new cljs.core.LazySeq(null,(function (){
+var s__61461__$1 = s__61461;
+while(true){
+var temp__4425__auto__ = cljs.core.seq.call(null,s__61461__$1);
+if(temp__4425__auto__){
+var s__61461__$2 = temp__4425__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,s__61461__$2)){
+var c__20303__auto__ = cljs.core.chunk_first.call(null,s__61461__$2);
+var size__20304__auto__ = cljs.core.count.call(null,c__20303__auto__);
+var b__61463 = cljs.core.chunk_buffer.call(null,size__20304__auto__);
+if((function (){var i__61462 = (0);
+while(true){
+if((i__61462 < size__20304__auto__)){
+var wall = cljs.core._nth.call(null,c__20303__auto__,i__61462);
+cljs.core.chunk_append.call(null,b__61463,(function (){var map__61472 = player;
+var map__61472__$1 = ((((!((map__61472 == null)))?((((map__61472.cljs$lang$protocol_mask$partition0$ & (64))) || (map__61472.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__61472):map__61472);
+var px = cljs.core.get.call(null,map__61472__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var py = cljs.core.get.call(null,map__61472__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+var psize = cljs.core.get.call(null,map__61472__$1,new cljs.core.Keyword(null,"size","size",1098693007));
+var map__61473 = wall;
+var map__61473__$1 = ((((!((map__61473 == null)))?((((map__61473.cljs$lang$protocol_mask$partition0$ & (64))) || (map__61473.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__61473):map__61473);
+var wx = cljs.core.get.call(null,map__61473__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var wy = cljs.core.get.call(null,map__61473__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+return ((px > (wx + p3r50na.apps.bookof5rinds.client.game.component.blocksize))) || (((px + psize) < wx)) || ((py > (wy + p3r50na.apps.bookof5rinds.client.game.component.blocksize))) || (((py + psize) < wy));
+})());
+
+var G__61480 = (i__61462 + (1));
+i__61462 = G__61480;
+continue;
+} else {
+return true;
+}
+break;
+}
+})()){
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__61463),p3r50na$apps$bookof5rinds$client$game$component$comp_intersections_$_iter__61460.call(null,cljs.core.chunk_rest.call(null,s__61461__$2)));
+} else {
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__61463),null);
+}
+} else {
+var wall = cljs.core.first.call(null,s__61461__$2);
+return cljs.core.cons.call(null,(function (){var map__61476 = player;
+var map__61476__$1 = ((((!((map__61476 == null)))?((((map__61476.cljs$lang$protocol_mask$partition0$ & (64))) || (map__61476.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__61476):map__61476);
+var px = cljs.core.get.call(null,map__61476__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var py = cljs.core.get.call(null,map__61476__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+var psize = cljs.core.get.call(null,map__61476__$1,new cljs.core.Keyword(null,"size","size",1098693007));
+var map__61477 = wall;
+var map__61477__$1 = ((((!((map__61477 == null)))?((((map__61477.cljs$lang$protocol_mask$partition0$ & (64))) || (map__61477.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__61477):map__61477);
+var wx = cljs.core.get.call(null,map__61477__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var wy = cljs.core.get.call(null,map__61477__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+return ((px > (wx + p3r50na.apps.bookof5rinds.client.game.component.blocksize))) || (((px + psize) < wx)) || ((py > (wy + p3r50na.apps.bookof5rinds.client.game.component.blocksize))) || (((py + psize) < wy));
+})(),p3r50na$apps$bookof5rinds$client$game$component$comp_intersections_$_iter__61460.call(null,cljs.core.rest.call(null,s__61461__$2)));
+}
+} else {
+return null;
+}
+break;
+}
+}),null,null));
+});
+return iter__20305__auto__.call(null,walls);
+});
+p3r50na.apps.bookof5rinds.client.game.component.intersects_wall_QMARK_ = (function p3r50na$apps$bookof5rinds$client$game$component$intersects_wall_QMARK_(state){
+var intersections = p3r50na.apps.bookof5rinds.client.game.component.comp_intersections.call(null,p3r50na.apps.bookof5rinds.client.game.component.walls,new cljs.core.Keyword(null,"player","player",-97687400).cljs$core$IFn$_invoke$arity$1(state));
+var nri = cljs.core.count.call(null,cljs.core.filter.call(null,cljs.core.false_QMARK_,intersections));
+return ((0) < nri);
 });
 p3r50na.apps.bookof5rinds.client.game.component.apply_controll = (function p3r50na$apps$bookof5rinds$client$game$component$apply_controll(state){
 if(cljs.core.empty_QMARK_.call(null,new cljs.core.Keyword(null,"controlls","controlls",-310267444).cljs$core$IFn$_invoke$arity$1(state))){
 return state;
 } else {
-var map__49396 = new cljs.core.Keyword(null,"player","player",-97687400).cljs$core$IFn$_invoke$arity$1(state);
-var map__49396__$1 = ((((!((map__49396 == null)))?((((map__49396.cljs$lang$protocol_mask$partition0$ & (64))) || (map__49396.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__49396):map__49396);
-var x = cljs.core.get.call(null,map__49396__$1,new cljs.core.Keyword(null,"x","x",2099068185));
-var y = cljs.core.get.call(null,map__49396__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
-var speed = cljs.core.get.call(null,map__49396__$1,new cljs.core.Keyword(null,"speed","speed",1257663751));
-return cljs.core.reduce.call(null,((function (map__49396,map__49396__$1,x,y,speed){
+var map__61484 = new cljs.core.Keyword(null,"player","player",-97687400).cljs$core$IFn$_invoke$arity$1(state);
+var map__61484__$1 = ((((!((map__61484 == null)))?((((map__61484.cljs$lang$protocol_mask$partition0$ & (64))) || (map__61484.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__61484):map__61484);
+var x = cljs.core.get.call(null,map__61484__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var y = cljs.core.get.call(null,map__61484__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+var speed = cljs.core.get.call(null,map__61484__$1,new cljs.core.Keyword(null,"speed","speed",1257663751));
+var newstate = cljs.core.reduce.call(null,((function (map__61484,map__61484__$1,x,y,speed){
 return (function (state__$1,controll){
-var G__49398 = (((controll instanceof cljs.core.Keyword))?controll.fqn:null);
-switch (G__49398) {
+var G__61486 = (((controll instanceof cljs.core.Keyword))?controll.fqn:null);
+switch (G__61486) {
 case "w":
 return cljs.core.update_in.call(null,state__$1,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"player","player",-97687400),new cljs.core.Keyword(null,"y","y",-1757859776)], null),cljs.core._,speed);
 
@@ -403,8 +472,15 @@ default:
 return state__$1;
 
 }
-});})(map__49396,map__49396__$1,x,y,speed))
+});})(map__61484,map__61484__$1,x,y,speed))
 ,state,new cljs.core.Keyword(null,"controlls","controlls",-310267444).cljs$core$IFn$_invoke$arity$1(state));
+cljs.core.println.call(null,p3r50na.apps.bookof5rinds.client.game.component.intersects_wall_QMARK_.call(null,state));
+
+if(cljs.core.truth_(p3r50na.apps.bookof5rinds.client.game.component.intersects_wall_QMARK_.call(null,state))){
+return cljs.core.identity.call(null,state);
+} else {
+return cljs.core.identity.call(null,newstate);
+}
 }
 });
 p3r50na.apps.bookof5rinds.client.game.component.cupdate = (function p3r50na$apps$bookof5rinds$client$game$component$cupdate(state){
@@ -421,104 +497,104 @@ return cljs.core.update_in.call(null,state,new cljs.core.PersistentVector(null, 
 cljs.core.println.call(null,p3r50na.apps.bookof5rinds.client.game.component.map_size.call(null,p3r50na.apps.bookof5rinds.client.game.component.map_matrix,p3r50na.apps.bookof5rinds.client.game.component.blocksize));
 p3r50na.apps.bookof5rinds.client.game.component.hello = (function p3r50na$apps$bookof5rinds$client$game$component$hello(){
 return quil.sketch.sketch.call(null,new cljs.core.Keyword(null,"host","host",-1558485167),"game-canvas",new cljs.core.Keyword(null,"update","update",1045576396),((cljs.core.fn_QMARK_.call(null,p3r50na.apps.bookof5rinds.client.game.component.cupdate))?(function() { 
-var G__49400__delegate = function (args){
+var G__61488__delegate = function (args){
 return cljs.core.apply.call(null,p3r50na.apps.bookof5rinds.client.game.component.cupdate,args);
 };
-var G__49400 = function (var_args){
+var G__61488 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__49401__i = 0, G__49401__a = new Array(arguments.length -  0);
-while (G__49401__i < G__49401__a.length) {G__49401__a[G__49401__i] = arguments[G__49401__i + 0]; ++G__49401__i;}
-  args = new cljs.core.IndexedSeq(G__49401__a,0);
+var G__61489__i = 0, G__61489__a = new Array(arguments.length -  0);
+while (G__61489__i < G__61489__a.length) {G__61489__a[G__61489__i] = arguments[G__61489__i + 0]; ++G__61489__i;}
+  args = new cljs.core.IndexedSeq(G__61489__a,0);
 } 
-return G__49400__delegate.call(this,args);};
-G__49400.cljs$lang$maxFixedArity = 0;
-G__49400.cljs$lang$applyTo = (function (arglist__49402){
-var args = cljs.core.seq(arglist__49402);
-return G__49400__delegate(args);
+return G__61488__delegate.call(this,args);};
+G__61488.cljs$lang$maxFixedArity = 0;
+G__61488.cljs$lang$applyTo = (function (arglist__61490){
+var args = cljs.core.seq(arglist__61490);
+return G__61488__delegate(args);
 });
-G__49400.cljs$core$IFn$_invoke$arity$variadic = G__49400__delegate;
-return G__49400;
+G__61488.cljs$core$IFn$_invoke$arity$variadic = G__61488__delegate;
+return G__61488;
 })()
 :p3r50na.apps.bookof5rinds.client.game.component.cupdate),new cljs.core.Keyword(null,"size","size",1098693007),p3r50na.apps.bookof5rinds.client.game.component.map_size.call(null,p3r50na.apps.bookof5rinds.client.game.component.map_matrix,p3r50na.apps.bookof5rinds.client.game.component.blocksize),new cljs.core.Keyword(null,"setup","setup",1987730512),((cljs.core.fn_QMARK_.call(null,p3r50na.apps.bookof5rinds.client.game.component.setup))?(function() { 
-var G__49403__delegate = function (args){
+var G__61491__delegate = function (args){
 return cljs.core.apply.call(null,p3r50na.apps.bookof5rinds.client.game.component.setup,args);
 };
-var G__49403 = function (var_args){
+var G__61491 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__49404__i = 0, G__49404__a = new Array(arguments.length -  0);
-while (G__49404__i < G__49404__a.length) {G__49404__a[G__49404__i] = arguments[G__49404__i + 0]; ++G__49404__i;}
-  args = new cljs.core.IndexedSeq(G__49404__a,0);
+var G__61492__i = 0, G__61492__a = new Array(arguments.length -  0);
+while (G__61492__i < G__61492__a.length) {G__61492__a[G__61492__i] = arguments[G__61492__i + 0]; ++G__61492__i;}
+  args = new cljs.core.IndexedSeq(G__61492__a,0);
 } 
-return G__49403__delegate.call(this,args);};
-G__49403.cljs$lang$maxFixedArity = 0;
-G__49403.cljs$lang$applyTo = (function (arglist__49405){
-var args = cljs.core.seq(arglist__49405);
-return G__49403__delegate(args);
+return G__61491__delegate.call(this,args);};
+G__61491.cljs$lang$maxFixedArity = 0;
+G__61491.cljs$lang$applyTo = (function (arglist__61493){
+var args = cljs.core.seq(arglist__61493);
+return G__61491__delegate(args);
 });
-G__49403.cljs$core$IFn$_invoke$arity$variadic = G__49403__delegate;
-return G__49403;
+G__61491.cljs$core$IFn$_invoke$arity$variadic = G__61491__delegate;
+return G__61491;
 })()
 :p3r50na.apps.bookof5rinds.client.game.component.setup),new cljs.core.Keyword(null,"middleware","middleware",1462115504),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [quil.middleware.fun_mode], null),new cljs.core.Keyword(null,"key-pressed","key-pressed",-757100364),((cljs.core.fn_QMARK_.call(null,p3r50na.apps.bookof5rinds.client.game.component.on_key_down))?(function() { 
-var G__49406__delegate = function (args){
+var G__61494__delegate = function (args){
 return cljs.core.apply.call(null,p3r50na.apps.bookof5rinds.client.game.component.on_key_down,args);
 };
-var G__49406 = function (var_args){
+var G__61494 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__49407__i = 0, G__49407__a = new Array(arguments.length -  0);
-while (G__49407__i < G__49407__a.length) {G__49407__a[G__49407__i] = arguments[G__49407__i + 0]; ++G__49407__i;}
-  args = new cljs.core.IndexedSeq(G__49407__a,0);
+var G__61495__i = 0, G__61495__a = new Array(arguments.length -  0);
+while (G__61495__i < G__61495__a.length) {G__61495__a[G__61495__i] = arguments[G__61495__i + 0]; ++G__61495__i;}
+  args = new cljs.core.IndexedSeq(G__61495__a,0);
 } 
-return G__49406__delegate.call(this,args);};
-G__49406.cljs$lang$maxFixedArity = 0;
-G__49406.cljs$lang$applyTo = (function (arglist__49408){
-var args = cljs.core.seq(arglist__49408);
-return G__49406__delegate(args);
+return G__61494__delegate.call(this,args);};
+G__61494.cljs$lang$maxFixedArity = 0;
+G__61494.cljs$lang$applyTo = (function (arglist__61496){
+var args = cljs.core.seq(arglist__61496);
+return G__61494__delegate(args);
 });
-G__49406.cljs$core$IFn$_invoke$arity$variadic = G__49406__delegate;
-return G__49406;
+G__61494.cljs$core$IFn$_invoke$arity$variadic = G__61494__delegate;
+return G__61494;
 })()
 :p3r50na.apps.bookof5rinds.client.game.component.on_key_down),new cljs.core.Keyword(null,"key-released","key-released",215919828),((cljs.core.fn_QMARK_.call(null,p3r50na.apps.bookof5rinds.client.game.component.on_key_up))?(function() { 
-var G__49409__delegate = function (args){
+var G__61497__delegate = function (args){
 return cljs.core.apply.call(null,p3r50na.apps.bookof5rinds.client.game.component.on_key_up,args);
 };
-var G__49409 = function (var_args){
+var G__61497 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__49410__i = 0, G__49410__a = new Array(arguments.length -  0);
-while (G__49410__i < G__49410__a.length) {G__49410__a[G__49410__i] = arguments[G__49410__i + 0]; ++G__49410__i;}
-  args = new cljs.core.IndexedSeq(G__49410__a,0);
+var G__61498__i = 0, G__61498__a = new Array(arguments.length -  0);
+while (G__61498__i < G__61498__a.length) {G__61498__a[G__61498__i] = arguments[G__61498__i + 0]; ++G__61498__i;}
+  args = new cljs.core.IndexedSeq(G__61498__a,0);
 } 
-return G__49409__delegate.call(this,args);};
-G__49409.cljs$lang$maxFixedArity = 0;
-G__49409.cljs$lang$applyTo = (function (arglist__49411){
-var args = cljs.core.seq(arglist__49411);
-return G__49409__delegate(args);
+return G__61497__delegate.call(this,args);};
+G__61497.cljs$lang$maxFixedArity = 0;
+G__61497.cljs$lang$applyTo = (function (arglist__61499){
+var args = cljs.core.seq(arglist__61499);
+return G__61497__delegate(args);
 });
-G__49409.cljs$core$IFn$_invoke$arity$variadic = G__49409__delegate;
-return G__49409;
+G__61497.cljs$core$IFn$_invoke$arity$variadic = G__61497__delegate;
+return G__61497;
 })()
 :p3r50na.apps.bookof5rinds.client.game.component.on_key_up),new cljs.core.Keyword(null,"draw","draw",1358331674),((cljs.core.fn_QMARK_.call(null,p3r50na.apps.bookof5rinds.client.game.component.draw))?(function() { 
-var G__49412__delegate = function (args){
+var G__61500__delegate = function (args){
 return cljs.core.apply.call(null,p3r50na.apps.bookof5rinds.client.game.component.draw,args);
 };
-var G__49412 = function (var_args){
+var G__61500 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__49413__i = 0, G__49413__a = new Array(arguments.length -  0);
-while (G__49413__i < G__49413__a.length) {G__49413__a[G__49413__i] = arguments[G__49413__i + 0]; ++G__49413__i;}
-  args = new cljs.core.IndexedSeq(G__49413__a,0);
+var G__61501__i = 0, G__61501__a = new Array(arguments.length -  0);
+while (G__61501__i < G__61501__a.length) {G__61501__a[G__61501__i] = arguments[G__61501__i + 0]; ++G__61501__i;}
+  args = new cljs.core.IndexedSeq(G__61501__a,0);
 } 
-return G__49412__delegate.call(this,args);};
-G__49412.cljs$lang$maxFixedArity = 0;
-G__49412.cljs$lang$applyTo = (function (arglist__49414){
-var args = cljs.core.seq(arglist__49414);
-return G__49412__delegate(args);
+return G__61500__delegate.call(this,args);};
+G__61500.cljs$lang$maxFixedArity = 0;
+G__61500.cljs$lang$applyTo = (function (arglist__61502){
+var args = cljs.core.seq(arglist__61502);
+return G__61500__delegate(args);
 });
-G__49412.cljs$core$IFn$_invoke$arity$variadic = G__49412__delegate;
-return G__49412;
+G__61500.cljs$core$IFn$_invoke$arity$variadic = G__61500__delegate;
+return G__61500;
 })()
 :p3r50na.apps.bookof5rinds.client.game.component.draw));
 });
@@ -531,65 +607,65 @@ return cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"no-start","no-start"
 quil.sketch.add_sketch_to_init_list.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"fn","fn",-1175266204),p3r50na.apps.bookof5rinds.client.game.component.hello,new cljs.core.Keyword(null,"host-id","host-id",742376279),"game-canvas"], null));
 }
 p3r50na.apps.bookof5rinds.client.game.component.game_component = (function p3r50na$apps$bookof5rinds$client$game$component$game_component(){
-if(typeof p3r50na.apps.bookof5rinds.client.game.component.t49418 !== 'undefined'){
+if(typeof p3r50na.apps.bookof5rinds.client.game.component.t61506 !== 'undefined'){
 } else {
 
 /**
 * @constructor
 */
-p3r50na.apps.bookof5rinds.client.game.component.t49418 = (function (game_component,meta49419){
+p3r50na.apps.bookof5rinds.client.game.component.t61506 = (function (game_component,meta61507){
 this.game_component = game_component;
-this.meta49419 = meta49419;
+this.meta61507 = meta61507;
 this.cljs$lang$protocol_mask$partition0$ = 393216;
 this.cljs$lang$protocol_mask$partition1$ = 0;
 })
-p3r50na.apps.bookof5rinds.client.game.component.t49418.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_49420,meta49419__$1){
+p3r50na.apps.bookof5rinds.client.game.component.t61506.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_61508,meta61507__$1){
 var self__ = this;
-var _49420__$1 = this;
-return (new p3r50na.apps.bookof5rinds.client.game.component.t49418(self__.game_component,meta49419__$1));
+var _61508__$1 = this;
+return (new p3r50na.apps.bookof5rinds.client.game.component.t61506(self__.game_component,meta61507__$1));
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.t49418.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_49420){
+p3r50na.apps.bookof5rinds.client.game.component.t61506.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_61508){
 var self__ = this;
-var _49420__$1 = this;
-return self__.meta49419;
+var _61508__$1 = this;
+return self__.meta61507;
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.t49418.prototype.om$core$IDidMount$ = true;
+p3r50na.apps.bookof5rinds.client.game.component.t61506.prototype.om$core$IDidMount$ = true;
 
-p3r50na.apps.bookof5rinds.client.game.component.t49418.prototype.om$core$IDidMount$did_mount$arity$1 = (function (this$){
+p3r50na.apps.bookof5rinds.client.game.component.t61506.prototype.om$core$IDidMount$did_mount$arity$1 = (function (this$){
 var self__ = this;
 var this$__$1 = this;
 return p3r50na.apps.bookof5rinds.client.game.component.hello.call(null);
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.t49418.prototype.om$core$IRender$ = true;
+p3r50na.apps.bookof5rinds.client.game.component.t61506.prototype.om$core$IRender$ = true;
 
-p3r50na.apps.bookof5rinds.client.game.component.t49418.prototype.om$core$IRender$render$arity$1 = (function (this$){
+p3r50na.apps.bookof5rinds.client.game.component.t61506.prototype.om$core$IRender$render$arity$1 = (function (this$){
 var self__ = this;
 var this$__$1 = this;
 return React.DOM.div(null,React.DOM.h1(null,"game"),React.DOM.canvas({"id": "game-canvas", "style": {"border": "1px solid gray"}}));
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.t49418.getBasis = (function (){
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.with_meta(new cljs.core.Symbol(null,"game-component","game-component",-175136358,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"arglists","arglists",1661989754),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list(cljs.core.PersistentVector.EMPTY))], null)),new cljs.core.Symbol(null,"meta49419","meta49419",-455103457,null)], null);
+p3r50na.apps.bookof5rinds.client.game.component.t61506.getBasis = (function (){
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.with_meta(new cljs.core.Symbol(null,"game-component","game-component",-175136358,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"arglists","arglists",1661989754),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list(cljs.core.PersistentVector.EMPTY))], null)),new cljs.core.Symbol(null,"meta61507","meta61507",1966139931,null)], null);
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.t49418.cljs$lang$type = true;
+p3r50na.apps.bookof5rinds.client.game.component.t61506.cljs$lang$type = true;
 
-p3r50na.apps.bookof5rinds.client.game.component.t49418.cljs$lang$ctorStr = "p3r50na.apps.bookof5rinds.client.game.component/t49418";
+p3r50na.apps.bookof5rinds.client.game.component.t61506.cljs$lang$ctorStr = "p3r50na.apps.bookof5rinds.client.game.component/t61506";
 
-p3r50na.apps.bookof5rinds.client.game.component.t49418.cljs$lang$ctorPrWriter = (function (this__20131__auto__,writer__20132__auto__,opt__20133__auto__){
-return cljs.core._write.call(null,writer__20132__auto__,"p3r50na.apps.bookof5rinds.client.game.component/t49418");
+p3r50na.apps.bookof5rinds.client.game.component.t61506.cljs$lang$ctorPrWriter = (function (this__20131__auto__,writer__20132__auto__,opt__20133__auto__){
+return cljs.core._write.call(null,writer__20132__auto__,"p3r50na.apps.bookof5rinds.client.game.component/t61506");
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.__GT_t49418 = (function p3r50na$apps$bookof5rinds$client$game$component$game_component_$___GT_t49418(game_component__$1,meta49419){
-return (new p3r50na.apps.bookof5rinds.client.game.component.t49418(game_component__$1,meta49419));
+p3r50na.apps.bookof5rinds.client.game.component.__GT_t61506 = (function p3r50na$apps$bookof5rinds$client$game$component$game_component_$___GT_t61506(game_component__$1,meta61507){
+return (new p3r50na.apps.bookof5rinds.client.game.component.t61506(game_component__$1,meta61507));
 });
 
 }
 
-return (new p3r50na.apps.bookof5rinds.client.game.component.t49418(p3r50na$apps$bookof5rinds$client$game$component$game_component,cljs.core.PersistentArrayMap.EMPTY));
+return (new p3r50na.apps.bookof5rinds.client.game.component.t61506(p3r50na$apps$bookof5rinds$client$game$component$game_component,cljs.core.PersistentArrayMap.EMPTY));
 });
 
 //# sourceMappingURL=component.js.map

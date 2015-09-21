@@ -68,24 +68,43 @@
 (defn draw [state]
   (q/background 255)
   (q/fill 200 200 200)
-  (q/fill 0)
   (doseq [wall walls]
     (q/rect (:x wall) (:y wall) blocksize blocksize))
+  (q/fill 0)
   (let [{x :x y :y size :size} (:player state)]
     (q/rect x y size size)))
 
+
+(defn comp-intersections [walls player]
+  (for [wall walls]
+    (let [{px :x py :y psize :size} player
+          {wx :x wy :y} wall]
+      (or
+        (> px (+ wx blocksize))
+        (< (+ px psize) wx)
+        (> py (+ wy blocksize))
+        (< (+ py psize) wy)))))
+
+(defn intersects-wall? [state]
+  (let [intersections (comp-intersections walls (:player state))
+        nri (count (filter false? intersections))]
+    (< 0 nri)))
 
 (defn apply-controll [state]
   (if (empty? (:controlls state))
     state
     (let [{x :x y :y speed :speed} (:player state)]
-      (reduce (fn [state controll]
-        (case controll
-          :w (update-in state [:player :y] - speed)
-          :s (update-in state [:player :y] + speed)
-          :a (update-in state [:player :x] - speed)
-          :d (update-in state [:player :x] + speed)
-             state)) state (:controlls state)))))
+      (let [newstate (reduce (fn [state controll]
+                        (case controll
+                          :w (update-in state [:player :y] - speed)
+                          :s (update-in state [:player :y] + speed)
+                          :a (update-in state [:player :x] - speed)
+                          :d (update-in state [:player :x] + speed)
+                             state)) state (:controlls state))]
+        (println (intersects-wall? state))
+        (if (intersects-wall? state)
+          (identity state)
+          (identity newstate))))))
 
 (defn cupdate [state]
   (-> state
