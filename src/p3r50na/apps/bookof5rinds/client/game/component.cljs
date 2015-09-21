@@ -50,10 +50,8 @@
 ; Rendering
 (defn setup []
   (q/frame-rate 60)
-  { :player (new Player 0 0 10 2)
-    :remote-players [
-      (new Player 100 50 10 2)
-    ]
+  { :player (new Player 5 5 10 2)
+    :remote-players [(new Player 30 40 10 2)]
     :controlls #{} })
 
 (def walls
@@ -75,10 +73,11 @@
   (q/fill 200 200 200)
   (doseq [wall walls]
     (q/rect (:x wall) (:y wall) blocksize blocksize))
-  (q/fill 0)
+  (q/fill 255 90 20)
   (doseq [remote-player (:remote-players state)]
     (let [{x :x y :y size :size} remote-player]
       (q/rect x y size size)))
+  (q/fill 50 120 190)
   (let [{x :x y :y size :size} (:player state)]
     (q/rect x y size size)))
 
