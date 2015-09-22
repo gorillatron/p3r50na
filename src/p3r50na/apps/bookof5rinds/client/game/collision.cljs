@@ -1,15 +1,20 @@
 (ns p3r50na.apps.bookof5rinds.client.game.collision)
 
 
+
+(defn intersects? [rect-a rect-b]
+  (let [{ax :x ay :y asize :size} rect-a
+        {bx :x by :y bsize :size} rect-b]
+    (or
+      (> ax (+ bx bsize))
+      (< (+ ax asize) bx)
+      (> ay (+ by bsize))
+      (< (+ ay asize) by))))
+
+
 (defn block-intersections [rect blocks blocksize]
   (for [block blocks]
-    (let [{px :x py :y psize :size} rect
-          {wx :x wy :y} block]
-      (or
-        (> px (+ wx blocksize))
-        (< (+ px psize) wx)
-        (> py (+ wy blocksize))
-        (< (+ py psize) wy)))))
+    (intersects? rect {:x (:x block) :y (:y block) :size blocksize})))
 
 
 (defn rect-intersects-blocks? [rect blocks blocksize]

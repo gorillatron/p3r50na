@@ -5,7 +5,7 @@
             [quil.core :as q :include-macros true]
             [quil.middleware :as m]
             [cljs.core.async :refer [put! take! chan <! >! timeout]]
-            [p3r50na.apps.bookof5rinds.client.game.collision :refer [rect-intersects-blocks? rect-intersects-boundary?]]
+            [p3r50na.apps.bookof5rinds.client.game.collision :refer [rect-intersects-blocks? rect-intersects-boundary? intersects?]]
             [p3r50na.apps.bookof5rinds.client.game.map :refer [block-of-type]]
             [p3r50na.apps.bookof5rinds.client.game.maps.level1 :refer [level1]]))
 
@@ -38,7 +38,6 @@
       (q/rect x y size size)))
   (doseq [bullet (:bullets state)]
     (let [{bx :x by :y size :size} bullet]
-      (println bullet)
       (q/rect bx by size size)))
   (q/fill 50 120 190)
   (let [{x :x y :y size :size} (:player state)]
@@ -64,10 +63,6 @@
 
 
 
-(defn send-player-state [player-state]
-  (println "send player state"))
-
-
 (defn update-bullet-location [bullet]
   (let [{speed :speed [bx by] :start lx :x ly :y [gx gy] :goal} bullet
         dx (- gx bx)
@@ -81,19 +76,32 @@
       (assoc bullet :x nx :y ny)))
 
 
-(defn update-bullets [state]
+(defn bullet-hit-player [bullet]
+  (= nil (:has-hit-player bullet)))
+
+(defn update-bullet-locations [state]
   (let [new-bullets (->> (:bullets state)
+      (filter bullet-hit-player)
       (map update-bullet-location)
       (filter (fn [bullet]
         (not (or (rect-intersects-blocks? bullet walls blocksize)
                  (rect-intersects-boundary? bullet level1))))))]
     (assoc state :bullets new-bullets)))
 
+(defn player-bullet-hits [players bullets]
+  (doseq [player players]
+    (doseq [bullet bullets])))
+
+(defn apply-player-bullet-hits [state]
+  (let [bullethits (player-bullet-hits (:remote-players state) (:bullets state))]
+    (println bullethits))
+  state)
 
 (defn cupdate [state]
   (let [oldstate state
         newstate (-> state
-          (update-bullets)
+          (apply-player-bullet-hits)
+          (update-bullet-locations)
           (apply-controll))]
     newstate))
 
