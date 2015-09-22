@@ -40,11 +40,11 @@ var this__20148__auto____$1 = this;
 return cljs.core._lookup.call(null,this__20148__auto____$1,k__20149__auto__,null);
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__20150__auto__,k57730,else__20151__auto__){
+p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$ILookup$_lookup$arity$3 = (function (this__20150__auto__,k58096,else__20151__auto__){
 var self__ = this;
 var this__20150__auto____$1 = this;
-var G__57732 = (((k57730 instanceof cljs.core.Keyword))?k57730.fqn:null);
-switch (G__57732) {
+var G__58098 = (((k58096 instanceof cljs.core.Keyword))?k58096.fqn:null);
+switch (G__58098) {
 case "x":
 return self__.x;
 
@@ -62,7 +62,7 @@ return self__.speed;
 
 break;
 default:
-return cljs.core.get.call(null,self__.__extmap,k57730,else__20151__auto__);
+return cljs.core.get.call(null,self__.__extmap,k58096,else__20151__auto__);
 
 }
 });
@@ -80,10 +80,10 @@ return cljs.core.pr_sequential_writer.call(null,writer__20163__auto__,pr_pair__2
 
 p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$IIterable$ = true;
 
-p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__57729){
+p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$IIterable$_iterator$arity$1 = (function (G__58095){
 var self__ = this;
-var G__57729__$1 = this;
-return (new cljs.core.RecordIter((0),G__57729__$1,4,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"x","x",2099068185),new cljs.core.Keyword(null,"y","y",-1757859776),new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.Keyword(null,"speed","speed",1257663751)], null),cljs.core._iterator.call(null,self__.__extmap)));
+var G__58095__$1 = this;
+return (new cljs.core.RecordIter((0),G__58095__$1,4,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"x","x",2099068185),new cljs.core.Keyword(null,"y","y",-1757859776),new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.Keyword(null,"speed","speed",1257663751)], null),cljs.core._iterator.call(null,self__.__extmap)));
 });
 
 p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$IMeta$_meta$arity$1 = (function (this__20146__auto__){
@@ -149,24 +149,24 @@ return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self
 }
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__20155__auto__,k__20156__auto__,G__57729){
+p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$IAssociative$_assoc$arity$3 = (function (this__20155__auto__,k__20156__auto__,G__58095){
 var self__ = this;
 var this__20155__auto____$1 = this;
-var pred__57733 = cljs.core.keyword_identical_QMARK_;
-var expr__57734 = k__20156__auto__;
-if(cljs.core.truth_(pred__57733.call(null,new cljs.core.Keyword(null,"x","x",2099068185),expr__57734))){
-return (new p3r50na.apps.bookof5rinds.client.game.component.Player(G__57729,self__.y,self__.size,self__.speed,self__.__meta,self__.__extmap,null));
+var pred__58099 = cljs.core.keyword_identical_QMARK_;
+var expr__58100 = k__20156__auto__;
+if(cljs.core.truth_(pred__58099.call(null,new cljs.core.Keyword(null,"x","x",2099068185),expr__58100))){
+return (new p3r50na.apps.bookof5rinds.client.game.component.Player(G__58095,self__.y,self__.size,self__.speed,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__57733.call(null,new cljs.core.Keyword(null,"y","y",-1757859776),expr__57734))){
-return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,G__57729,self__.size,self__.speed,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__58099.call(null,new cljs.core.Keyword(null,"y","y",-1757859776),expr__58100))){
+return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,G__58095,self__.size,self__.speed,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__57733.call(null,new cljs.core.Keyword(null,"size","size",1098693007),expr__57734))){
-return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self__.y,G__57729,self__.speed,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__58099.call(null,new cljs.core.Keyword(null,"size","size",1098693007),expr__58100))){
+return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self__.y,G__58095,self__.speed,self__.__meta,self__.__extmap,null));
 } else {
-if(cljs.core.truth_(pred__57733.call(null,new cljs.core.Keyword(null,"speed","speed",1257663751),expr__57734))){
-return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self__.y,self__.size,G__57729,self__.__meta,self__.__extmap,null));
+if(cljs.core.truth_(pred__58099.call(null,new cljs.core.Keyword(null,"speed","speed",1257663751),expr__58100))){
+return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self__.y,self__.size,G__58095,self__.__meta,self__.__extmap,null));
 } else {
-return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self__.y,self__.size,self__.speed,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__20156__auto__,G__57729),null));
+return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self__.y,self__.size,self__.speed,self__.__meta,cljs.core.assoc.call(null,self__.__extmap,k__20156__auto__,G__58095),null));
 }
 }
 }
@@ -179,10 +179,10 @@ var this__20160__auto____$1 = this;
 return cljs.core.seq.call(null,cljs.core.concat.call(null,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"x","x",2099068185),self__.x],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"y","y",-1757859776),self__.y],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"size","size",1098693007),self__.size],null)),(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"speed","speed",1257663751),self__.speed],null))], null),self__.__extmap));
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__20147__auto__,G__57729){
+p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (this__20147__auto__,G__58095){
 var self__ = this;
 var this__20147__auto____$1 = this;
-return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self__.y,self__.size,self__.speed,G__57729,self__.__extmap,self__.__hash));
+return (new p3r50na.apps.bookof5rinds.client.game.component.Player(self__.x,self__.y,self__.size,self__.speed,G__58095,self__.__extmap,self__.__hash));
 });
 
 p3r50na.apps.bookof5rinds.client.game.component.Player.prototype.cljs$core$ICollection$_conj$arity$2 = (function (this__20153__auto__,entry__20154__auto__){
@@ -213,8 +213,8 @@ p3r50na.apps.bookof5rinds.client.game.component.__GT_Player = (function p3r50na$
 return (new p3r50na.apps.bookof5rinds.client.game.component.Player(x,y,size,speed,null,null,null));
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.map__GT_Player = (function p3r50na$apps$bookof5rinds$client$game$component$map__GT_Player(G__57731){
-return (new p3r50na.apps.bookof5rinds.client.game.component.Player(new cljs.core.Keyword(null,"x","x",2099068185).cljs$core$IFn$_invoke$arity$1(G__57731),new cljs.core.Keyword(null,"y","y",-1757859776).cljs$core$IFn$_invoke$arity$1(G__57731),new cljs.core.Keyword(null,"size","size",1098693007).cljs$core$IFn$_invoke$arity$1(G__57731),new cljs.core.Keyword(null,"speed","speed",1257663751).cljs$core$IFn$_invoke$arity$1(G__57731),null,cljs.core.dissoc.call(null,G__57731,new cljs.core.Keyword(null,"x","x",2099068185),new cljs.core.Keyword(null,"y","y",-1757859776),new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.Keyword(null,"speed","speed",1257663751)),null));
+p3r50na.apps.bookof5rinds.client.game.component.map__GT_Player = (function p3r50na$apps$bookof5rinds$client$game$component$map__GT_Player(G__58097){
+return (new p3r50na.apps.bookof5rinds.client.game.component.Player(new cljs.core.Keyword(null,"x","x",2099068185).cljs$core$IFn$_invoke$arity$1(G__58097),new cljs.core.Keyword(null,"y","y",-1757859776).cljs$core$IFn$_invoke$arity$1(G__58097),new cljs.core.Keyword(null,"size","size",1098693007).cljs$core$IFn$_invoke$arity$1(G__58097),new cljs.core.Keyword(null,"speed","speed",1257663751).cljs$core$IFn$_invoke$arity$1(G__58097),null,cljs.core.dissoc.call(null,G__58097,new cljs.core.Keyword(null,"x","x",2099068185),new cljs.core.Keyword(null,"y","y",-1757859776),new cljs.core.Keyword(null,"size","size",1098693007),new cljs.core.Keyword(null,"speed","speed",1257663751)),null));
 });
 
 p3r50na.apps.bookof5rinds.client.game.component.blocksize = new cljs.core.Keyword(null,"blocksize","blocksize",-1737805231).cljs$core$IFn$_invoke$arity$1(p3r50na.apps.bookof5rinds.client.game.maps.level1.level1);
@@ -224,58 +224,58 @@ p3r50na.apps.bookof5rinds.client.game.component.walls = p3r50na.apps.bookof5rind
 p3r50na.apps.bookof5rinds.client.game.component.setup = (function p3r50na$apps$bookof5rinds$client$game$component$setup(){
 quil.core.frame_rate.call(null,(120));
 
-return new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"player","player",-97687400),(new p3r50na.apps.bookof5rinds.client.game.component.Player((5),(5),(10),(1),null,null,null)),new cljs.core.Keyword(null,"remote-players","remote-players",1446934658),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(new p3r50na.apps.bookof5rinds.client.game.component.Player((30),(40),(10),(2),null,null,null))], null),new cljs.core.Keyword(null,"bullets","bullets",1734809024),cljs.core.PersistentVector.EMPTY,new cljs.core.Keyword(null,"controlls","controlls",-310267444),cljs.core.PersistentHashSet.EMPTY], null);
+return new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"player","player",-97687400),(new p3r50na.apps.bookof5rinds.client.game.component.Player((5),(5),(10),(1),null,null,null)),new cljs.core.Keyword(null,"remote-players","remote-players",1446934658),cljs.core.PersistentVector.EMPTY,new cljs.core.Keyword(null,"bullets","bullets",1734809024),cljs.core.PersistentVector.EMPTY,new cljs.core.Keyword(null,"controlls","controlls",-310267444),cljs.core.PersistentHashSet.EMPTY], null);
 });
 p3r50na.apps.bookof5rinds.client.game.component.draw = (function p3r50na$apps$bookof5rinds$client$game$component$draw(state){
 quil.core.background.call(null,(255));
 
 quil.core.fill.call(null,(200),(200),(200));
 
-var seq__57759_57781 = cljs.core.seq.call(null,p3r50na.apps.bookof5rinds.client.game.component.walls);
-var chunk__57760_57782 = null;
-var count__57761_57783 = (0);
-var i__57762_57784 = (0);
+var seq__58125_58147 = cljs.core.seq.call(null,p3r50na.apps.bookof5rinds.client.game.component.walls);
+var chunk__58126_58148 = null;
+var count__58127_58149 = (0);
+var i__58128_58150 = (0);
 while(true){
-if((i__57762_57784 < count__57761_57783)){
-var wall_57785 = cljs.core._nth.call(null,chunk__57760_57782,i__57762_57784);
-quil.core.rect.call(null,new cljs.core.Keyword(null,"x","x",2099068185).cljs$core$IFn$_invoke$arity$1(wall_57785),new cljs.core.Keyword(null,"y","y",-1757859776).cljs$core$IFn$_invoke$arity$1(wall_57785),p3r50na.apps.bookof5rinds.client.game.component.blocksize,p3r50na.apps.bookof5rinds.client.game.component.blocksize);
+if((i__58128_58150 < count__58127_58149)){
+var wall_58151 = cljs.core._nth.call(null,chunk__58126_58148,i__58128_58150);
+quil.core.rect.call(null,new cljs.core.Keyword(null,"x","x",2099068185).cljs$core$IFn$_invoke$arity$1(wall_58151),new cljs.core.Keyword(null,"y","y",-1757859776).cljs$core$IFn$_invoke$arity$1(wall_58151),p3r50na.apps.bookof5rinds.client.game.component.blocksize,p3r50na.apps.bookof5rinds.client.game.component.blocksize);
 
-var G__57786 = seq__57759_57781;
-var G__57787 = chunk__57760_57782;
-var G__57788 = count__57761_57783;
-var G__57789 = (i__57762_57784 + (1));
-seq__57759_57781 = G__57786;
-chunk__57760_57782 = G__57787;
-count__57761_57783 = G__57788;
-i__57762_57784 = G__57789;
+var G__58152 = seq__58125_58147;
+var G__58153 = chunk__58126_58148;
+var G__58154 = count__58127_58149;
+var G__58155 = (i__58128_58150 + (1));
+seq__58125_58147 = G__58152;
+chunk__58126_58148 = G__58153;
+count__58127_58149 = G__58154;
+i__58128_58150 = G__58155;
 continue;
 } else {
-var temp__4425__auto___57790 = cljs.core.seq.call(null,seq__57759_57781);
-if(temp__4425__auto___57790){
-var seq__57759_57791__$1 = temp__4425__auto___57790;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__57759_57791__$1)){
-var c__20337__auto___57792 = cljs.core.chunk_first.call(null,seq__57759_57791__$1);
-var G__57793 = cljs.core.chunk_rest.call(null,seq__57759_57791__$1);
-var G__57794 = c__20337__auto___57792;
-var G__57795 = cljs.core.count.call(null,c__20337__auto___57792);
-var G__57796 = (0);
-seq__57759_57781 = G__57793;
-chunk__57760_57782 = G__57794;
-count__57761_57783 = G__57795;
-i__57762_57784 = G__57796;
+var temp__4425__auto___58156 = cljs.core.seq.call(null,seq__58125_58147);
+if(temp__4425__auto___58156){
+var seq__58125_58157__$1 = temp__4425__auto___58156;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__58125_58157__$1)){
+var c__20337__auto___58158 = cljs.core.chunk_first.call(null,seq__58125_58157__$1);
+var G__58159 = cljs.core.chunk_rest.call(null,seq__58125_58157__$1);
+var G__58160 = c__20337__auto___58158;
+var G__58161 = cljs.core.count.call(null,c__20337__auto___58158);
+var G__58162 = (0);
+seq__58125_58147 = G__58159;
+chunk__58126_58148 = G__58160;
+count__58127_58149 = G__58161;
+i__58128_58150 = G__58162;
 continue;
 } else {
-var wall_57797 = cljs.core.first.call(null,seq__57759_57791__$1);
-quil.core.rect.call(null,new cljs.core.Keyword(null,"x","x",2099068185).cljs$core$IFn$_invoke$arity$1(wall_57797),new cljs.core.Keyword(null,"y","y",-1757859776).cljs$core$IFn$_invoke$arity$1(wall_57797),p3r50na.apps.bookof5rinds.client.game.component.blocksize,p3r50na.apps.bookof5rinds.client.game.component.blocksize);
+var wall_58163 = cljs.core.first.call(null,seq__58125_58157__$1);
+quil.core.rect.call(null,new cljs.core.Keyword(null,"x","x",2099068185).cljs$core$IFn$_invoke$arity$1(wall_58163),new cljs.core.Keyword(null,"y","y",-1757859776).cljs$core$IFn$_invoke$arity$1(wall_58163),p3r50na.apps.bookof5rinds.client.game.component.blocksize,p3r50na.apps.bookof5rinds.client.game.component.blocksize);
 
-var G__57798 = cljs.core.next.call(null,seq__57759_57791__$1);
-var G__57799 = null;
-var G__57800 = (0);
-var G__57801 = (0);
-seq__57759_57781 = G__57798;
-chunk__57760_57782 = G__57799;
-count__57761_57783 = G__57800;
-i__57762_57784 = G__57801;
+var G__58164 = cljs.core.next.call(null,seq__58125_58157__$1);
+var G__58165 = null;
+var G__58166 = (0);
+var G__58167 = (0);
+seq__58125_58147 = G__58164;
+chunk__58126_58148 = G__58165;
+count__58127_58149 = G__58166;
+i__58128_58150 = G__58167;
 continue;
 }
 } else {
@@ -286,61 +286,61 @@ break;
 
 quil.core.fill.call(null,(255),(90),(20));
 
-var seq__57763_57802 = cljs.core.seq.call(null,new cljs.core.Keyword(null,"remote-players","remote-players",1446934658).cljs$core$IFn$_invoke$arity$1(state));
-var chunk__57764_57803 = null;
-var count__57765_57804 = (0);
-var i__57766_57805 = (0);
+var seq__58129_58168 = cljs.core.seq.call(null,new cljs.core.Keyword(null,"remote-players","remote-players",1446934658).cljs$core$IFn$_invoke$arity$1(state));
+var chunk__58130_58169 = null;
+var count__58131_58170 = (0);
+var i__58132_58171 = (0);
 while(true){
-if((i__57766_57805 < count__57765_57804)){
-var remote_player_57806 = cljs.core._nth.call(null,chunk__57764_57803,i__57766_57805);
-var map__57767_57807 = remote_player_57806;
-var map__57767_57808__$1 = ((((!((map__57767_57807 == null)))?((((map__57767_57807.cljs$lang$protocol_mask$partition0$ & (64))) || (map__57767_57807.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__57767_57807):map__57767_57807);
-var x_57809 = cljs.core.get.call(null,map__57767_57808__$1,new cljs.core.Keyword(null,"x","x",2099068185));
-var y_57810 = cljs.core.get.call(null,map__57767_57808__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
-var size_57811 = cljs.core.get.call(null,map__57767_57808__$1,new cljs.core.Keyword(null,"size","size",1098693007));
-quil.core.rect.call(null,x_57809,y_57810,size_57811,size_57811);
+if((i__58132_58171 < count__58131_58170)){
+var remote_player_58172 = cljs.core._nth.call(null,chunk__58130_58169,i__58132_58171);
+var map__58133_58173 = remote_player_58172;
+var map__58133_58174__$1 = ((((!((map__58133_58173 == null)))?((((map__58133_58173.cljs$lang$protocol_mask$partition0$ & (64))) || (map__58133_58173.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__58133_58173):map__58133_58173);
+var x_58175 = cljs.core.get.call(null,map__58133_58174__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var y_58176 = cljs.core.get.call(null,map__58133_58174__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+var size_58177 = cljs.core.get.call(null,map__58133_58174__$1,new cljs.core.Keyword(null,"size","size",1098693007));
+quil.core.rect.call(null,x_58175,y_58176,size_58177,size_58177);
 
-var G__57812 = seq__57763_57802;
-var G__57813 = chunk__57764_57803;
-var G__57814 = count__57765_57804;
-var G__57815 = (i__57766_57805 + (1));
-seq__57763_57802 = G__57812;
-chunk__57764_57803 = G__57813;
-count__57765_57804 = G__57814;
-i__57766_57805 = G__57815;
+var G__58178 = seq__58129_58168;
+var G__58179 = chunk__58130_58169;
+var G__58180 = count__58131_58170;
+var G__58181 = (i__58132_58171 + (1));
+seq__58129_58168 = G__58178;
+chunk__58130_58169 = G__58179;
+count__58131_58170 = G__58180;
+i__58132_58171 = G__58181;
 continue;
 } else {
-var temp__4425__auto___57816 = cljs.core.seq.call(null,seq__57763_57802);
-if(temp__4425__auto___57816){
-var seq__57763_57817__$1 = temp__4425__auto___57816;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__57763_57817__$1)){
-var c__20337__auto___57818 = cljs.core.chunk_first.call(null,seq__57763_57817__$1);
-var G__57819 = cljs.core.chunk_rest.call(null,seq__57763_57817__$1);
-var G__57820 = c__20337__auto___57818;
-var G__57821 = cljs.core.count.call(null,c__20337__auto___57818);
-var G__57822 = (0);
-seq__57763_57802 = G__57819;
-chunk__57764_57803 = G__57820;
-count__57765_57804 = G__57821;
-i__57766_57805 = G__57822;
+var temp__4425__auto___58182 = cljs.core.seq.call(null,seq__58129_58168);
+if(temp__4425__auto___58182){
+var seq__58129_58183__$1 = temp__4425__auto___58182;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__58129_58183__$1)){
+var c__20337__auto___58184 = cljs.core.chunk_first.call(null,seq__58129_58183__$1);
+var G__58185 = cljs.core.chunk_rest.call(null,seq__58129_58183__$1);
+var G__58186 = c__20337__auto___58184;
+var G__58187 = cljs.core.count.call(null,c__20337__auto___58184);
+var G__58188 = (0);
+seq__58129_58168 = G__58185;
+chunk__58130_58169 = G__58186;
+count__58131_58170 = G__58187;
+i__58132_58171 = G__58188;
 continue;
 } else {
-var remote_player_57823 = cljs.core.first.call(null,seq__57763_57817__$1);
-var map__57769_57824 = remote_player_57823;
-var map__57769_57825__$1 = ((((!((map__57769_57824 == null)))?((((map__57769_57824.cljs$lang$protocol_mask$partition0$ & (64))) || (map__57769_57824.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__57769_57824):map__57769_57824);
-var x_57826 = cljs.core.get.call(null,map__57769_57825__$1,new cljs.core.Keyword(null,"x","x",2099068185));
-var y_57827 = cljs.core.get.call(null,map__57769_57825__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
-var size_57828 = cljs.core.get.call(null,map__57769_57825__$1,new cljs.core.Keyword(null,"size","size",1098693007));
-quil.core.rect.call(null,x_57826,y_57827,size_57828,size_57828);
+var remote_player_58189 = cljs.core.first.call(null,seq__58129_58183__$1);
+var map__58135_58190 = remote_player_58189;
+var map__58135_58191__$1 = ((((!((map__58135_58190 == null)))?((((map__58135_58190.cljs$lang$protocol_mask$partition0$ & (64))) || (map__58135_58190.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__58135_58190):map__58135_58190);
+var x_58192 = cljs.core.get.call(null,map__58135_58191__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var y_58193 = cljs.core.get.call(null,map__58135_58191__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+var size_58194 = cljs.core.get.call(null,map__58135_58191__$1,new cljs.core.Keyword(null,"size","size",1098693007));
+quil.core.rect.call(null,x_58192,y_58193,size_58194,size_58194);
 
-var G__57829 = cljs.core.next.call(null,seq__57763_57817__$1);
-var G__57830 = null;
-var G__57831 = (0);
-var G__57832 = (0);
-seq__57763_57802 = G__57829;
-chunk__57764_57803 = G__57830;
-count__57765_57804 = G__57831;
-i__57766_57805 = G__57832;
+var G__58195 = cljs.core.next.call(null,seq__58129_58183__$1);
+var G__58196 = null;
+var G__58197 = (0);
+var G__58198 = (0);
+seq__58129_58168 = G__58195;
+chunk__58130_58169 = G__58196;
+count__58131_58170 = G__58197;
+i__58132_58171 = G__58198;
 continue;
 }
 } else {
@@ -349,61 +349,61 @@ continue;
 break;
 }
 
-var seq__57771_57833 = cljs.core.seq.call(null,new cljs.core.Keyword(null,"bullets","bullets",1734809024).cljs$core$IFn$_invoke$arity$1(state));
-var chunk__57772_57834 = null;
-var count__57773_57835 = (0);
-var i__57774_57836 = (0);
+var seq__58137_58199 = cljs.core.seq.call(null,new cljs.core.Keyword(null,"bullets","bullets",1734809024).cljs$core$IFn$_invoke$arity$1(state));
+var chunk__58138_58200 = null;
+var count__58139_58201 = (0);
+var i__58140_58202 = (0);
 while(true){
-if((i__57774_57836 < count__57773_57835)){
-var bullet_57837 = cljs.core._nth.call(null,chunk__57772_57834,i__57774_57836);
-var map__57775_57838 = bullet_57837;
-var map__57775_57839__$1 = ((((!((map__57775_57838 == null)))?((((map__57775_57838.cljs$lang$protocol_mask$partition0$ & (64))) || (map__57775_57838.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__57775_57838):map__57775_57838);
-var bx_57840 = cljs.core.get.call(null,map__57775_57839__$1,new cljs.core.Keyword(null,"x","x",2099068185));
-var by_57841 = cljs.core.get.call(null,map__57775_57839__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
-var size_57842 = cljs.core.get.call(null,map__57775_57839__$1,new cljs.core.Keyword(null,"size","size",1098693007));
-quil.core.rect.call(null,bx_57840,by_57841,size_57842,size_57842);
+if((i__58140_58202 < count__58139_58201)){
+var bullet_58203 = cljs.core._nth.call(null,chunk__58138_58200,i__58140_58202);
+var map__58141_58204 = bullet_58203;
+var map__58141_58205__$1 = ((((!((map__58141_58204 == null)))?((((map__58141_58204.cljs$lang$protocol_mask$partition0$ & (64))) || (map__58141_58204.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__58141_58204):map__58141_58204);
+var bx_58206 = cljs.core.get.call(null,map__58141_58205__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var by_58207 = cljs.core.get.call(null,map__58141_58205__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+var size_58208 = cljs.core.get.call(null,map__58141_58205__$1,new cljs.core.Keyword(null,"size","size",1098693007));
+quil.core.rect.call(null,bx_58206,by_58207,size_58208,size_58208);
 
-var G__57843 = seq__57771_57833;
-var G__57844 = chunk__57772_57834;
-var G__57845 = count__57773_57835;
-var G__57846 = (i__57774_57836 + (1));
-seq__57771_57833 = G__57843;
-chunk__57772_57834 = G__57844;
-count__57773_57835 = G__57845;
-i__57774_57836 = G__57846;
+var G__58209 = seq__58137_58199;
+var G__58210 = chunk__58138_58200;
+var G__58211 = count__58139_58201;
+var G__58212 = (i__58140_58202 + (1));
+seq__58137_58199 = G__58209;
+chunk__58138_58200 = G__58210;
+count__58139_58201 = G__58211;
+i__58140_58202 = G__58212;
 continue;
 } else {
-var temp__4425__auto___57847 = cljs.core.seq.call(null,seq__57771_57833);
-if(temp__4425__auto___57847){
-var seq__57771_57848__$1 = temp__4425__auto___57847;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__57771_57848__$1)){
-var c__20337__auto___57849 = cljs.core.chunk_first.call(null,seq__57771_57848__$1);
-var G__57850 = cljs.core.chunk_rest.call(null,seq__57771_57848__$1);
-var G__57851 = c__20337__auto___57849;
-var G__57852 = cljs.core.count.call(null,c__20337__auto___57849);
-var G__57853 = (0);
-seq__57771_57833 = G__57850;
-chunk__57772_57834 = G__57851;
-count__57773_57835 = G__57852;
-i__57774_57836 = G__57853;
+var temp__4425__auto___58213 = cljs.core.seq.call(null,seq__58137_58199);
+if(temp__4425__auto___58213){
+var seq__58137_58214__$1 = temp__4425__auto___58213;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__58137_58214__$1)){
+var c__20337__auto___58215 = cljs.core.chunk_first.call(null,seq__58137_58214__$1);
+var G__58216 = cljs.core.chunk_rest.call(null,seq__58137_58214__$1);
+var G__58217 = c__20337__auto___58215;
+var G__58218 = cljs.core.count.call(null,c__20337__auto___58215);
+var G__58219 = (0);
+seq__58137_58199 = G__58216;
+chunk__58138_58200 = G__58217;
+count__58139_58201 = G__58218;
+i__58140_58202 = G__58219;
 continue;
 } else {
-var bullet_57854 = cljs.core.first.call(null,seq__57771_57848__$1);
-var map__57777_57855 = bullet_57854;
-var map__57777_57856__$1 = ((((!((map__57777_57855 == null)))?((((map__57777_57855.cljs$lang$protocol_mask$partition0$ & (64))) || (map__57777_57855.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__57777_57855):map__57777_57855);
-var bx_57857 = cljs.core.get.call(null,map__57777_57856__$1,new cljs.core.Keyword(null,"x","x",2099068185));
-var by_57858 = cljs.core.get.call(null,map__57777_57856__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
-var size_57859 = cljs.core.get.call(null,map__57777_57856__$1,new cljs.core.Keyword(null,"size","size",1098693007));
-quil.core.rect.call(null,bx_57857,by_57858,size_57859,size_57859);
+var bullet_58220 = cljs.core.first.call(null,seq__58137_58214__$1);
+var map__58143_58221 = bullet_58220;
+var map__58143_58222__$1 = ((((!((map__58143_58221 == null)))?((((map__58143_58221.cljs$lang$protocol_mask$partition0$ & (64))) || (map__58143_58221.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__58143_58221):map__58143_58221);
+var bx_58223 = cljs.core.get.call(null,map__58143_58222__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var by_58224 = cljs.core.get.call(null,map__58143_58222__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+var size_58225 = cljs.core.get.call(null,map__58143_58222__$1,new cljs.core.Keyword(null,"size","size",1098693007));
+quil.core.rect.call(null,bx_58223,by_58224,size_58225,size_58225);
 
-var G__57860 = cljs.core.next.call(null,seq__57771_57848__$1);
-var G__57861 = null;
-var G__57862 = (0);
-var G__57863 = (0);
-seq__57771_57833 = G__57860;
-chunk__57772_57834 = G__57861;
-count__57773_57835 = G__57862;
-i__57774_57836 = G__57863;
+var G__58226 = cljs.core.next.call(null,seq__58137_58214__$1);
+var G__58227 = null;
+var G__58228 = (0);
+var G__58229 = (0);
+seq__58137_58199 = G__58226;
+chunk__58138_58200 = G__58227;
+count__58139_58201 = G__58228;
+i__58140_58202 = G__58229;
 continue;
 }
 } else {
@@ -414,26 +414,26 @@ break;
 
 quil.core.fill.call(null,(50),(120),(190));
 
-var map__57779 = new cljs.core.Keyword(null,"player","player",-97687400).cljs$core$IFn$_invoke$arity$1(state);
-var map__57779__$1 = ((((!((map__57779 == null)))?((((map__57779.cljs$lang$protocol_mask$partition0$ & (64))) || (map__57779.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__57779):map__57779);
-var x = cljs.core.get.call(null,map__57779__$1,new cljs.core.Keyword(null,"x","x",2099068185));
-var y = cljs.core.get.call(null,map__57779__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
-var size = cljs.core.get.call(null,map__57779__$1,new cljs.core.Keyword(null,"size","size",1098693007));
+var map__58145 = new cljs.core.Keyword(null,"player","player",-97687400).cljs$core$IFn$_invoke$arity$1(state);
+var map__58145__$1 = ((((!((map__58145 == null)))?((((map__58145.cljs$lang$protocol_mask$partition0$ & (64))) || (map__58145.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__58145):map__58145);
+var x = cljs.core.get.call(null,map__58145__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var y = cljs.core.get.call(null,map__58145__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+var size = cljs.core.get.call(null,map__58145__$1,new cljs.core.Keyword(null,"size","size",1098693007));
 return quil.core.rect.call(null,x,y,size,size);
 });
 p3r50na.apps.bookof5rinds.client.game.component.apply_controll = (function p3r50na$apps$bookof5rinds$client$game$component$apply_controll(state){
 if(cljs.core.empty_QMARK_.call(null,new cljs.core.Keyword(null,"controlls","controlls",-310267444).cljs$core$IFn$_invoke$arity$1(state))){
 return state;
 } else {
-var map__57867 = new cljs.core.Keyword(null,"player","player",-97687400).cljs$core$IFn$_invoke$arity$1(state);
-var map__57867__$1 = ((((!((map__57867 == null)))?((((map__57867.cljs$lang$protocol_mask$partition0$ & (64))) || (map__57867.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__57867):map__57867);
-var x = cljs.core.get.call(null,map__57867__$1,new cljs.core.Keyword(null,"x","x",2099068185));
-var y = cljs.core.get.call(null,map__57867__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
-var speed = cljs.core.get.call(null,map__57867__$1,new cljs.core.Keyword(null,"speed","speed",1257663751));
-var newstate = cljs.core.reduce.call(null,((function (map__57867,map__57867__$1,x,y,speed){
+var map__58233 = new cljs.core.Keyword(null,"player","player",-97687400).cljs$core$IFn$_invoke$arity$1(state);
+var map__58233__$1 = ((((!((map__58233 == null)))?((((map__58233.cljs$lang$protocol_mask$partition0$ & (64))) || (map__58233.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__58233):map__58233);
+var x = cljs.core.get.call(null,map__58233__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var y = cljs.core.get.call(null,map__58233__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+var speed = cljs.core.get.call(null,map__58233__$1,new cljs.core.Keyword(null,"speed","speed",1257663751));
+var newstate = cljs.core.reduce.call(null,((function (map__58233,map__58233__$1,x,y,speed){
 return (function (state__$1,controll){
-var newstate = (function (){var G__57869 = (((controll instanceof cljs.core.Keyword))?controll.fqn:null);
-switch (G__57869) {
+var newstate = (function (){var G__58235 = (((controll instanceof cljs.core.Keyword))?controll.fqn:null);
+switch (G__58235) {
 case "w":
 return cljs.core.update_in.call(null,state__$1,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"player","player",-97687400),new cljs.core.Keyword(null,"y","y",-1757859776)], null),cljs.core._,speed);
 
@@ -466,23 +466,23 @@ return state__$1;
 } else {
 return newstate;
 }
-});})(map__57867,map__57867__$1,x,y,speed))
+});})(map__58233,map__58233__$1,x,y,speed))
 ,state,new cljs.core.Keyword(null,"controlls","controlls",-310267444).cljs$core$IFn$_invoke$arity$1(state));
 return newstate;
 }
 });
 p3r50na.apps.bookof5rinds.client.game.component.update_bullet_location = (function p3r50na$apps$bookof5rinds$client$game$component$update_bullet_location(bullet){
-var map__57875 = bullet;
-var map__57875__$1 = ((((!((map__57875 == null)))?((((map__57875.cljs$lang$protocol_mask$partition0$ & (64))) || (map__57875.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__57875):map__57875);
-var speed = cljs.core.get.call(null,map__57875__$1,new cljs.core.Keyword(null,"speed","speed",1257663751));
-var vec__57876 = cljs.core.get.call(null,map__57875__$1,new cljs.core.Keyword(null,"start","start",-355208981));
-var bx = cljs.core.nth.call(null,vec__57876,(0),null);
-var by = cljs.core.nth.call(null,vec__57876,(1),null);
-var lx = cljs.core.get.call(null,map__57875__$1,new cljs.core.Keyword(null,"x","x",2099068185));
-var ly = cljs.core.get.call(null,map__57875__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
-var vec__57877 = cljs.core.get.call(null,map__57875__$1,new cljs.core.Keyword(null,"goal","goal",-2073396501));
-var gx = cljs.core.nth.call(null,vec__57877,(0),null);
-var gy = cljs.core.nth.call(null,vec__57877,(1),null);
+var map__58241 = bullet;
+var map__58241__$1 = ((((!((map__58241 == null)))?((((map__58241.cljs$lang$protocol_mask$partition0$ & (64))) || (map__58241.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__58241):map__58241);
+var speed = cljs.core.get.call(null,map__58241__$1,new cljs.core.Keyword(null,"speed","speed",1257663751));
+var vec__58242 = cljs.core.get.call(null,map__58241__$1,new cljs.core.Keyword(null,"start","start",-355208981));
+var bx = cljs.core.nth.call(null,vec__58242,(0),null);
+var by = cljs.core.nth.call(null,vec__58242,(1),null);
+var lx = cljs.core.get.call(null,map__58241__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var ly = cljs.core.get.call(null,map__58241__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+var vec__58243 = cljs.core.get.call(null,map__58241__$1,new cljs.core.Keyword(null,"goal","goal",-2073396501));
+var gx = cljs.core.nth.call(null,vec__58243,(0),null);
+var gy = cljs.core.nth.call(null,vec__58243,(1),null);
 var dx = (gx - bx);
 var dy = (gy - by);
 var goal_dist = Math.sqrt(((dx * dx) + (dy * dy)));
@@ -509,56 +509,56 @@ return p3r50na.apps.bookof5rinds.client.game.collision.rect_intersects_boundary_
 return cljs.core.assoc.call(null,state,new cljs.core.Keyword(null,"bullets","bullets",1734809024),new_bullets);
 });
 p3r50na.apps.bookof5rinds.client.game.component.player_bullet_hits = (function p3r50na$apps$bookof5rinds$client$game$component$player_bullet_hits(players,bullets){
-var seq__57891 = cljs.core.seq.call(null,players);
-var chunk__57892 = null;
-var count__57893 = (0);
-var i__57894 = (0);
+var seq__58257 = cljs.core.seq.call(null,players);
+var chunk__58258 = null;
+var count__58259 = (0);
+var i__58260 = (0);
 while(true){
-if((i__57894 < count__57893)){
-var player = cljs.core._nth.call(null,chunk__57892,i__57894);
-var seq__57895_57903 = cljs.core.seq.call(null,bullets);
-var chunk__57896_57904 = null;
-var count__57897_57905 = (0);
-var i__57898_57906 = (0);
+if((i__58260 < count__58259)){
+var player = cljs.core._nth.call(null,chunk__58258,i__58260);
+var seq__58261_58269 = cljs.core.seq.call(null,bullets);
+var chunk__58262_58270 = null;
+var count__58263_58271 = (0);
+var i__58264_58272 = (0);
 while(true){
-if((i__57898_57906 < count__57897_57905)){
-var bullet_57907 = cljs.core._nth.call(null,chunk__57896_57904,i__57898_57906);
+if((i__58264_58272 < count__58263_58271)){
+var bullet_58273 = cljs.core._nth.call(null,chunk__58262_58270,i__58264_58272);
 
-var G__57908 = seq__57895_57903;
-var G__57909 = chunk__57896_57904;
-var G__57910 = count__57897_57905;
-var G__57911 = (i__57898_57906 + (1));
-seq__57895_57903 = G__57908;
-chunk__57896_57904 = G__57909;
-count__57897_57905 = G__57910;
-i__57898_57906 = G__57911;
+var G__58274 = seq__58261_58269;
+var G__58275 = chunk__58262_58270;
+var G__58276 = count__58263_58271;
+var G__58277 = (i__58264_58272 + (1));
+seq__58261_58269 = G__58274;
+chunk__58262_58270 = G__58275;
+count__58263_58271 = G__58276;
+i__58264_58272 = G__58277;
 continue;
 } else {
-var temp__4425__auto___57912 = cljs.core.seq.call(null,seq__57895_57903);
-if(temp__4425__auto___57912){
-var seq__57895_57913__$1 = temp__4425__auto___57912;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__57895_57913__$1)){
-var c__20337__auto___57914 = cljs.core.chunk_first.call(null,seq__57895_57913__$1);
-var G__57915 = cljs.core.chunk_rest.call(null,seq__57895_57913__$1);
-var G__57916 = c__20337__auto___57914;
-var G__57917 = cljs.core.count.call(null,c__20337__auto___57914);
-var G__57918 = (0);
-seq__57895_57903 = G__57915;
-chunk__57896_57904 = G__57916;
-count__57897_57905 = G__57917;
-i__57898_57906 = G__57918;
+var temp__4425__auto___58278 = cljs.core.seq.call(null,seq__58261_58269);
+if(temp__4425__auto___58278){
+var seq__58261_58279__$1 = temp__4425__auto___58278;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__58261_58279__$1)){
+var c__20337__auto___58280 = cljs.core.chunk_first.call(null,seq__58261_58279__$1);
+var G__58281 = cljs.core.chunk_rest.call(null,seq__58261_58279__$1);
+var G__58282 = c__20337__auto___58280;
+var G__58283 = cljs.core.count.call(null,c__20337__auto___58280);
+var G__58284 = (0);
+seq__58261_58269 = G__58281;
+chunk__58262_58270 = G__58282;
+count__58263_58271 = G__58283;
+i__58264_58272 = G__58284;
 continue;
 } else {
-var bullet_57919 = cljs.core.first.call(null,seq__57895_57913__$1);
+var bullet_58285 = cljs.core.first.call(null,seq__58261_58279__$1);
 
-var G__57920 = cljs.core.next.call(null,seq__57895_57913__$1);
-var G__57921 = null;
-var G__57922 = (0);
-var G__57923 = (0);
-seq__57895_57903 = G__57920;
-chunk__57896_57904 = G__57921;
-count__57897_57905 = G__57922;
-i__57898_57906 = G__57923;
+var G__58286 = cljs.core.next.call(null,seq__58261_58279__$1);
+var G__58287 = null;
+var G__58288 = (0);
+var G__58289 = (0);
+seq__58261_58269 = G__58286;
+chunk__58262_58270 = G__58287;
+count__58263_58271 = G__58288;
+i__58264_58272 = G__58289;
 continue;
 }
 } else {
@@ -567,75 +567,75 @@ continue;
 break;
 }
 
-var G__57924 = seq__57891;
-var G__57925 = chunk__57892;
-var G__57926 = count__57893;
-var G__57927 = (i__57894 + (1));
-seq__57891 = G__57924;
-chunk__57892 = G__57925;
-count__57893 = G__57926;
-i__57894 = G__57927;
+var G__58290 = seq__58257;
+var G__58291 = chunk__58258;
+var G__58292 = count__58259;
+var G__58293 = (i__58260 + (1));
+seq__58257 = G__58290;
+chunk__58258 = G__58291;
+count__58259 = G__58292;
+i__58260 = G__58293;
 continue;
 } else {
-var temp__4425__auto__ = cljs.core.seq.call(null,seq__57891);
+var temp__4425__auto__ = cljs.core.seq.call(null,seq__58257);
 if(temp__4425__auto__){
-var seq__57891__$1 = temp__4425__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__57891__$1)){
-var c__20337__auto__ = cljs.core.chunk_first.call(null,seq__57891__$1);
-var G__57928 = cljs.core.chunk_rest.call(null,seq__57891__$1);
-var G__57929 = c__20337__auto__;
-var G__57930 = cljs.core.count.call(null,c__20337__auto__);
-var G__57931 = (0);
-seq__57891 = G__57928;
-chunk__57892 = G__57929;
-count__57893 = G__57930;
-i__57894 = G__57931;
+var seq__58257__$1 = temp__4425__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__58257__$1)){
+var c__20337__auto__ = cljs.core.chunk_first.call(null,seq__58257__$1);
+var G__58294 = cljs.core.chunk_rest.call(null,seq__58257__$1);
+var G__58295 = c__20337__auto__;
+var G__58296 = cljs.core.count.call(null,c__20337__auto__);
+var G__58297 = (0);
+seq__58257 = G__58294;
+chunk__58258 = G__58295;
+count__58259 = G__58296;
+i__58260 = G__58297;
 continue;
 } else {
-var player = cljs.core.first.call(null,seq__57891__$1);
-var seq__57899_57932 = cljs.core.seq.call(null,bullets);
-var chunk__57900_57933 = null;
-var count__57901_57934 = (0);
-var i__57902_57935 = (0);
+var player = cljs.core.first.call(null,seq__58257__$1);
+var seq__58265_58298 = cljs.core.seq.call(null,bullets);
+var chunk__58266_58299 = null;
+var count__58267_58300 = (0);
+var i__58268_58301 = (0);
 while(true){
-if((i__57902_57935 < count__57901_57934)){
-var bullet_57936 = cljs.core._nth.call(null,chunk__57900_57933,i__57902_57935);
+if((i__58268_58301 < count__58267_58300)){
+var bullet_58302 = cljs.core._nth.call(null,chunk__58266_58299,i__58268_58301);
 
-var G__57937 = seq__57899_57932;
-var G__57938 = chunk__57900_57933;
-var G__57939 = count__57901_57934;
-var G__57940 = (i__57902_57935 + (1));
-seq__57899_57932 = G__57937;
-chunk__57900_57933 = G__57938;
-count__57901_57934 = G__57939;
-i__57902_57935 = G__57940;
+var G__58303 = seq__58265_58298;
+var G__58304 = chunk__58266_58299;
+var G__58305 = count__58267_58300;
+var G__58306 = (i__58268_58301 + (1));
+seq__58265_58298 = G__58303;
+chunk__58266_58299 = G__58304;
+count__58267_58300 = G__58305;
+i__58268_58301 = G__58306;
 continue;
 } else {
-var temp__4425__auto___57941__$1 = cljs.core.seq.call(null,seq__57899_57932);
-if(temp__4425__auto___57941__$1){
-var seq__57899_57942__$1 = temp__4425__auto___57941__$1;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__57899_57942__$1)){
-var c__20337__auto___57943 = cljs.core.chunk_first.call(null,seq__57899_57942__$1);
-var G__57944 = cljs.core.chunk_rest.call(null,seq__57899_57942__$1);
-var G__57945 = c__20337__auto___57943;
-var G__57946 = cljs.core.count.call(null,c__20337__auto___57943);
-var G__57947 = (0);
-seq__57899_57932 = G__57944;
-chunk__57900_57933 = G__57945;
-count__57901_57934 = G__57946;
-i__57902_57935 = G__57947;
+var temp__4425__auto___58307__$1 = cljs.core.seq.call(null,seq__58265_58298);
+if(temp__4425__auto___58307__$1){
+var seq__58265_58308__$1 = temp__4425__auto___58307__$1;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__58265_58308__$1)){
+var c__20337__auto___58309 = cljs.core.chunk_first.call(null,seq__58265_58308__$1);
+var G__58310 = cljs.core.chunk_rest.call(null,seq__58265_58308__$1);
+var G__58311 = c__20337__auto___58309;
+var G__58312 = cljs.core.count.call(null,c__20337__auto___58309);
+var G__58313 = (0);
+seq__58265_58298 = G__58310;
+chunk__58266_58299 = G__58311;
+count__58267_58300 = G__58312;
+i__58268_58301 = G__58313;
 continue;
 } else {
-var bullet_57948 = cljs.core.first.call(null,seq__57899_57942__$1);
+var bullet_58314 = cljs.core.first.call(null,seq__58265_58308__$1);
 
-var G__57949 = cljs.core.next.call(null,seq__57899_57942__$1);
-var G__57950 = null;
-var G__57951 = (0);
-var G__57952 = (0);
-seq__57899_57932 = G__57949;
-chunk__57900_57933 = G__57950;
-count__57901_57934 = G__57951;
-i__57902_57935 = G__57952;
+var G__58315 = cljs.core.next.call(null,seq__58265_58308__$1);
+var G__58316 = null;
+var G__58317 = (0);
+var G__58318 = (0);
+seq__58265_58298 = G__58315;
+chunk__58266_58299 = G__58316;
+count__58267_58300 = G__58317;
+i__58268_58301 = G__58318;
 continue;
 }
 } else {
@@ -644,14 +644,14 @@ continue;
 break;
 }
 
-var G__57953 = cljs.core.next.call(null,seq__57891__$1);
-var G__57954 = null;
-var G__57955 = (0);
-var G__57956 = (0);
-seq__57891 = G__57953;
-chunk__57892 = G__57954;
-count__57893 = G__57955;
-i__57894 = G__57956;
+var G__58319 = cljs.core.next.call(null,seq__58257__$1);
+var G__58320 = null;
+var G__58321 = (0);
+var G__58322 = (0);
+seq__58257 = G__58319;
+chunk__58258 = G__58320;
+count__58259 = G__58321;
+i__58260 = G__58322;
 continue;
 }
 } else {
@@ -662,8 +662,8 @@ break;
 }
 });
 p3r50na.apps.bookof5rinds.client.game.component.apply_player_bullet_hits = (function p3r50na$apps$bookof5rinds$client$game$component$apply_player_bullet_hits(state){
-var bullethits_57957 = p3r50na.apps.bookof5rinds.client.game.component.player_bullet_hits.call(null,new cljs.core.Keyword(null,"remote-players","remote-players",1446934658).cljs$core$IFn$_invoke$arity$1(state),new cljs.core.Keyword(null,"bullets","bullets",1734809024).cljs$core$IFn$_invoke$arity$1(state));
-cljs.core.println.call(null,bullethits_57957);
+var bullethits_58323 = p3r50na.apps.bookof5rinds.client.game.component.player_bullet_hits.call(null,new cljs.core.Keyword(null,"remote-players","remote-players",1446934658).cljs$core$IFn$_invoke$arity$1(state),new cljs.core.Keyword(null,"bullets","bullets",1734809024).cljs$core$IFn$_invoke$arity$1(state));
+cljs.core.println.call(null,bullethits_58323);
 
 return state;
 });
@@ -681,158 +681,158 @@ var keycode = quil.core.key_as_keyword.call(null);
 return cljs.core.update_in.call(null,state,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"controlls","controlls",-310267444)], null),cljs.core.disj,keycode);
 });
 p3r50na.apps.bookof5rinds.client.game.component.on_mouse_clicked = (function p3r50na$apps$bookof5rinds$client$game$component$on_mouse_clicked(state,event){
-var map__57962 = event;
-var map__57962__$1 = ((((!((map__57962 == null)))?((((map__57962.cljs$lang$protocol_mask$partition0$ & (64))) || (map__57962.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__57962):map__57962);
-var mx = cljs.core.get.call(null,map__57962__$1,new cljs.core.Keyword(null,"x","x",2099068185));
-var my = cljs.core.get.call(null,map__57962__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
-var map__57963 = new cljs.core.Keyword(null,"player","player",-97687400).cljs$core$IFn$_invoke$arity$1(state);
-var map__57963__$1 = ((((!((map__57963 == null)))?((((map__57963.cljs$lang$protocol_mask$partition0$ & (64))) || (map__57963.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__57963):map__57963);
-var px = cljs.core.get.call(null,map__57963__$1,new cljs.core.Keyword(null,"x","x",2099068185));
-var py = cljs.core.get.call(null,map__57963__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
-var ps = cljs.core.get.call(null,map__57963__$1,new cljs.core.Keyword(null,"size","size",1098693007));
+var map__58328 = event;
+var map__58328__$1 = ((((!((map__58328 == null)))?((((map__58328.cljs$lang$protocol_mask$partition0$ & (64))) || (map__58328.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__58328):map__58328);
+var mx = cljs.core.get.call(null,map__58328__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var my = cljs.core.get.call(null,map__58328__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+var map__58329 = new cljs.core.Keyword(null,"player","player",-97687400).cljs$core$IFn$_invoke$arity$1(state);
+var map__58329__$1 = ((((!((map__58329 == null)))?((((map__58329.cljs$lang$protocol_mask$partition0$ & (64))) || (map__58329.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__58329):map__58329);
+var px = cljs.core.get.call(null,map__58329__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var py = cljs.core.get.call(null,map__58329__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+var ps = cljs.core.get.call(null,map__58329__$1,new cljs.core.Keyword(null,"size","size",1098693007));
 var start = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(px + (ps / (2))),(py + (ps / (2)))], null);
 return cljs.core.update_in.call(null,state,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"bullets","bullets",1734809024)], null),cljs.core.conj,new cljs.core.PersistentArrayMap(null, 6, [new cljs.core.Keyword(null,"x","x",2099068185),cljs.core.get.call(null,start,(0)),new cljs.core.Keyword(null,"y","y",-1757859776),cljs.core.get.call(null,start,(1)),new cljs.core.Keyword(null,"start","start",-355208981),start,new cljs.core.Keyword(null,"goal","goal",-2073396501),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [mx,my], null),new cljs.core.Keyword(null,"speed","speed",1257663751),1.4,new cljs.core.Keyword(null,"size","size",1098693007),(2)], null));
 });
 p3r50na.apps.bookof5rinds.client.game.component.game_renderer = (function p3r50na$apps$bookof5rinds$client$game$component$game_renderer(){
 return quil.sketch.sketch.call(null,new cljs.core.Keyword(null,"mouse-clicked","mouse-clicked",-199339421),((cljs.core.fn_QMARK_.call(null,p3r50na.apps.bookof5rinds.client.game.component.on_mouse_clicked))?(function() { 
-var G__57966__delegate = function (args){
+var G__58332__delegate = function (args){
 return cljs.core.apply.call(null,p3r50na.apps.bookof5rinds.client.game.component.on_mouse_clicked,args);
 };
-var G__57966 = function (var_args){
+var G__58332 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__57967__i = 0, G__57967__a = new Array(arguments.length -  0);
-while (G__57967__i < G__57967__a.length) {G__57967__a[G__57967__i] = arguments[G__57967__i + 0]; ++G__57967__i;}
-  args = new cljs.core.IndexedSeq(G__57967__a,0);
+var G__58333__i = 0, G__58333__a = new Array(arguments.length -  0);
+while (G__58333__i < G__58333__a.length) {G__58333__a[G__58333__i] = arguments[G__58333__i + 0]; ++G__58333__i;}
+  args = new cljs.core.IndexedSeq(G__58333__a,0);
 } 
-return G__57966__delegate.call(this,args);};
-G__57966.cljs$lang$maxFixedArity = 0;
-G__57966.cljs$lang$applyTo = (function (arglist__57968){
-var args = cljs.core.seq(arglist__57968);
-return G__57966__delegate(args);
+return G__58332__delegate.call(this,args);};
+G__58332.cljs$lang$maxFixedArity = 0;
+G__58332.cljs$lang$applyTo = (function (arglist__58334){
+var args = cljs.core.seq(arglist__58334);
+return G__58332__delegate(args);
 });
-G__57966.cljs$core$IFn$_invoke$arity$variadic = G__57966__delegate;
-return G__57966;
+G__58332.cljs$core$IFn$_invoke$arity$variadic = G__58332__delegate;
+return G__58332;
 })()
 :p3r50na.apps.bookof5rinds.client.game.component.on_mouse_clicked),new cljs.core.Keyword(null,"update","update",1045576396),((cljs.core.fn_QMARK_.call(null,p3r50na.apps.bookof5rinds.client.game.component.cupdate))?(function() { 
-var G__57969__delegate = function (args){
+var G__58335__delegate = function (args){
 return cljs.core.apply.call(null,p3r50na.apps.bookof5rinds.client.game.component.cupdate,args);
 };
-var G__57969 = function (var_args){
+var G__58335 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__57970__i = 0, G__57970__a = new Array(arguments.length -  0);
-while (G__57970__i < G__57970__a.length) {G__57970__a[G__57970__i] = arguments[G__57970__i + 0]; ++G__57970__i;}
-  args = new cljs.core.IndexedSeq(G__57970__a,0);
+var G__58336__i = 0, G__58336__a = new Array(arguments.length -  0);
+while (G__58336__i < G__58336__a.length) {G__58336__a[G__58336__i] = arguments[G__58336__i + 0]; ++G__58336__i;}
+  args = new cljs.core.IndexedSeq(G__58336__a,0);
 } 
-return G__57969__delegate.call(this,args);};
-G__57969.cljs$lang$maxFixedArity = 0;
-G__57969.cljs$lang$applyTo = (function (arglist__57971){
-var args = cljs.core.seq(arglist__57971);
-return G__57969__delegate(args);
+return G__58335__delegate.call(this,args);};
+G__58335.cljs$lang$maxFixedArity = 0;
+G__58335.cljs$lang$applyTo = (function (arglist__58337){
+var args = cljs.core.seq(arglist__58337);
+return G__58335__delegate(args);
 });
-G__57969.cljs$core$IFn$_invoke$arity$variadic = G__57969__delegate;
-return G__57969;
+G__58335.cljs$core$IFn$_invoke$arity$variadic = G__58335__delegate;
+return G__58335;
 })()
 :p3r50na.apps.bookof5rinds.client.game.component.cupdate),new cljs.core.Keyword(null,"size","size",1098693007),((cljs.core.fn_QMARK_.call(null,p3r50na.apps.bookof5rinds.client.game.component.map_size))?(function() { 
-var G__57972__delegate = function (args){
+var G__58338__delegate = function (args){
 return cljs.core.apply.call(null,p3r50na.apps.bookof5rinds.client.game.component.map_size,args);
 };
-var G__57972 = function (var_args){
+var G__58338 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__57973__i = 0, G__57973__a = new Array(arguments.length -  0);
-while (G__57973__i < G__57973__a.length) {G__57973__a[G__57973__i] = arguments[G__57973__i + 0]; ++G__57973__i;}
-  args = new cljs.core.IndexedSeq(G__57973__a,0);
+var G__58339__i = 0, G__58339__a = new Array(arguments.length -  0);
+while (G__58339__i < G__58339__a.length) {G__58339__a[G__58339__i] = arguments[G__58339__i + 0]; ++G__58339__i;}
+  args = new cljs.core.IndexedSeq(G__58339__a,0);
 } 
-return G__57972__delegate.call(this,args);};
-G__57972.cljs$lang$maxFixedArity = 0;
-G__57972.cljs$lang$applyTo = (function (arglist__57974){
-var args = cljs.core.seq(arglist__57974);
-return G__57972__delegate(args);
+return G__58338__delegate.call(this,args);};
+G__58338.cljs$lang$maxFixedArity = 0;
+G__58338.cljs$lang$applyTo = (function (arglist__58340){
+var args = cljs.core.seq(arglist__58340);
+return G__58338__delegate(args);
 });
-G__57972.cljs$core$IFn$_invoke$arity$variadic = G__57972__delegate;
-return G__57972;
+G__58338.cljs$core$IFn$_invoke$arity$variadic = G__58338__delegate;
+return G__58338;
 })()
 :p3r50na.apps.bookof5rinds.client.game.component.map_size),new cljs.core.Keyword(null,"setup","setup",1987730512),((cljs.core.fn_QMARK_.call(null,p3r50na.apps.bookof5rinds.client.game.component.setup))?(function() { 
-var G__57975__delegate = function (args){
+var G__58341__delegate = function (args){
 return cljs.core.apply.call(null,p3r50na.apps.bookof5rinds.client.game.component.setup,args);
 };
-var G__57975 = function (var_args){
+var G__58341 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__57976__i = 0, G__57976__a = new Array(arguments.length -  0);
-while (G__57976__i < G__57976__a.length) {G__57976__a[G__57976__i] = arguments[G__57976__i + 0]; ++G__57976__i;}
-  args = new cljs.core.IndexedSeq(G__57976__a,0);
+var G__58342__i = 0, G__58342__a = new Array(arguments.length -  0);
+while (G__58342__i < G__58342__a.length) {G__58342__a[G__58342__i] = arguments[G__58342__i + 0]; ++G__58342__i;}
+  args = new cljs.core.IndexedSeq(G__58342__a,0);
 } 
-return G__57975__delegate.call(this,args);};
-G__57975.cljs$lang$maxFixedArity = 0;
-G__57975.cljs$lang$applyTo = (function (arglist__57977){
-var args = cljs.core.seq(arglist__57977);
-return G__57975__delegate(args);
+return G__58341__delegate.call(this,args);};
+G__58341.cljs$lang$maxFixedArity = 0;
+G__58341.cljs$lang$applyTo = (function (arglist__58343){
+var args = cljs.core.seq(arglist__58343);
+return G__58341__delegate(args);
 });
-G__57975.cljs$core$IFn$_invoke$arity$variadic = G__57975__delegate;
-return G__57975;
+G__58341.cljs$core$IFn$_invoke$arity$variadic = G__58341__delegate;
+return G__58341;
 })()
 :p3r50na.apps.bookof5rinds.client.game.component.setup),new cljs.core.Keyword(null,"middleware","middleware",1462115504),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [quil.middleware.fun_mode], null),new cljs.core.Keyword(null,"host","host",-1558485167),"game-canvas",new cljs.core.Keyword(null,"key-pressed","key-pressed",-757100364),((cljs.core.fn_QMARK_.call(null,p3r50na.apps.bookof5rinds.client.game.component.on_key_down))?(function() { 
-var G__57978__delegate = function (args){
+var G__58344__delegate = function (args){
 return cljs.core.apply.call(null,p3r50na.apps.bookof5rinds.client.game.component.on_key_down,args);
 };
-var G__57978 = function (var_args){
+var G__58344 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__57979__i = 0, G__57979__a = new Array(arguments.length -  0);
-while (G__57979__i < G__57979__a.length) {G__57979__a[G__57979__i] = arguments[G__57979__i + 0]; ++G__57979__i;}
-  args = new cljs.core.IndexedSeq(G__57979__a,0);
+var G__58345__i = 0, G__58345__a = new Array(arguments.length -  0);
+while (G__58345__i < G__58345__a.length) {G__58345__a[G__58345__i] = arguments[G__58345__i + 0]; ++G__58345__i;}
+  args = new cljs.core.IndexedSeq(G__58345__a,0);
 } 
-return G__57978__delegate.call(this,args);};
-G__57978.cljs$lang$maxFixedArity = 0;
-G__57978.cljs$lang$applyTo = (function (arglist__57980){
-var args = cljs.core.seq(arglist__57980);
-return G__57978__delegate(args);
+return G__58344__delegate.call(this,args);};
+G__58344.cljs$lang$maxFixedArity = 0;
+G__58344.cljs$lang$applyTo = (function (arglist__58346){
+var args = cljs.core.seq(arglist__58346);
+return G__58344__delegate(args);
 });
-G__57978.cljs$core$IFn$_invoke$arity$variadic = G__57978__delegate;
-return G__57978;
+G__58344.cljs$core$IFn$_invoke$arity$variadic = G__58344__delegate;
+return G__58344;
 })()
 :p3r50na.apps.bookof5rinds.client.game.component.on_key_down),new cljs.core.Keyword(null,"key-released","key-released",215919828),((cljs.core.fn_QMARK_.call(null,p3r50na.apps.bookof5rinds.client.game.component.on_key_up))?(function() { 
-var G__57981__delegate = function (args){
+var G__58347__delegate = function (args){
 return cljs.core.apply.call(null,p3r50na.apps.bookof5rinds.client.game.component.on_key_up,args);
 };
-var G__57981 = function (var_args){
+var G__58347 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__57982__i = 0, G__57982__a = new Array(arguments.length -  0);
-while (G__57982__i < G__57982__a.length) {G__57982__a[G__57982__i] = arguments[G__57982__i + 0]; ++G__57982__i;}
-  args = new cljs.core.IndexedSeq(G__57982__a,0);
+var G__58348__i = 0, G__58348__a = new Array(arguments.length -  0);
+while (G__58348__i < G__58348__a.length) {G__58348__a[G__58348__i] = arguments[G__58348__i + 0]; ++G__58348__i;}
+  args = new cljs.core.IndexedSeq(G__58348__a,0);
 } 
-return G__57981__delegate.call(this,args);};
-G__57981.cljs$lang$maxFixedArity = 0;
-G__57981.cljs$lang$applyTo = (function (arglist__57983){
-var args = cljs.core.seq(arglist__57983);
-return G__57981__delegate(args);
+return G__58347__delegate.call(this,args);};
+G__58347.cljs$lang$maxFixedArity = 0;
+G__58347.cljs$lang$applyTo = (function (arglist__58349){
+var args = cljs.core.seq(arglist__58349);
+return G__58347__delegate(args);
 });
-G__57981.cljs$core$IFn$_invoke$arity$variadic = G__57981__delegate;
-return G__57981;
+G__58347.cljs$core$IFn$_invoke$arity$variadic = G__58347__delegate;
+return G__58347;
 })()
 :p3r50na.apps.bookof5rinds.client.game.component.on_key_up),new cljs.core.Keyword(null,"draw","draw",1358331674),((cljs.core.fn_QMARK_.call(null,p3r50na.apps.bookof5rinds.client.game.component.draw))?(function() { 
-var G__57984__delegate = function (args){
+var G__58350__delegate = function (args){
 return cljs.core.apply.call(null,p3r50na.apps.bookof5rinds.client.game.component.draw,args);
 };
-var G__57984 = function (var_args){
+var G__58350 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__57985__i = 0, G__57985__a = new Array(arguments.length -  0);
-while (G__57985__i < G__57985__a.length) {G__57985__a[G__57985__i] = arguments[G__57985__i + 0]; ++G__57985__i;}
-  args = new cljs.core.IndexedSeq(G__57985__a,0);
+var G__58351__i = 0, G__58351__a = new Array(arguments.length -  0);
+while (G__58351__i < G__58351__a.length) {G__58351__a[G__58351__i] = arguments[G__58351__i + 0]; ++G__58351__i;}
+  args = new cljs.core.IndexedSeq(G__58351__a,0);
 } 
-return G__57984__delegate.call(this,args);};
-G__57984.cljs$lang$maxFixedArity = 0;
-G__57984.cljs$lang$applyTo = (function (arglist__57986){
-var args = cljs.core.seq(arglist__57986);
-return G__57984__delegate(args);
+return G__58350__delegate.call(this,args);};
+G__58350.cljs$lang$maxFixedArity = 0;
+G__58350.cljs$lang$applyTo = (function (arglist__58352){
+var args = cljs.core.seq(arglist__58352);
+return G__58350__delegate(args);
 });
-G__57984.cljs$core$IFn$_invoke$arity$variadic = G__57984__delegate;
-return G__57984;
+G__58350.cljs$core$IFn$_invoke$arity$variadic = G__58350__delegate;
+return G__58350;
 })()
 :p3r50na.apps.bookof5rinds.client.game.component.draw));
 });
@@ -845,66 +845,66 @@ return cljs.core._EQ_.call(null,new cljs.core.Keyword(null,"no-start","no-start"
 quil.sketch.add_sketch_to_init_list.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"fn","fn",-1175266204),p3r50na.apps.bookof5rinds.client.game.component.game_renderer,new cljs.core.Keyword(null,"host-id","host-id",742376279),"game-canvas"], null));
 }
 p3r50na.apps.bookof5rinds.client.game.component.game_component = (function p3r50na$apps$bookof5rinds$client$game$component$game_component(socket){
-if(typeof p3r50na.apps.bookof5rinds.client.game.component.t57990 !== 'undefined'){
+if(typeof p3r50na.apps.bookof5rinds.client.game.component.t58356 !== 'undefined'){
 } else {
 
 /**
 * @constructor
 */
-p3r50na.apps.bookof5rinds.client.game.component.t57990 = (function (game_component,socket,meta57991){
+p3r50na.apps.bookof5rinds.client.game.component.t58356 = (function (game_component,socket,meta58357){
 this.game_component = game_component;
 this.socket = socket;
-this.meta57991 = meta57991;
+this.meta58357 = meta58357;
 this.cljs$lang$protocol_mask$partition0$ = 393216;
 this.cljs$lang$protocol_mask$partition1$ = 0;
 })
-p3r50na.apps.bookof5rinds.client.game.component.t57990.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_57992,meta57991__$1){
+p3r50na.apps.bookof5rinds.client.game.component.t58356.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_58358,meta58357__$1){
 var self__ = this;
-var _57992__$1 = this;
-return (new p3r50na.apps.bookof5rinds.client.game.component.t57990(self__.game_component,self__.socket,meta57991__$1));
+var _58358__$1 = this;
+return (new p3r50na.apps.bookof5rinds.client.game.component.t58356(self__.game_component,self__.socket,meta58357__$1));
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.t57990.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_57992){
+p3r50na.apps.bookof5rinds.client.game.component.t58356.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_58358){
 var self__ = this;
-var _57992__$1 = this;
-return self__.meta57991;
+var _58358__$1 = this;
+return self__.meta58357;
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.t57990.prototype.om$core$IDidMount$ = true;
+p3r50na.apps.bookof5rinds.client.game.component.t58356.prototype.om$core$IDidMount$ = true;
 
-p3r50na.apps.bookof5rinds.client.game.component.t57990.prototype.om$core$IDidMount$did_mount$arity$1 = (function (this$){
+p3r50na.apps.bookof5rinds.client.game.component.t58356.prototype.om$core$IDidMount$did_mount$arity$1 = (function (this$){
 var self__ = this;
 var this$__$1 = this;
 return p3r50na.apps.bookof5rinds.client.game.component.game_renderer.call(null);
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.t57990.prototype.om$core$IRender$ = true;
+p3r50na.apps.bookof5rinds.client.game.component.t58356.prototype.om$core$IRender$ = true;
 
-p3r50na.apps.bookof5rinds.client.game.component.t57990.prototype.om$core$IRender$render$arity$1 = (function (this$){
+p3r50na.apps.bookof5rinds.client.game.component.t58356.prototype.om$core$IRender$render$arity$1 = (function (this$){
 var self__ = this;
 var this$__$1 = this;
 return React.DOM.div(null,React.DOM.h1(null,"game"),React.DOM.canvas({"id": "game-canvas", "style": {"border": "1px solid gray"}}));
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.t57990.getBasis = (function (){
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.with_meta(new cljs.core.Symbol(null,"game-component","game-component",-175136358,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"arglists","arglists",1661989754),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"socket","socket",1699668590,null)], null)))], null)),new cljs.core.Symbol(null,"socket","socket",1699668590,null),new cljs.core.Symbol(null,"meta57991","meta57991",602391333,null)], null);
+p3r50na.apps.bookof5rinds.client.game.component.t58356.getBasis = (function (){
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.with_meta(new cljs.core.Symbol(null,"game-component","game-component",-175136358,null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"arglists","arglists",1661989754),cljs.core.list(new cljs.core.Symbol(null,"quote","quote",1377916282,null),cljs.core.list(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"socket","socket",1699668590,null)], null)))], null)),new cljs.core.Symbol(null,"socket","socket",1699668590,null),new cljs.core.Symbol(null,"meta58357","meta58357",-822505846,null)], null);
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.t57990.cljs$lang$type = true;
+p3r50na.apps.bookof5rinds.client.game.component.t58356.cljs$lang$type = true;
 
-p3r50na.apps.bookof5rinds.client.game.component.t57990.cljs$lang$ctorStr = "p3r50na.apps.bookof5rinds.client.game.component/t57990";
+p3r50na.apps.bookof5rinds.client.game.component.t58356.cljs$lang$ctorStr = "p3r50na.apps.bookof5rinds.client.game.component/t58356";
 
-p3r50na.apps.bookof5rinds.client.game.component.t57990.cljs$lang$ctorPrWriter = (function (this__20132__auto__,writer__20133__auto__,opt__20134__auto__){
-return cljs.core._write.call(null,writer__20133__auto__,"p3r50na.apps.bookof5rinds.client.game.component/t57990");
+p3r50na.apps.bookof5rinds.client.game.component.t58356.cljs$lang$ctorPrWriter = (function (this__20132__auto__,writer__20133__auto__,opt__20134__auto__){
+return cljs.core._write.call(null,writer__20133__auto__,"p3r50na.apps.bookof5rinds.client.game.component/t58356");
 });
 
-p3r50na.apps.bookof5rinds.client.game.component.__GT_t57990 = (function p3r50na$apps$bookof5rinds$client$game$component$game_component_$___GT_t57990(game_component__$1,socket__$1,meta57991){
-return (new p3r50na.apps.bookof5rinds.client.game.component.t57990(game_component__$1,socket__$1,meta57991));
+p3r50na.apps.bookof5rinds.client.game.component.__GT_t58356 = (function p3r50na$apps$bookof5rinds$client$game$component$game_component_$___GT_t58356(game_component__$1,socket__$1,meta58357){
+return (new p3r50na.apps.bookof5rinds.client.game.component.t58356(game_component__$1,socket__$1,meta58357));
 });
 
 }
 
-return (new p3r50na.apps.bookof5rinds.client.game.component.t57990(p3r50na$apps$bookof5rinds$client$game$component$game_component,socket,cljs.core.PersistentArrayMap.EMPTY));
+return (new p3r50na.apps.bookof5rinds.client.game.component.t58356(p3r50na$apps$bookof5rinds$client$game$component$game_component,socket,cljs.core.PersistentArrayMap.EMPTY));
 });
 
 //# sourceMappingURL=component.js.map

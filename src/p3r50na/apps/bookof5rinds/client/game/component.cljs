@@ -22,7 +22,7 @@
 (defn setup []
   (q/frame-rate 120)
   {:player (new Player 5 5 10 1)
-   :remote-players [(new Player 30 40 10 2)]
+   :remote-players []
    :bullets []
    :controlls #{} })
 
