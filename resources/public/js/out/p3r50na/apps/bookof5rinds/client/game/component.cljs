@@ -4,69 +4,27 @@
             [om.dom :as dom]
             [quil.core :as q :include-macros true]
             [quil.middleware :as m]
-            [cljs.core.async :refer [put! take! chan <! >! timeout]]))
-
-(enable-console-print!)
-
-
-
-; Game Objects
-(defprotocol GameObject)
-
-(defprotocol Movable)
-
-(defprotocol Static)
-
-(defrecord Player [x y size speed]
-  GameObject
-  Movable)
+            [cljs.core.async :refer [put! take! chan <! >! timeout]]
+            [p3r50na.apps.bookof5rinds.client.game.collision :refer [player-intersects-blocks? player-intersects-boundary?]]
+            [p3r50na.apps.bookof5rinds.client.game.map :refer [block-of-type]]
+            [p3r50na.apps.bookof5rinds.client.game.maps.level1 :refer [level1]]))
 
 
+(defrecord Player [x y size speed])
 
-(def map-matrix [
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :g} {:type :w} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :w} {:type :w} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :w} {:type :w} {:type :g} {:type :g} {:type :g} {:type :w} {:type :g} {:type :g} {:type :g} {:type :w} {:type :w} {:type :w} {:type :g} {:type :g}]
-  [{:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :g} {:type :g} {:type :w} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :w} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g}]
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :w} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :w}]
-  [{:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :g} {:type :w} {:type :w}]
-])
+(def blocksize (:blocksize level1))
+(def map-matrix (:matrix level1))
+(def map-size (:size level1))
 
-(def blocksize (int 20))
-
-(defn map-size [map-matrix blocksize]
-  (let [x (* blocksize (count (first map-matrix)))
-        y (* blocksize (count map-matrix))]
-    [x y]))
+(def walls (block-of-type :w level1))
 
 
-; Rendering
-(defn setup []
+(defn setup [watr]
   (q/frame-rate 60)
   { :player (new Player 5 5 10 2)
     :remote-players [(new Player 30 40 10 2)]
     :controlls #{} })
 
-(def walls
-  (remove nil?
-    (flatten
-      (map-indexed (fn [ydx row]
-        (map-indexed (fn [xdx block]
-          (let [y (* ydx blocksize)
-                x (* xdx blocksize)]
-            (if (= :w (:type block))
-              {:x x :y y}))) row)) map-matrix))))
-
-
-(doseq [wall walls]
-  (println wall))
 
 (defn draw [state]
   (q/background 255)
@@ -82,21 +40,6 @@
     (q/rect x y size size)))
 
 
-(defn comp-intersections [walls player]
-  (for [wall walls]
-    (let [{px :x py :y psize :size} player
-          {wx :x wy :y} wall]
-      (or
-        (> px (+ wx blocksize))
-        (< (+ px psize) wx)
-        (> py (+ wy blocksize))
-        (< (+ py psize) wy)))))
-
-(defn intersects-wall? [state]
-  (let [intersections (comp-intersections walls (:player state))
-        nri (count (filter false? intersections))]
-    (< 0 nri)))
-
 (defn apply-controll [state]
   (if (empty? (:controlls state))
     state
@@ -108,44 +51,53 @@
                                 :a (update-in state [:player :x] - speed)
                                 :d (update-in state [:player :x] + speed)
                                    state)]
-                          (if (intersects-wall? newstate)
+                          (if (or (player-intersects-blocks? (:player newstate) walls blocksize)
+                                  (player-intersects-boundary? (:player newstate) level1))
                             state
                             newstate))) state (:controlls state))]
         newstate))))
 
+
+(defn send-player-state [state]
+  (println "send player state"))
+
+
 (defn cupdate [state]
-  (-> state
-    (apply-controll)))
+  (let [oldstate state
+        newstate (-> state
+          (apply-controll))]
+    (if (not= oldstate newstate)
+      (send-player-state (:player newstate)))
+    newstate))
 
 
 (defn on-key-down [state event]
   (let [keycode (:key event)]
     (update-in state [:controlls] conj keycode)))
 
+
 (defn on-key-up [state]
   (let [keycode (q/key-as-keyword)]
     (update-in state [:controlls] disj keycode)))
 
-(println (map-size map-matrix blocksize))
 
-(q/defsketch hello
+(q/defsketch game-renderer
   :setup setup
   :update cupdate
   :draw draw
   :host "game-canvas"
-  :size (map-size map-matrix blocksize)
+  :size map-size
   :key-pressed on-key-down
   :key-released on-key-up
   :middleware [m/fun-mode])
 
 
-
 ; React Components
-(defn game-component []
+(defn game-component [socket]
   (reify
     om/IDidMount
     (did-mount [this]
-      (hello))
+      (game-renderer))
     om/IRender
     (render [this]
       (dom/div nil

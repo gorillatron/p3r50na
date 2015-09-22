@@ -70,7 +70,7 @@
       (dom/div nil
         (dom/input #js {:onKeyDown #(handle-new-rind-keydown % state owner)})
         (rindidate-list (:rindidates state))
-        (om/build game-component nil)))))
+        (om/build game-component socket)))))
 
 
 (om/root app {}

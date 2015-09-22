@@ -19,6 +19,7 @@
 
 
 (def app-state (atom {
+  :players {}
   :rindidates [
     {:name "Rindiana Jonas"}
     {:name "Rindseeker"}
@@ -33,20 +34,24 @@
     (send! client (write-str {:type "state" :state @app-state}))))
 
 
-(defn create-rind [state new-rind]
+(defn create-rind [state new-rind channel]
   (assoc state :rindidates (conj (:rindidates state) new-rind)))
 
 
-(defn remove-rind [state rind-to-remove]
+(defn remove-rind [state rind-to-remove channel]
   (assoc state :rindidates (remove #(= % rind-to-remove) (:rindidates state))))
 
+(defn update-player-state [state player-state channel]
+  (update-in state [:players channel] player-state)
+  state)
 
-(defn handle-command [command data]
+(defn handle-command [command data channel]
   (doseq []
     (swap! app-state
       (case command
+        "player-state" update-player-state
         "create-rind" create-rind
-        "remove-rind" remove-rind) data)
+        "remove-rind" remove-rind) data channel)
     (broadcast-state)))
 
 
@@ -67,6 +72,6 @@
         (on-receive channel
           (fn [json-data]
             (let [data (read-str json-data :key-fn clojure.core/keyword)]
-              (handle-command (:command data) (:data data))))))))
+              (handle-command (:command data) (:data data) channel)))))))
 
     ))
