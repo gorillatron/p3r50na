@@ -18,41 +18,46 @@
       [:script {:src "/js/bookof5rinds.client.core.js"}]]))})
 
 
-(def app-state (atom {
-  :players {}
-  :rindidates [
-    {:name "Rindiana Jonas"}
-    {:name "Rindseeker"}
-  ]}))
+(def server-state (atom {
+  :players {} }))
 
 
-(def socket-clients (atom {}))
+(defn players-except [except-player]
+  (filter (fn [player] (= except-player player)) (:players @server-state)))
 
 
-(defn broadcast-state []
-  (doseq [client (keys @socket-clients)]
-    (send! client (write-str {:type "state" :state @app-state}))))
+(defn broadcast-event [name data players]
+  (doseq [player players]
+    (send! (:socket player) (write-str {:event name :data data}))))
 
 
-(defn create-rind [state new-rind channel]
-  (assoc state :rindidates (conj (:rindidates state) new-rind)))
+(defn handle-join-game [data socket]
+  (let [{player :player} data
+         player (assoc player :socket socket)]
+    (doseq []
+      (swap! server-state assoc (:name player) player)
+      (broadcast-event "join-game" player (players-except player)))))
 
 
-(defn remove-rind [state rind-to-remove channel]
-  (assoc state :rindidates (remove #(= % rind-to-remove) (:rindidates state))))
+(defn handle-leave-game [data socket]
+  (let [{player :player} data]
+    (doseq []
+      (swap! server-state dissoc (:name player))
+      (broadcast-event "leave-game" player (players-except player)))))
 
-(defn update-player-state [state player-state channel]
-  (update-in state [:players channel] player-state)
-  state)
 
-(defn handle-command [command data channel]
-  (doseq []
-    (swap! app-state
-      (case command
-        "player-state" update-player-state
-        "create-rind" create-rind
-        "remove-rind" remove-rind) data channel)
-    (broadcast-state)))
+(defn handle-update-player-state [data socket] server-state)
+
+
+(defn handle-fire-bullet [data socket] server-state)
+
+
+(defn handle-command [command data socket]
+  (case command
+    "join-game"             (handle-join-game data socket)
+    "leave-game"            (handle-leave-game data socket)
+    "update-player-state"   (handle-update-player-state data socket)
+    "fire-bullet"           (handle-fire-bullet data socket)))
 
 
 (defn router []
@@ -60,18 +65,17 @@
 
     (GET "/" [&args]
       (let [template (get templates :index)]
-      (template &args)))
+        (template &args)))
 
     (GET "/ws" [] (fn [req]
-      (with-channel req channel
-        (swap! socket-clients assoc channel true)
-        (send! channel (write-str {:type "state" :state @app-state }))
-        (on-close channel
+      (with-channel req socket
+        (send! socket (write-str {:type "state" :state @server-state }))
+        (on-close socket
           (fn [status]
             (println "channel closed")))
-        (on-receive channel
+        (on-receive socket
           (fn [json-data]
             (let [data (read-str json-data :key-fn clojure.core/keyword)]
-              (handle-command (:command data) (:data data) channel)))))))
+              (handle-command (:command data) (:data data) socket)))))))
 
     ))

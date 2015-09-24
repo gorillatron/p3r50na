@@ -12,6 +12,11 @@
 
 (defrecord Player [x y size speed])
 
+(def controll-mapping { :w :up
+                        :s :down
+                        :d :right
+                        :a :left })
+
 (def blocksize (:blocksize level1))
 (def map-matrix (:matrix level1))
 (def map-size (:size level1))
@@ -22,7 +27,7 @@
 (defn setup []
   (q/frame-rate 120)
   {:player (new Player 5 5 10 1)
-   :remote-players []
+   :remote-players [(new Player 40 70 10 1)]
    :bullets []
    :controlls #{} })
 
@@ -30,16 +35,25 @@
 (defn draw [state]
   (q/background 255)
   (q/fill 200 200 200)
+
+  (q/stroke 0 0 0)
   (doseq [wall walls]
     (q/rect (:x wall) (:y wall) blocksize blocksize))
+
   (q/fill 255 90 20)
+  (q/stroke 255 90 20)
   (doseq [remote-player (:remote-players state)]
     (let [{x :x y :y size :size} remote-player]
       (q/rect x y size size)))
+
+  (q/fill 130 130 130)
+  (q/stroke 150 150 150)
   (doseq [bullet (:bullets state)]
     (let [{bx :x by :y size :size} bullet]
       (q/rect bx by size size)))
+
   (q/fill 50 120 190)
+  (q/stroke 50 120 190)
   (let [{x :x y :y size :size} (:player state)]
     (q/rect x y size size)))
 
@@ -50,11 +64,11 @@
     (let [{x :x y :y speed :speed} (:player state)]
       (let [newstate (reduce (fn [state controll]
                         (let [newstate (case controll
-                                :w (update-in state [:player :y] - speed)
-                                :s (update-in state [:player :y] + speed)
-                                :a (update-in state [:player :x] - speed)
-                                :d (update-in state [:player :x] + speed)
-                                   state)]
+                                :up    (update-in state [:player :y] - speed)
+                                :down  (update-in state [:player :y] + speed)
+                                :left  (update-in state [:player :x] - speed)
+                                :right (update-in state [:player :x] + speed)
+                                        state)]
                           (if (or (rect-intersects-blocks? (:player newstate) walls blocksize)
                                   (rect-intersects-boundary? (:player newstate) level1))
                             state
@@ -76,31 +90,18 @@
       (assoc bullet :x nx :y ny)))
 
 
-(defn bullet-hit-player [bullet]
-  (= nil (:has-hit-player bullet)))
-
 (defn update-bullet-locations [state]
   (let [new-bullets (->> (:bullets state)
-      (filter bullet-hit-player)
       (map update-bullet-location)
       (filter (fn [bullet]
         (not (or (rect-intersects-blocks? bullet walls blocksize)
                  (rect-intersects-boundary? bullet level1))))))]
     (assoc state :bullets new-bullets)))
 
-(defn player-bullet-hits [players bullets]
-  (doseq [player players]
-    (doseq [bullet bullets])))
-
-(defn apply-player-bullet-hits [state]
-  (let [bullethits (player-bullet-hits (:remote-players state) (:bullets state))]
-    (println bullethits))
-  state)
 
 (defn cupdate [state]
   (let [oldstate state
         newstate (-> state
-          (apply-player-bullet-hits)
           (update-bullet-locations)
           (apply-controll))]
     newstate))
@@ -108,12 +109,12 @@
 
 (defn on-key-down [state event]
   (let [keycode (:key event)]
-    (update-in state [:controlls] conj keycode)))
+    (update-in state [:controlls] conj (keycode controll-mapping))))
 
 
 (defn on-key-up [state]
   (let [keycode (q/key-as-keyword)]
-    (update-in state [:controlls] disj keycode)))
+    (update-in state [:controlls] disj (keycode controll-mapping))))
 
 
 (defn on-mouse-clicked [state event]
