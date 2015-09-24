@@ -36,28 +36,26 @@
          player (assoc player :socket socket)]
     (doseq []
       (swap! server-state assoc (:name player) player)
-      (broadcast-event "join-game" player (players-except player)))))
+      (broadcast-event "player-update-state" player (players-except player)))))
 
 
 (defn handle-leave-game [data socket]
   (let [{player :player} data]
     (doseq []
       (swap! server-state dissoc (:name player))
-      (broadcast-event "leave-game" player (players-except player)))))
+      (broadcast-event "player-update-state" player (players-except player)))))
 
 
-(defn handle-update-player-state [data socket] server-state)
-
-
-(defn handle-fire-bullet [data socket] server-state)
+(defn handle-player-state-report [data socket]
+  (let [{player :player} data]
+    (doseq []
+      (swap! server-state assoc (:name player) player)
+      (broadcast-event "player-update-state" player (players-except player)))))
 
 
 (defn handle-command [command data socket]
   (case command
-    "join-game"             (handle-join-game data socket)
-    "leave-game"            (handle-leave-game data socket)
-    "update-player-state"   (handle-update-player-state data socket)
-    "fire-bullet"           (handle-fire-bullet data socket)))
+    "player-state-report" (handle-player-state-report data socket)))
 
 
 (defn router []
