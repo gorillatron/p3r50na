@@ -19,43 +19,33 @@
 
 
 (def server-state (atom {
-  :players {} }))
+  :clients {} }))
+
+(defn sockets-except [socket]
+  (let [sockets (keys (:clients @server-state))]
+    (filter #(not= % socket) sockets)))
 
 
-(defn players-except [except-player]
-  (filter (fn [player] (= except-player player)) (:players @server-state)))
-
-
-(defn broadcast-event [name data players]
-  (doseq [player players]
-    (send! (:socket player) (write-str {:event name :data data}))))
-
-
-(defn handle-join-game [data socket]
-  (let [{player :player} data
-         player (assoc player :socket socket)]
-    (doseq []
-      (swap! server-state assoc (:name player) player)
-      (broadcast-event "player-update-state" player (players-except player)))))
-
-
-(defn handle-leave-game [data socket]
-  (let [{player :player} data]
-    (doseq []
-      (swap! server-state dissoc (:name player))
-      (broadcast-event "player-update-state" player (players-except player)))))
+(defn broadcast-event [name data sockets]
+  (doseq [socket sockets]
+    (send! socket (write-str {:event name :data data}))))
 
 
 (defn handle-player-state-report [data socket]
   (let [{player :player} data]
     (doseq []
-      (swap! server-state assoc (:name player) player)
-      (broadcast-event "player-update-state" player (players-except player)))))
+      (swap! server-state assoc-in [:clients socket] player)
+      (broadcast-event "player-update-state" player (sockets-except socket)))))
 
+(defn handle-player-fired-bullet [data socket]
+  (let [{bullet :bullet} data]
+    (doseq []
+      (broadcast-event "player-fired-bullet" bullet (sockets-except socket)))))
 
 (defn handle-command [command data socket]
   (case command
-    "player-state-report" (handle-player-state-report data socket)))
+    "player-state-report"  (handle-player-state-report data socket)
+    "player-fired-bullet"  (handle-player-fired-bullet data socket)))
 
 
 (defn router []
@@ -67,6 +57,7 @@
 
     (GET "/ws" [] (fn [req]
       (with-channel req socket
+        (swap! server-state assoc-in [:clients socket] {})
         (send! socket (write-str {:type "state" :state @server-state }))
         (on-close socket
           (fn [status]

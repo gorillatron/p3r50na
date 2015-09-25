@@ -10,7 +10,8 @@
             [p3r50na.apps.bookof5rinds.client.game.maps.level1 :refer [level1]]))
 
 
-(defrecord Player [x y size speed])
+
+(defrecord Player [name x y size speed])
 
 (def controll-mapping { :w :up
                         :s :down
@@ -23,12 +24,39 @@
 
 (def walls (block-of-type :w level1))
 
+(def socket
+  (js/WebSocket. "ws://localhost:8080/book-of-5-rinds/ws"))
+
+(defn rnd-string
+        ([] (rnd-string 8))
+        ([n]
+           (let [chars (map char (range 33 127))
+                 rstr (take n (repeatedly #(rand-nth chars)))]
+             (reduce str rstr))))
+
+(def namo (rnd-string))
+
+(def remote-players (atom {}))
+(def remote-player-bullets (atom []))
+
+(defn remote-player-update [player]
+  (swap! remote-players assoc (:name player) player))
+
+(defn remote-player-fire-bullet [bullet]
+  (swap! remote-player-bullets conj bullet))
+
+(set! (.-onmessage socket)
+  (fn [e]
+    (let [event (js->clj (.parse js/JSON (.-data e)) :keywordize-keys true)]
+      (case (:event event)
+        "player-update-state"  (remote-player-update (:data event))
+        "player-fired-bullet"  (remote-player-fire-bullet (:data event))))))
 
 (defn setup []
-  (q/frame-rate 120)
-  {:player (new Player 5 5 10 1)
-   :remote-players []
+  (q/frame-rate 60)
+  {:player (new Player namo 5 5 10 2)
    :bullets []
+   :remote-bullets []
    :controlls #{} })
 
 
@@ -42,20 +70,32 @@
 
   (q/fill 255 90 20)
   (q/stroke 255 90 20)
-  (doseq [remote-player (:remote-players state)]
+  (doseq [[name remote-player] @remote-players]
     (let [{x :x y :y size :size} remote-player]
       (q/rect x y size size)))
 
-  (q/fill 130 130 130)
-  (q/stroke 150 150 150)
-  (doseq [bullet (:bullets state)]
+  (doseq [bullet (:remote-bullets state)]
     (let [{bx :x by :y size :size} bullet]
       (q/rect bx by size size)))
+
 
   (q/fill 50 120 190)
   (q/stroke 50 120 190)
   (let [{x :x y :y size :size} (:player state)]
-    (q/rect x y size size)))
+    (q/rect x y size size))
+
+  (doseq [bullet (:bullets state)]
+    (let [{bx :x by :y size :size} bullet]
+      (q/rect bx by size size))))
+
+
+(defn send-player-state-report [player]
+  (.send socket
+    (js/JSON.stringify (clj->js { :command "player-state-report" :data {:player player} }))))
+
+(defn send-player-fired-bullet [bullet]
+  (.send socket
+    (js/JSON.stringify (clj->js { :command "player-fired-bullet" :data {:bullet bullet} }))))
 
 
 (defn apply-controll [state]
@@ -73,7 +113,10 @@
                                   (rect-intersects-boundary? (:player newstate) level1))
                             state
                             newstate))) state (:controlls state))]
-        newstate))))
+        (doseq []
+          (if (not (= newstate state))
+            (send-player-state-report (:player newstate)))
+          newstate)))))
 
 
 
@@ -89,21 +132,27 @@
         ny (+ ym ly)]
       (assoc bullet :x nx :y ny)))
 
-
-(defn update-bullet-locations [state]
-  (let [new-bullets (->> (:bullets state)
+(defn update-bullets [old-bullets]
+  (->> old-bullets
       (map update-bullet-location)
       (filter (fn [bullet]
         (not (or (rect-intersects-blocks? bullet walls blocksize)
-                 (rect-intersects-boundary? bullet level1))))))]
-    (assoc state :bullets new-bullets)))
+                 (rect-intersects-boundary? bullet level1)))))))
+
+(defn update-player-bullet-locations [state]
+  (assoc state :bullets (update-bullets (:bullets state))))
+
+(defn update-remote-player-bullet-locations [state]
+  (assoc state :remote-bullets (update-bullets (:remote-bullets state))))
 
 
 (defn cupdate [state]
   (let [oldstate state
         newstate (-> state
-          (update-bullet-locations)
+          (update-remote-player-bullet-locations)
+          (update-player-bullet-locations)
           (apply-controll))]
+    (reset! remote-player-bullets [])
     newstate))
 
 
@@ -120,8 +169,10 @@
 (defn on-mouse-clicked [state event]
   (let [{mx :x my :y} event
         {px :x py :y ps :size} (:player state)
-        start [(+ px (/ ps 2)) (+ py (/ ps 2))]]
-    (update-in state [:bullets] conj {:x (get start 0) :y (get start 1) :start start :goal [mx my] :speed 1.4 :size 2})))
+        start [(+ px (/ ps 2)) (+ py (/ ps 2))]
+        bullet {:x (get start 0) :y (get start 1) :start start :goal [mx my] :speed 2 :size 2 :fired-by (:player state)}]
+    (send-player-fired-bullet bullet)
+    (update-in state [:bullets] conj bullet)))
 
 
 (q/defsketch game-renderer
@@ -137,7 +188,7 @@
 
 
 ; React Components
-(defn game-component [socket]
+(defn game-component []
   (reify
     om/IDidMount
     (did-mount [this]
