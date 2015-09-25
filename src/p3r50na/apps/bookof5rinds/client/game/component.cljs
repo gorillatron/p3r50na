@@ -20,10 +20,7 @@
                         :d :right
                         :a :left })
 
-(def socket
-  (js/WebSocket. "ws://localhost:8080/book-of-5-rinds/ws"))
-
-(def state (atom { :player (new Player "NAME" 5 5 10 2)
+(def state (atom { :player (new Player "gorillatron" 5 5 10 2)
                    :bullets []
                    :controlls #{}
                    :map level1 }))
@@ -31,13 +28,12 @@
 (def game-loop (create-loop @state))
 (def controller (:controller game-loop))
 
-(go (while true
-  (let [newstate (<! (:render-chan game-loop))]
-    (reset! state newstate))))
 
 (defn setup []
-  (q/frame-rate 60))
-
+  (q/frame-rate 60)
+  (go (while true
+    (let [newstate (<! (:render-chan game-loop))]
+      (reset! state newstate)))))
 
 (defn draw []
   (let [state @state]
@@ -82,7 +78,6 @@
   :mouse-clicked on-mouse-clicked
   :key-pressed on-key-down
   :key-released on-key-up)
-
 
 
 ; React Components
