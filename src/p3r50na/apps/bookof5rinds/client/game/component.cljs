@@ -7,6 +7,7 @@
             [cljs.core.async :refer [put! take! chan <! >! timeout]]
             [p3r50na.apps.bookof5rinds.client.game.collision :refer [rect-intersects-blocks? rect-intersects-boundary? intersects?]]
             [p3r50na.apps.bookof5rinds.client.game.map :refer [block-of-type]]
+            [p3r50na.apps.bookof5rinds.client.game.engine :refer [create-loop]]
             [p3r50na.apps.bookof5rinds.client.game.maps.level1 :refer [level1]]))
 
 
@@ -139,20 +140,15 @@
         (not (or (rect-intersects-blocks? bullet walls blocksize)
                  (rect-intersects-boundary? bullet level1)))))))
 
-(defn update-player-bullet-locations [state]
+(defn update-bullet-locations [state]
   (assoc state :bullets (update-bullets (:bullets state))))
-
-(defn update-remote-player-bullet-locations [state]
-  (assoc state :remote-bullets (update-bullets (:remote-bullets state))))
 
 
 (defn cupdate [state]
   (let [oldstate state
         newstate (-> state
-          (update-remote-player-bullet-locations)
-          (update-player-bullet-locations)
+          (update-bullet-locations)
           (apply-controll))]
-    (reset! remote-player-bullets [])
     newstate))
 
 
@@ -186,6 +182,12 @@
   :key-released on-key-up
   :middleware [m/fun-mode])
 
+(def game-loop (create-loop {:player (new Player namo 5 5 10 2)
+                             :bullets []
+                             :controlls #{}
+                             :map level1 }))
+(go (while true
+  (println (:player (<! (:render-chan game-loop))))))
 
 ; React Components
 (defn game-component []
