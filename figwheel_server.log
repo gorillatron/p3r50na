@@ -7400,3 +7400,565 @@ notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\com
 [0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
 [32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.433 seconds.[0m
 notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.577 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.58 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.587 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.54 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.628 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.364 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.395 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.497 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/namo at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/namo at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 38 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 39 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 39 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 39 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 39 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/remote-players at line 43 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 109 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 109 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 109 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 109 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 128 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 133 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 150 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 150 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 150 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.654 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/namo at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/namo at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 38 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/remote-players at line 43 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 109 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 109 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 109 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 109 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 128 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 133 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 150 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 150 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 150 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.612 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/namo at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/namo at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 38 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/remote-players at line 43 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 109 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 109 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 109 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 109 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 128 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 133 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 150 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 150 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 150 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.631 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/namo at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/namo at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 38 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/remote-players at line 43 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/blocksize at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 97 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 102 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 116 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 116 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 116 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 119 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 119 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 119 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.61 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/namo at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/namo at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 38 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/remote-players at line 43 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 68 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 73 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/send-player-fired-bullet at line 81 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 87 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 87 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 87 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 90 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 90 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 90 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.587 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/namo at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/namo at line 27 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 38 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/remote-players at line 43 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 63 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 68 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/send-player-fired-bullet at line 76 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.547 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/namo at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 35 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/remote-players at line 40 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 60 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 65 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/send-player-fired-bullet at line 73 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 79 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 79 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 79 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.522 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/Player at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/namo at line 18 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 35 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/remote-players at line 40 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 60 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 65 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/send-player-fired-bullet at line 73 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 79 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 79 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 79 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.657 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/namo at line 20 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 37 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/remote-players at line 42 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 62 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 67 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/send-player-fired-bullet at line 75 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 81 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 81 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 81 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 84 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 84 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 84 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.577 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 38 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/remote-players at line 43 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 63 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 68 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/send-player-fired-bullet at line 76 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.564 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 38 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/remote-players at line 43 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 63 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 68 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/send-player-fired-bullet at line 76 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.789 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\map.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/walls at line 38 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/remote-players at line 43 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 63 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 68 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/send-player-fired-bullet at line 76 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.641 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/remote-players at line 43 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 63 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 68 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/send-player-fired-bullet at line 76 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.573 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/remote-players at line 43 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 63 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 68 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/send-player-fired-bullet at line 76 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.793 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\map.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/remote-players at line 43 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 63 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 68 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/send-player-fired-bullet at line 76 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 82 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.564 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 52 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 57 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/send-player-fired-bullet at line 65 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 71 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 71 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 71 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 74 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 74 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 74 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.542 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 52 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/controll-mapping at line 57 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/send-player-fired-bullet at line 65 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 71 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 71 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 71 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 74 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 74 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 74 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.607 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/send-player-fired-bullet at line 70 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 76 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 76 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 76 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 79 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 79 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 79 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.49 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 75 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 75 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/cupdate at line 75 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 78 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 78 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 78 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.498 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 77 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 77 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/map-size at line 77 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.442 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.442 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.378 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.514 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.634 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.425 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.422 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/<!! at line 38 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.431 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.387 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+ERROR: Unmatched delimiter ) on file C:\cygwin64\progg\p3r50na\src\p3r50na\apps\bookof5rinds\client\game\component.cljs, line 29, column 33
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+ERROR: Unmatched delimiter } on file C:\cygwin64\progg\p3r50na\src\p3r50na\apps\bookof5rinds\client\game\component.cljs, line 31, column 36
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.379 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.49 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+ERROR: EOF while reading, starting at line 66 and column 1 on file C:\cygwin64\progg\p3r50na\src\p3r50na\apps\bookof5rinds\client\game\component.cljs, line 101, column 1
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/event at line 67 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.426 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/event at line 68 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.445 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/event at line 68 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.485 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.42 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.38 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.391 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.4 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/addEventListener at line 60 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/addEventListener at line 60 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.439 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.437 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.435 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.422 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.427 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.415 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.426 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: on-key-down at line 62 is being replaced at line 66 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/on-key-up at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/on-key-up at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+WARNING: Use of undeclared Var p3r50na.apps.bookof5rinds.client.game.component/on-key-up at line 85 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.456 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.425 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.454 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.561 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.539 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.454 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.507 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.462 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.432 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.428 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.495 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+ERROR: Invalid token: :keys: on file C:\cygwin64\progg\p3r50na\src\p3r50na\apps\bookof5rinds\client\game\component.cljs, line 28, column 39
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+ERROR: Invalid token: :keys: on file C:\cygwin64\progg\p3r50na\src\p3r50na\apps\bookof5rinds\client\game\component.cljs, line 28, column 39
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+ERROR: Invalid token: :keys: on file C:\cygwin64\progg\p3r50na\src\p3r50na\apps\bookof5rinds\client\game\component.cljs, line 28, column 39
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.476 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[31mCompiling "resources/public/js/bookof5rinds.client.core.js" failed.[0m
+ERROR: Map literal must contain an even number of forms on file C:\cygwin64\progg\p3r50na\src\p3r50na\apps\bookof5rinds\client\game\component.cljs, line 28, column 48
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.494 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+WARNING: Wrong number of args (2) passed to cljs.core/update-in at line 70 src\p3r50na\apps\bookof5rinds\client\game\component.cljs
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.503 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.462 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.495 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.432 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.484 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.505 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.489 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.535 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.439 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.513 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.445 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.445 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.566 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.436 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.559 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.512 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.468 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.551 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.539 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.446 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.479 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.573 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.52 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.54 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.517 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js

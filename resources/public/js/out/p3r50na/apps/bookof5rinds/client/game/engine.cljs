@@ -6,21 +6,10 @@
             [quil.middleware :as m]
             [cljs.core.async :refer [put! take! chan <! >! timeout]]
             [p3r50na.apps.bookof5rinds.client.game.collision :refer [rect-intersects-blocks? rect-intersects-boundary? intersects?]]
-            [p3r50na.apps.bookof5rinds.client.game.map :refer [block-of-type]]
+            [p3r50na.apps.bookof5rinds.client.game.map :refer [block-of-type walls]]
             [p3r50na.apps.bookof5rinds.client.game.maps.level1 :refer [level1]]))
 
 
-
-(defrecord GameState [player remote-players bullets map])
-
-(defrecord Player [name x y size speed])
-
-(def controll-mapping { :w :up
-                        :s :down
-                        :d :right
-                        :a :left })
-
-(defn- walls [state] (block-of-type :w (:matrix (:map state))))
 
 (defn- apply-controll [state]
   (if (empty? (:controlls state))
@@ -33,11 +22,12 @@
                                 :left  (update-in state [:player :x] - speed)
                                 :right (update-in state [:player :x] + speed)
                                         state)]
-                          (if (or (rect-intersects-blocks? (:player newstate) (walls state) (:blocksize (:map state)))
+                          (if (or (rect-intersects-blocks? (:player newstate) (walls (:map state)) (:blocksize (:map state)))
                                   (rect-intersects-boundary? (:player newstate) level1))
                             state
                             newstate))) state (:controlls state))]
         newstate))))
+
 
 (defn- update-bullet-location [bullet]
   (let [{speed :speed [bx by] :start lx :x ly :y [gx gy] :goal} bullet
@@ -51,15 +41,18 @@
         ny (+ ym ly)]
       (assoc bullet :x nx :y ny)))
 
+
 (defn- update-bullets [state]
   (->> (:bullets state)
       (map update-bullet-location)
       (filter (fn [bullet]
-        (not (or (rect-intersects-blocks? bullet (walls state) (:blocksize (:map state)))
+        (not (or (rect-intersects-blocks? bullet (walls (:map state)) (:blocksize (:map state)))
                  (rect-intersects-boundary? bullet level1)))))))
+
 
 (defn- update-bullet-locations [state]
   (assoc state :bullets (update-bullets state)))
+
 
 (defn- update-state [state]
   (let [oldstate state
@@ -68,11 +61,15 @@
           (apply-controll))]
     newstate))
 
+
 (defn create-loop [state]
-  (let [render-chan (chan) ]
+  (let [render-chan (chan)
+        controlls (atom #{})]
     (go (loop [oldstate state]
-      (let [newstate (update-state oldstate)]
+      (let [newstate (update-state oldstate)
+            newstate (assoc newstate :controlls @controlls)]
         (>! render-chan newstate)
-        (<! (timeout 1000))
+        (<! (timeout (/ 1000 60)))
         (recur newstate))))
-    { :render-chan render-chan }))
+    { :render-chan render-chan
+      :controller (fn [mutator] (reset! controlls (mutator @controlls))) }))

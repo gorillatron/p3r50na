@@ -21,6 +21,8 @@
               (if (= type (:type block))
                 {:x x :y y}))) row)) matrix)))))
 
+(defn walls [map] (block-of-type :w map))
+
 
 (defn construct-map [blocksize matrix]
   (let [map (new Map blocksize matrix)]
