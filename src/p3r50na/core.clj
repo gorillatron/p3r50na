@@ -29,7 +29,7 @@
   (GET "/" [] "show-landing-page yooo")
   (context "/book-of-5-rinds" []
     (bookof5rinds/router))
-  (route/resources "/")
+  (route/resources "/") ;; yeep
   (route/not-found "<p>Page not found.</p>")) ;; all other, return 404
 
 

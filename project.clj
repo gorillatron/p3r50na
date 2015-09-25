@@ -1,6 +1,6 @@
 (defproject p3r50na "0.1.0-SNAPSHOT"
 
-  :description "FIXME: write description"
+  :description "omg wtf"
 
   :url "http://example.com/FIXME"
 
