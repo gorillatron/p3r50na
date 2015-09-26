@@ -11,8 +11,8 @@
 
 
 
-(defn- apply-controll [state]
-  (if (empty? (:controlls state))
+(defn- apply-controlls [state controlls]
+  (if (empty? controlls)
     state
     (let [{x :x y :y speed :speed} (:player state)]
       (let [newstate (reduce (fn [state controll]
@@ -25,7 +25,7 @@
                           (if (or (rect-intersects-blocks? (:player newstate) (walls (:map state)) (:blocksize (:map state)))
                                   (rect-intersects-boundary? (:player newstate) level1))
                             state
-                            newstate))) state (:controlls state))]
+                            newstate))) state controlls)]
         newstate))))
 
 
@@ -44,32 +44,49 @@
 
 (defn- update-bullets [state]
   (->> (:bullets state)
-      (map update-bullet-location)
-      (filter (fn [bullet]
-        (not (or (rect-intersects-blocks? bullet (walls (:map state)) (:blocksize (:map state)))
-                 (rect-intersects-boundary? bullet level1)))))))
+       (map update-bullet-location)
+       (filter (fn [bullet]
+         (not (or (rect-intersects-blocks? bullet (walls (:map state)) (:blocksize (:map state)))
+                  (rect-intersects-boundary? bullet level1)))))))
 
 
 (defn- update-bullet-locations [state]
   (assoc state :bullets (update-bullets state)))
 
 
-(defn- update-state [state]
+(defn- update-objects [state]
   (let [oldstate state
         newstate (-> state
-          (update-bullet-locations)
-          (apply-controll))]
+          (update-bullet-locations))]
     newstate))
 
 
-(defn create-loop [state]
-  (let [render-chan (chan)
-        controlls (atom #{})]
-    (go (loop [oldstate state]
-      (let [newstate (update-state oldstate)
-            newstate (assoc newstate :controlls @controlls)]
-        (>! render-chan newstate)
-        (<! (timeout (/ 1000 60)))
-        (recur newstate))))
-    { :render-chan render-chan
+(defn- player-fired-bullet [state event]
+  (let [{mx :mx my :my} event
+        {px :x py :y ps :size} (:player state)
+        start [(+ px (/ ps 2)) (+ py (/ ps 2))]
+        bullet {:x (get start 0) :y (get start 1) :start start :goal [mx my] :speed 1.3 :size 2 :fired-by (:player state)}]
+    (update-in state [:bullets] conj bullet)))
+
+
+(defn- apply-events [state events]
+  (reduce (fn [state event]
+    (case (:name event)
+      "player-fired-bullet" (player-fired-bullet state event))) state events))
+
+
+(defn create-simulation [state]
+  (let [oldstate (atom state)
+        controlls (atom #{})
+        events (atom [])]
+    {
+      :next-frame (fn []
+        (let [newstate (apply-events @oldstate @events)
+              newstate (apply-controlls newstate @controlls)
+              newstate (update-objects newstate)]
+          (doseq []
+            (reset! events [])
+            (reset! oldstate newstate)
+            newstate)))
+      :add-event (fn [event] (swap! events conj event))
       :controller (fn [mutator] (reset! controlls (mutator @controlls))) }))

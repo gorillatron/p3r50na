@@ -7,7 +7,7 @@
             [cljs.core.async :refer [put! take! chan <! >! timeout]]
             [p3r50na.apps.bookof5rinds.client.game.collision :refer [rect-intersects-blocks? rect-intersects-boundary? intersects?]]
             [p3r50na.apps.bookof5rinds.client.game.map :refer [block-of-type walls map-size]]
-            [p3r50na.apps.bookof5rinds.client.game.engine :refer [create-loop]]
+            [p3r50na.apps.bookof5rinds.client.game.engine :refer [create-simulation]]
             [p3r50na.apps.bookof5rinds.client.game.maps.level1 :refer [level1]]))
 
 
@@ -20,28 +20,30 @@
                         :d :right
                         :a :left })
 
-(def state (atom { :player (new Player "gorillatron" 5 5 10 2)
-                   :bullets []
-                   :controlls #{}
-                   :map level1 }))
+(def game-simulation (create-simulation { :player (new Player "gorillatron" 5 5 10 2)
+                                          :bullets []
+                                          :controlls #{}
+                                          :map level1 }))
 
-(def game-loop (create-loop @state))
-(def controller (:controller game-loop))
+(def next-frame (:next-frame game-simulation))
+(def controller (:controller game-simulation))
+(def add-event (:add-event game-simulation))
 
 
 (defn setup []
-  (q/frame-rate 60)
-  (go (while true
-    (let [newstate (<! (:render-chan game-loop))]
-      (reset! state newstate)))))
+  (q/smooth)
+  (q/frame-rate 60))
 
 (defn draw []
-  (let [state @state]
+  (let [state (next-frame)
+        bullets (:bullets state)
+        walls (walls (:map state))]
+
     (q/background 255)
     (q/fill 200 200 200)
 
     (q/stroke 0 0 0)
-    (doseq [wall (walls (:map state))]
+    (doseq [wall walls]
       (q/rect (:x wall) (:y wall) 20 20))
 
     (q/fill 50 120 190)
@@ -49,25 +51,29 @@
     (let [{x :x y :y size :size} (:player state)]
       (q/rect x y size size))
 
-    (doseq [bullet (:bullets state)]
+    ; (js/console.time "doseq")
+
+    (doseq [bullet bullets]
       (let [{bx :x by :y size :size} bullet]
-        (q/rect bx by size size)))))
+        (q/rect bx by size size)))
 
+    ; (js/console.timeEnd "doseq")
 
-(defn on-key-down [event]
+))
+
+(defn on-key-down []
   (controller #(conj % ((q/key-as-keyword) controll-mapping))))
 
 
-(defn on-key-up [event]
+(defn on-key-up []
   (controller #(disj % ((q/key-as-keyword) controll-mapping))))
 
 
-(defn on-mouse-clicked [state event]
-  (let [{mx :x my :y} event
-        {px :x py :y ps :size} (:player state)
-        start [(+ px (/ ps 2)) (+ py (/ ps 2))]
-        bullet {:x (get start 0) :y (get start 1) :start start :goal [mx my] :speed 2 :size 2 :fired-by (:player state)}]
-    (controller #(conj % :bullet-fired))))
+(defn on-mouse-clicked []
+  (let [mx (q/mouse-x)
+        my (q/mouse-y)
+        event {:name "player-fired-bullet" :mx mx :my my}]
+    (add-event event)))
 
 
 (q/defsketch game-renderer
