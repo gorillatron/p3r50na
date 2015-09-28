@@ -47,12 +47,16 @@
       (assoc bullet :x nx :y ny)))
 
 
+(defn bullet-intersects? [state bullet]
+  (not (or (rect-intersects-blocks? bullet (wallsm (:map state)) (:blocksize (:map state)))
+           (rect-intersects-boundary? bullet (:map state)))))
+
+
 (defn- update-bullets [state]
   (->> (:bullets state)
        (mapv update-bullet-location)
-       (filterv (fn [bullet]
-         (not (or (rect-intersects-blocks? bullet (wallsm (:map state)) (:blocksize (:map state)))
-                  (rect-intersects-boundary? bullet (:map state))))))))
+       (filterv (partial bullet-intersects? state))))
+
 
 (defn- update-bullet-locations [state]
   (assoc state :bullets (update-bullets state)))
@@ -73,20 +77,34 @@
     (update-in state [:bullets] conj bullet)))
 
 
+(defn- remote-player-updated [state event]
+  (let [{remote-player :player} event]
+    (assoc-in state [:remote-players (:name remote-player)] remote-player)))
+
+
 (defn- apply-events [state events]
   (reduce (fn [state event]
     (case (:name event)
+      "remote-player-update" (remote-player-updated state event)
       "player-fired-bullet" (player-fired-bullet state event))) state events))
 
 
+(defn- create-initial-state [state]
+  (merge {:player nil
+          :level nil
+          :bullets []
+          :remote-players {}
+          :remote-bullets []
+          :controlls #{}} state))
+
+
 (defn create-simulation [state]
-  (let [initial-state (merge state {:bullets []
-                                    :controlls #{}})
-        old-state (atom initial-state)
-        controlls (atom #{})
-        events (atom [])]
-    {
-      :next-frame (fn []
+  (let [initial-state (create-initial-state state)
+        old-state     (atom initial-state)
+        controlls     (atom #{})
+        events        (atom [])]
+
+    {:next-frame (fn []
         (let [new-state (apply-events @old-state @events)
               new-state (apply-controlls new-state @controlls)
               new-state (update-objects new-state)]

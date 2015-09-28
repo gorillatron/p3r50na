@@ -34,6 +34,8 @@
 (defn draw []
   (let [state (next-frame)
         bullets (:bullets state)
+        remote-players (vals (:remote-players state))
+        remote-bullets (:remote-bullets state)
         walls (walls (:map state))]
 
     (q/background 255)
@@ -43,6 +45,7 @@
     (doseq [wall walls]
       (q/rect (:x wall) (:y wall) 20 20))
 
+    ; PLayer and player local objects
     (q/fill 50 120 190)
     (q/stroke 50 120 190)
     (let [{x :x y :y size :size} (:player state)]
@@ -52,6 +55,16 @@
       (let [{bx :x by :y size :size} bullet]
         (q/rect bx by size size)))
 
+    ; Remote players and objects
+    (q/fill 200 30 30)
+    (q/stroke 200 30 30)
+    (doseq [remote-player remote-players]
+      (let [{x :x y :y size :size} remote-player]
+        (q/rect x y size size)))
+
+    (doseq [bullet remote-bullets]
+      (let [{bx :x by :y size :size} bullet]
+        (q/rect bx by size size)))
 ))
 
 (defn on-key-down []

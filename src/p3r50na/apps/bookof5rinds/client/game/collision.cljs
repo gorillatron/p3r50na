@@ -1,7 +1,6 @@
 (ns p3r50na.apps.bookof5rinds.client.game.collision)
 
 
-
 (defn intersects? [rect-a rect-b]
   (let [{ax :x ay :y asize :size} rect-a
         {bx :x by :y bsize :size} rect-b]
