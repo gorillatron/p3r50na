@@ -22,6 +22,14 @@
     (< 0 nri)))
 
 
+(defn rect-intersects-rects? [rect rects]
+  (let [intersections (for [rect-cand rects]
+    (intersects? rect rect-cand))
+        nri (count (filter false? intersections))]
+    (< 0 nri)))
+
+
+
 (defn rect-intersects-boundary? [rect map]
   (let [{px :x py :y psize :size} rect
         [mw mh] (:size map)]

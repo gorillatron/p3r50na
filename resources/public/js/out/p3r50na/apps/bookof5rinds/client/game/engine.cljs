@@ -4,9 +4,8 @@
             [om.dom :as dom]
             [quil.core :as q :include-macros true]
             [quil.middleware :as m]
-            [wagjo.data.array :as arr]
             [cljs.core.async :refer [put! take! chan <! >! timeout]]
-            [p3r50na.apps.bookof5rinds.client.game.collision :refer [rect-intersects-blocks? rect-intersects-boundary? intersects?]]
+            [p3r50na.apps.bookof5rinds.client.game.collision :refer [rect-intersects-blocks? rect-intersects-boundary? intersects? rect-intersects-rects?]]
             [p3r50na.apps.bookof5rinds.client.game.level :refer [block-of-type walls]]))
 
 
@@ -48,7 +47,8 @@
 
 
 (defn bullet-intersects? [state bullet]
-  (not (or (rect-intersects-blocks? bullet (wallsm (:map state)) (:blocksize (:map state)))
+  (not (or (rect-intersects-rects? bullet (:remote-players state))
+           (rect-intersects-blocks? bullet (wallsm (:map state)) (:blocksize (:map state)))
            (rect-intersects-boundary? bullet (:map state)))))
 
 
@@ -76,7 +76,7 @@
         start [(+ px (/ ps 2)) (+ py (/ ps 2))]]
     {:x (get start 0)
      :y (get start 1)
-     :fired-by (:player state)
+     :fired-by player
      :start start
      :goal [mx my]
      :speed 1.3
@@ -109,7 +109,6 @@
 (defn- create-initial-state [state]
   (merge {:player nil
           :level nil
-          :hits-taken []
           :bullets []
           :remote-players {}
           :remote-bullets []
@@ -133,7 +132,7 @@
         {hits false misses true} (group-by (partial intersects? player) remote-bullets)]
       (-> state
         (assoc :remote-bullets misses)
-        (update :hits-taken concat hits))))
+        (update-in [:player :hp] - (* 4 (count hits))))))
 
 
 (defn create-simulation [state]
@@ -146,8 +145,8 @@
     {:next-frame (fn []
         (let [new-state (apply-events @old-state @events)
               new-state (apply-controlls new-state @controlls)
-              new-state (update-objects new-state)
-              new-state (take-hits new-state)]
+              new-state (take-hits new-state)
+              new-state (update-objects new-state)]
           (doseq []
             (send-updates! update-channel @old-state new-state @events)
             (reset! events [])

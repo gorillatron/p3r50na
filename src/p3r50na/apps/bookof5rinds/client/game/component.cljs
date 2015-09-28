@@ -12,14 +12,14 @@
 
 (defrecord GameState [player remote-players bullets map])
 
-(defrecord Player [name x y size speed])
+(defrecord Player [name x y size speed hp])
 
 (def controll-mapping { :w :up
                         :s :down
                         :d :right
                         :a :left })
 
-(def game-simulation (create-simulation { :player (new Player (str "gorilla" (rand 100)) (rand 100) (rand 100) 10 1)
+(def game-simulation (create-simulation { :player (new Player (str "gorilla" (rand 100)) (rand 100) (rand 100) 10 1 150)
                                           :map level1 }))
 
 (def next-frame (:next-frame game-simulation))
@@ -43,15 +43,15 @@
 
 (defn draw []
   (let [state (next-frame)
+        player (:player state)
         bullets (:bullets state)
         remote-players (vals (:remote-players state))
         remote-bullets (:remote-bullets state)
-        hits-taken-count (count (:hits-taken state))
-        life (- 150 (* 4 hits-taken-count))
+        hp (:hp player)
         walls (walls (:map state))]
 
 
-    (if (< life 0)
+    (if (< hp 0)
 
       ; GAME OVER
       (doseq []
@@ -65,7 +65,7 @@
 
         (q/stroke 50 200 50)
         (q/fill 80 250 80)
-        (q/rect 5 350 life 5)
+        (q/rect 5 350 hp 5)
 
 
         (q/stroke 0 0 0)
@@ -76,7 +76,7 @@
         ; PLayer and player local objects
         (q/fill 50 120 190)
         (q/stroke 50 120 190)
-        (let [{x :x y :y size :size} (:player state)]
+        (let [{x :x y :y size :size} player]
           (q/rect x y size size))
 
         (doseq [bullet bullets]
@@ -87,8 +87,8 @@
         (q/fill 200 30 30)
         (q/stroke 200 30 30)
         (doseq [remote-player remote-players]
-          (let [{x :x y :y size :size} remote-player]
-            (q/rect x y size size)))
+          (let [{x :x y :y size :size hp :hp} remote-player]
+            (if (> hp 0) (q/rect x y size size))))
 
         (doseq [bullet remote-bullets]
           (let [{bx :x by :y size :size} bullet]
