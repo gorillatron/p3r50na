@@ -1,8 +1,7 @@
 goog.addDependency("base.js", ['goog'], []);
 goog.addDependency("../cljs/core.js", ['cljs.core'], ['goog.string', 'goog.object', 'goog.string.StringBuffer', 'goog.array']);
-goog.addDependency("../p3r50na/apps/bookof5rinds/client/game/map.js", ['p3r50na.apps.bookof5rinds.client.game.map'], ['cljs.core']);
-goog.addDependency("../p3r50na/apps/bookof5rinds/client/game/maps/level1.js", ['p3r50na.apps.bookof5rinds.client.game.maps.level1'], ['p3r50na.apps.bookof5rinds.client.game.map', 'cljs.core']);
-goog.addDependency("../p3r50na/apps/bookof5rinds/client/game/collision.js", ['p3r50na.apps.bookof5rinds.client.game.collision'], ['cljs.core']);
+goog.addDependency("../p3r50na/apps/bookof5rinds/client/game/level.js", ['p3r50na.apps.bookof5rinds.client.game.level'], ['cljs.core']);
+goog.addDependency("../p3r50na/apps/bookof5rinds/client/game/levels/level1.js", ['p3r50na.apps.bookof5rinds.client.game.levels.level1'], ['cljs.core', 'p3r50na.apps.bookof5rinds.client.game.level']);
 goog.addDependency("../react.inc.js", ['cljsjs.react'], []);
 goog.addDependency("../om/dom.js", ['om.dom'], ['cljs.core', 'goog.object', 'cljsjs.react']);
 goog.addDependency("../cljs/core/async/impl/protocols.js", ['cljs.core.async.impl.protocols'], ['cljs.core']);
@@ -12,6 +11,7 @@ goog.addDependency("../cljs/core/async/impl/channels.js", ['cljs.core.async.impl
 goog.addDependency("../cljs/core/async/impl/ioc_helpers.js", ['cljs.core.async.impl.ioc_helpers'], ['cljs.core', 'cljs.core.async.impl.protocols']);
 goog.addDependency("../cljs/core/async/impl/timers.js", ['cljs.core.async.impl.timers'], ['cljs.core.async.impl.channels', 'cljs.core.async.impl.dispatch', 'cljs.core', 'cljs.core.async.impl.protocols']);
 goog.addDependency("../cljs/core/async.js", ['cljs.core.async'], ['cljs.core.async.impl.channels', 'cljs.core.async.impl.dispatch', 'cljs.core', 'cljs.core.async.impl.buffers', 'cljs.core.async.impl.protocols', 'cljs.core.async.impl.ioc_helpers', 'cljs.core.async.impl.timers']);
+goog.addDependency("../p3r50na/apps/bookof5rinds/client/game/collision.js", ['p3r50na.apps.bookof5rinds.client.game.collision'], ['cljs.core']);
 goog.addDependency("../wagjo/data/array.js", ['wagjo.data.array'], ['cljs.core']);
 goog.addDependency("../processing.js", ['org.processingjs.Processing'], []);
 goog.addDependency("../quil/middlewares/deprecated_options.js", ['quil.middlewares.deprecated_options'], ['cljs.core']);
@@ -24,8 +24,8 @@ goog.addDependency("../quil/middlewares/navigation_2d.js", ['quil.middlewares.na
 goog.addDependency("../quil/middlewares/fun_mode.js", ['quil.middlewares.fun_mode'], ['cljs.core', 'quil.core']);
 goog.addDependency("../quil/middleware.js", ['quil.middleware'], ['cljs.core', 'quil.middlewares.navigation_3d', 'quil.middlewares.navigation_2d', 'quil.middlewares.fun_mode']);
 goog.addDependency("../om/core.js", ['om.core'], ['goog.dom', 'cljs.core', 'om.dom', 'goog.dom.dataset', 'goog.object', 'cljsjs.react', 'goog.ui.IdGenerator']);
-goog.addDependency("../p3r50na/apps/bookof5rinds/client/game/engine.js", ['p3r50na.apps.bookof5rinds.client.game.engine'], ['p3r50na.apps.bookof5rinds.client.game.maps.level1', 'p3r50na.apps.bookof5rinds.client.game.collision', 'p3r50na.apps.bookof5rinds.client.game.map', 'cljs.core', 'om.dom', 'cljs.core.async', 'wagjo.data.array', 'quil.core', 'quil.middleware', 'om.core']);
-goog.addDependency("../p3r50na/apps/bookof5rinds/client/game/component.js", ['p3r50na.apps.bookof5rinds.client.game.component'], ['p3r50na.apps.bookof5rinds.client.game.maps.level1', 'p3r50na.apps.bookof5rinds.client.game.collision', 'p3r50na.apps.bookof5rinds.client.game.map', 'cljs.core', 'om.dom', 'cljs.core.async', 'p3r50na.apps.bookof5rinds.client.game.engine', 'quil.core', 'quil.middleware', 'om.core']);
+goog.addDependency("../p3r50na/apps/bookof5rinds/client/game/engine.js", ['p3r50na.apps.bookof5rinds.client.game.engine'], ['p3r50na.apps.bookof5rinds.client.game.collision', 'cljs.core', 'p3r50na.apps.bookof5rinds.client.game.level', 'om.dom', 'cljs.core.async', 'wagjo.data.array', 'quil.core', 'quil.middleware', 'om.core']);
+goog.addDependency("../p3r50na/apps/bookof5rinds/client/game/component.js", ['p3r50na.apps.bookof5rinds.client.game.component'], ['p3r50na.apps.bookof5rinds.client.game.levels.level1', 'cljs.core', 'p3r50na.apps.bookof5rinds.client.game.level', 'om.dom', 'cljs.core.async', 'p3r50na.apps.bookof5rinds.client.game.engine', 'quil.core', 'quil.middleware', 'om.core']);
 goog.addDependency("../p3r50na/apps/bookof5rinds/client/core.js", ['p3r50na.apps.bookof5rinds.client.core'], ['p3r50na.apps.bookof5rinds.client.game.component', 'cljs.core', 'om.dom', 'cljs.core.async', 'om.core']);
 goog.addDependency("../figwheel/client/utils.js", ['figwheel.client.utils'], ['cljs.core', 'clojure.string']);
 goog.addDependency("../cljs/reader.js", ['cljs.reader'], ['goog.string', 'cljs.core', 'goog.string.StringBuffer']);

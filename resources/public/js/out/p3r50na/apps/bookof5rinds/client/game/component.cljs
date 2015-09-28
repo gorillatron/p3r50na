@@ -5,10 +5,9 @@
             [quil.core :as q :include-macros true]
             [quil.middleware :as m]
             [cljs.core.async :refer [put! take! chan <! >! timeout]]
-            [p3r50na.apps.bookof5rinds.client.game.collision :refer [rect-intersects-blocks? rect-intersects-boundary? intersects?]]
-            [p3r50na.apps.bookof5rinds.client.game.map :refer [block-of-type walls map-size]]
             [p3r50na.apps.bookof5rinds.client.game.engine :refer [create-simulation]]
-            [p3r50na.apps.bookof5rinds.client.game.maps.level1 :refer [level1]]))
+            [p3r50na.apps.bookof5rinds.client.game.level :refer [block-of-type walls map-size]]
+            [p3r50na.apps.bookof5rinds.client.game.levels.level1 :refer [level1]]))
 
 
 (defrecord GameState [player remote-players bullets map])
@@ -20,9 +19,7 @@
                         :d :right
                         :a :left })
 
-(def game-simulation (create-simulation { :player (new Player "gorillatron" 5 5 10 2)
-                                          :bullets []
-                                          :controlls #{}
+(def game-simulation (create-simulation { :player (new Player "gorillatron" 5 5 10 1)
                                           :map level1 }))
 
 (def next-frame (:next-frame game-simulation))
@@ -51,13 +48,9 @@
     (let [{x :x y :y size :size} (:player state)]
       (q/rect x y size size))
 
-    ; (js/console.time "doseq")
-
     (doseq [bullet bullets]
       (let [{bx :x by :y size :size} bullet]
         (q/rect bx by size size)))
-
-    ; (js/console.timeEnd "doseq")
 
 ))
 

@@ -7,13 +7,16 @@
             [wagjo.data.array :as arr]
             [cljs.core.async :refer [put! take! chan <! >! timeout]]
             [p3r50na.apps.bookof5rinds.client.game.collision :refer [rect-intersects-blocks? rect-intersects-boundary? intersects?]]
-            [p3r50na.apps.bookof5rinds.client.game.map :refer [block-of-type walls]]
-            [p3r50na.apps.bookof5rinds.client.game.maps.level1 :refer [level1]]))
+            [p3r50na.apps.bookof5rinds.client.game.level :refer [block-of-type walls]]))
 
 
+; Memoize the function for extracting walls
+; Improves collision detection performance a lot
 (def wallsm (memoize walls))
 
+
 (defn- apply-controlls [state controlls]
+  "Apply player controls to the game state"
   (if (empty? controlls)
     state
     (let [{x :x y :y speed :speed} (:player state)]
@@ -25,7 +28,7 @@
                                 :right (update-in state [:player :x] + speed)
                                         state)]
                           (if (or (rect-intersects-blocks? (:player newstate) (walls (:map state)) (:blocksize (:map state)))
-                                  (rect-intersects-boundary? (:player newstate) level1))
+                                  (rect-intersects-boundary? (:player newstate) (:map state)))
                             state
                             newstate))) state controlls)]
         newstate))))
@@ -49,7 +52,7 @@
        (mapv update-bullet-location)
        (filterv (fn [bullet]
          (not (or (rect-intersects-blocks? bullet (wallsm (:map state)) (:blocksize (:map state)))
-                  (rect-intersects-boundary? bullet level1)))))))
+                  (rect-intersects-boundary? bullet (:map state))))))))
 
 (defn- update-bullet-locations [state]
   (assoc state :bullets (update-bullets state)))
@@ -57,9 +60,9 @@
 
 (defn- update-objects [state]
   (let [oldstate state
-        newstate (-> state
+        new-state (-> state
           (update-bullet-locations))]
-    newstate))
+    new-state))
 
 
 (defn- player-fired-bullet [state event]
@@ -77,17 +80,19 @@
 
 
 (defn create-simulation [state]
-  (let [oldstate (atom state)
+  (let [initial-state (merge state {:bullets []
+                                    :controlls #{}})
+        old-state (atom initial-state)
         controlls (atom #{})
         events (atom [])]
     {
       :next-frame (fn []
-        (let [newstate (apply-events @oldstate @events)
-              newstate (apply-controlls newstate @controlls)
-              newstate (update-objects newstate)]
+        (let [new-state (apply-events @old-state @events)
+              new-state (apply-controlls new-state @controlls)
+              new-state (update-objects new-state)]
           (doseq []
             (reset! events [])
-            (reset! oldstate newstate)
-            newstate)))
+            (reset! old-state new-state)
+            new-state)))
       :add-event (fn [event] (swap! events conj event))
       :controller (fn [mutator] (reset! controlls (mutator @controlls))) }))

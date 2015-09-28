@@ -1,5 +1,5 @@
-(ns p3r50na.apps.bookof5rinds.client.game.maps.level1
-  (:require [p3r50na.apps.bookof5rinds.client.game.map :refer [construct-map map-size]]))
+(ns p3r50na.apps.bookof5rinds.client.game.levels.level1
+  (:require [p3r50na.apps.bookof5rinds.client.game.level :refer [construct-map map-size]]))
 
 
 (def level1 (construct-map 20 [
