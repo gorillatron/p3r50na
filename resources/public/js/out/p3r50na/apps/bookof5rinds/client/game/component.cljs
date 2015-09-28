@@ -19,7 +19,7 @@
                         :d :right
                         :a :left })
 
-(def game-simulation (create-simulation { :player (new Player (str "gorilla" (rand 100)) 5 5 10 1)
+(def game-simulation (create-simulation { :player (new Player (str "gorilla" (rand 100)) (rand 100) (rand 100) 10 1)
                                           :map level1 }))
 
 (def next-frame (:next-frame game-simulation))
@@ -46,35 +46,55 @@
         bullets (:bullets state)
         remote-players (vals (:remote-players state))
         remote-bullets (:remote-bullets state)
+        hits-taken-count (count (:hits-taken state))
+        life (- 150 (* 4 hits-taken-count))
         walls (walls (:map state))]
 
-    (q/background 255)
-    (q/fill 200 200 200)
 
-    (q/stroke 0 0 0)
-    (doseq [wall walls]
-      (q/rect (:x wall) (:y wall) 20 20))
+    (if (< life 0)
 
-    ; PLayer and player local objects
-    (q/fill 50 120 190)
-    (q/stroke 50 120 190)
-    (let [{x :x y :y size :size} (:player state)]
-      (q/rect x y size size))
+      (doseq []
+        (q/background 230 40 40)
+        (q/text-size 40)
+        (q/text "GAME OVER" 100 100))
 
-    (doseq [bullet bullets]
-      (let [{bx :x by :y size :size} bullet]
-        (q/rect bx by size size)))
+      (doseq []
+        (q/background 255)
 
-    ; Remote players and objects
-    (q/fill 200 30 30)
-    (q/stroke 200 30 30)
-    (doseq [remote-player remote-players]
-      (let [{x :x y :y size :size} remote-player]
-        (q/rect x y size size)))
+        (q/stroke 50 200 50)
+        (q/fill 80 250 80)
+        (q/rect 5 350 life 5)
 
-    (doseq [bullet remote-bullets]
-      (let [{bx :x by :y size :size} bullet]
-        (q/rect bx by size size)))
+
+        (q/stroke 0 0 0)
+        (q/fill 200 200 200)
+        (doseq [wall walls]
+          (q/rect (:x wall) (:y wall) 20 20))
+
+        ; PLayer and player local objects
+        (q/fill 50 120 190)
+        (q/stroke 50 120 190)
+        (let [{x :x y :y size :size} (:player state)]
+          (q/rect x y size size))
+
+        (doseq [bullet bullets]
+          (let [{bx :x by :y size :size} bullet]
+            (q/rect bx by size size)))
+
+        ; Remote players and objects
+        (q/fill 200 30 30)
+        (q/stroke 200 30 30)
+        (doseq [remote-player remote-players]
+          (let [{x :x y :y size :size} remote-player]
+            (q/rect x y size size)))
+
+        (doseq [bullet remote-bullets]
+          (let [{bx :x by :y size :size} bullet]
+            (q/rect bx by size size)))
+        ))
+
+    ; (println (count (:hits-taken state)))
+
 ))
 
 (defn on-key-down []

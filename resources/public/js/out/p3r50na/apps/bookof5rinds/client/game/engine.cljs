@@ -109,6 +109,7 @@
 (defn- create-initial-state [state]
   (merge {:player nil
           :level nil
+          :hits-taken []
           :bullets []
           :remote-players {}
           :remote-bullets []
@@ -126,6 +127,15 @@
           (>! channel {:update "bullet-fired" :bullet (player-event->bullet (:player old-state) event)})))))))
 
 
+(defn- take-hits [state]
+  (let [player (:player state)
+        remote-bullets (:remote-bullets state)
+        {hits false misses true} (group-by (partial intersects? player) remote-bullets)]
+      (-> state
+        (assoc :remote-bullets misses)
+        (update :hits-taken concat hits))))
+
+
 (defn create-simulation [state]
   (let [initial-state    (create-initial-state state)
         old-state        (atom initial-state)
@@ -136,7 +146,8 @@
     {:next-frame (fn []
         (let [new-state (apply-events @old-state @events)
               new-state (apply-controlls new-state @controlls)
-              new-state (update-objects new-state)]
+              new-state (update-objects new-state)
+              new-state (take-hits new-state)]
           (doseq []
             (send-updates! update-channel @old-state new-state @events)
             (reset! events [])
