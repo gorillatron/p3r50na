@@ -1,6 +1,6 @@
 (defproject p3r50na "0.1.0-SNAPSHOT"
 
-  :description "omg wtf"
+  :description "FIXME: write description"
 
   :url "http://example.com/FIXME"
 
@@ -19,6 +19,7 @@
                  [ring/ring-devel "1.4.0"]
                  [ring/ring-core "1.4.0"]
                  [reloaded.repl "0.1.0"]
+                 [com.wagjo/data-cljs "0.1.0-SNAPSHOT"]
                  [hiccup "1.0.5"]
                  [quil "2.2.6"]]
 

@@ -7,21 +7,23 @@ goog.require('om.dom');
 goog.require('p3r50na.apps.bookof5rinds.client.game.map');
 goog.require('quil.core');
 goog.require('cljs.core.async');
+goog.require('wagjo.data.array');
 goog.require('quil.middleware');
 goog.require('om.core');
+p3r50na.apps.bookof5rinds.client.game.engine.wallsm = cljs.core.memoize.call(null,p3r50na.apps.bookof5rinds.client.game.map.walls);
 p3r50na.apps.bookof5rinds.client.game.engine.apply_controlls = (function p3r50na$apps$bookof5rinds$client$game$engine$apply_controlls(state,controlls){
 if(cljs.core.empty_QMARK_.call(null,controlls)){
 return state;
 } else {
-var map__73869 = new cljs.core.Keyword(null,"player","player",-97687400).cljs$core$IFn$_invoke$arity$1(state);
-var map__73869__$1 = ((((!((map__73869 == null)))?((((map__73869.cljs$lang$protocol_mask$partition0$ & (64))) || (map__73869.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__73869):map__73869);
-var x = cljs.core.get.call(null,map__73869__$1,new cljs.core.Keyword(null,"x","x",2099068185));
-var y = cljs.core.get.call(null,map__73869__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
-var speed = cljs.core.get.call(null,map__73869__$1,new cljs.core.Keyword(null,"speed","speed",1257663751));
-var newstate = cljs.core.reduce.call(null,((function (map__73869,map__73869__$1,x,y,speed){
+var map__26116 = new cljs.core.Keyword(null,"player","player",-97687400).cljs$core$IFn$_invoke$arity$1(state);
+var map__26116__$1 = ((((!((map__26116 == null)))?((((map__26116.cljs$lang$protocol_mask$partition0$ & (64))) || (map__26116.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__26116):map__26116);
+var x = cljs.core.get.call(null,map__26116__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var y = cljs.core.get.call(null,map__26116__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+var speed = cljs.core.get.call(null,map__26116__$1,new cljs.core.Keyword(null,"speed","speed",1257663751));
+var newstate = cljs.core.reduce.call(null,((function (map__26116,map__26116__$1,x,y,speed){
 return (function (state__$1,controll){
-var newstate = (function (){var G__73871 = (((controll instanceof cljs.core.Keyword))?controll.fqn:null);
-switch (G__73871) {
+var newstate = (function (){var G__26118 = (((controll instanceof cljs.core.Keyword))?controll.fqn:null);
+switch (G__26118) {
 case "up":
 return cljs.core.update_in.call(null,state__$1,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"player","player",-97687400),new cljs.core.Keyword(null,"y","y",-1757859776)], null),cljs.core._,speed);
 
@@ -54,23 +56,23 @@ return state__$1;
 } else {
 return newstate;
 }
-});})(map__73869,map__73869__$1,x,y,speed))
+});})(map__26116,map__26116__$1,x,y,speed))
 ,state,controlls);
 return newstate;
 }
 });
 p3r50na.apps.bookof5rinds.client.game.engine.update_bullet_location = (function p3r50na$apps$bookof5rinds$client$game$engine$update_bullet_location(bullet){
-var map__73877 = bullet;
-var map__73877__$1 = ((((!((map__73877 == null)))?((((map__73877.cljs$lang$protocol_mask$partition0$ & (64))) || (map__73877.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__73877):map__73877);
-var speed = cljs.core.get.call(null,map__73877__$1,new cljs.core.Keyword(null,"speed","speed",1257663751));
-var vec__73878 = cljs.core.get.call(null,map__73877__$1,new cljs.core.Keyword(null,"start","start",-355208981));
-var bx = cljs.core.nth.call(null,vec__73878,(0),null);
-var by = cljs.core.nth.call(null,vec__73878,(1),null);
-var lx = cljs.core.get.call(null,map__73877__$1,new cljs.core.Keyword(null,"x","x",2099068185));
-var ly = cljs.core.get.call(null,map__73877__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
-var vec__73879 = cljs.core.get.call(null,map__73877__$1,new cljs.core.Keyword(null,"goal","goal",-2073396501));
-var gx = cljs.core.nth.call(null,vec__73879,(0),null);
-var gy = cljs.core.nth.call(null,vec__73879,(1),null);
+var map__26124 = bullet;
+var map__26124__$1 = ((((!((map__26124 == null)))?((((map__26124.cljs$lang$protocol_mask$partition0$ & (64))) || (map__26124.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__26124):map__26124);
+var speed = cljs.core.get.call(null,map__26124__$1,new cljs.core.Keyword(null,"speed","speed",1257663751));
+var vec__26125 = cljs.core.get.call(null,map__26124__$1,new cljs.core.Keyword(null,"start","start",-355208981));
+var bx = cljs.core.nth.call(null,vec__26125,(0),null);
+var by = cljs.core.nth.call(null,vec__26125,(1),null);
+var lx = cljs.core.get.call(null,map__26124__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var ly = cljs.core.get.call(null,map__26124__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+var vec__26126 = cljs.core.get.call(null,map__26124__$1,new cljs.core.Keyword(null,"goal","goal",-2073396501));
+var gx = cljs.core.nth.call(null,vec__26126,(0),null);
+var gy = cljs.core.nth.call(null,vec__26126,(1),null);
 var dx = (gx - bx);
 var dy = (gy - by);
 var goal_dist = Math.sqrt(((dx * dx) + (dy * dy)));
@@ -82,15 +84,15 @@ var ny = (ym + ly);
 return cljs.core.assoc.call(null,bullet,new cljs.core.Keyword(null,"x","x",2099068185),nx,new cljs.core.Keyword(null,"y","y",-1757859776),ny);
 });
 p3r50na.apps.bookof5rinds.client.game.engine.update_bullets = (function p3r50na$apps$bookof5rinds$client$game$engine$update_bullets(state){
-return cljs.core.filter.call(null,(function (bullet){
-return cljs.core.not.call(null,(function (){var or__19555__auto__ = p3r50na.apps.bookof5rinds.client.game.collision.rect_intersects_blocks_QMARK_.call(null,bullet,p3r50na.apps.bookof5rinds.client.game.map.walls.call(null,new cljs.core.Keyword(null,"map","map",1371690461).cljs$core$IFn$_invoke$arity$1(state)),new cljs.core.Keyword(null,"blocksize","blocksize",-1737805231).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"map","map",1371690461).cljs$core$IFn$_invoke$arity$1(state)));
+return cljs.core.filterv.call(null,(function (bullet){
+return cljs.core.not.call(null,(function (){var or__19555__auto__ = p3r50na.apps.bookof5rinds.client.game.collision.rect_intersects_blocks_QMARK_.call(null,bullet,p3r50na.apps.bookof5rinds.client.game.engine.wallsm.call(null,new cljs.core.Keyword(null,"map","map",1371690461).cljs$core$IFn$_invoke$arity$1(state)),new cljs.core.Keyword(null,"blocksize","blocksize",-1737805231).cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"map","map",1371690461).cljs$core$IFn$_invoke$arity$1(state)));
 if(cljs.core.truth_(or__19555__auto__)){
 return or__19555__auto__;
 } else {
 return p3r50na.apps.bookof5rinds.client.game.collision.rect_intersects_boundary_QMARK_.call(null,bullet,p3r50na.apps.bookof5rinds.client.game.maps.level1.level1);
 }
 })());
-}),cljs.core.map.call(null,p3r50na.apps.bookof5rinds.client.game.engine.update_bullet_location,new cljs.core.Keyword(null,"bullets","bullets",1734809024).cljs$core$IFn$_invoke$arity$1(state)));
+}),cljs.core.mapv.call(null,p3r50na.apps.bookof5rinds.client.game.engine.update_bullet_location,new cljs.core.Keyword(null,"bullets","bullets",1734809024).cljs$core$IFn$_invoke$arity$1(state)));
 });
 p3r50na.apps.bookof5rinds.client.game.engine.update_bullet_locations = (function p3r50na$apps$bookof5rinds$client$game$engine$update_bullet_locations(state){
 return cljs.core.assoc.call(null,state,new cljs.core.Keyword(null,"bullets","bullets",1734809024),p3r50na.apps.bookof5rinds.client.game.engine.update_bullets.call(null,state));
@@ -101,23 +103,23 @@ var newstate = p3r50na.apps.bookof5rinds.client.game.engine.update_bullet_locati
 return newstate;
 });
 p3r50na.apps.bookof5rinds.client.game.engine.player_fired_bullet = (function p3r50na$apps$bookof5rinds$client$game$engine$player_fired_bullet(state,event){
-var map__73885 = event;
-var map__73885__$1 = ((((!((map__73885 == null)))?((((map__73885.cljs$lang$protocol_mask$partition0$ & (64))) || (map__73885.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__73885):map__73885);
-var mx = cljs.core.get.call(null,map__73885__$1,new cljs.core.Keyword(null,"mx","mx",-199887020));
-var my = cljs.core.get.call(null,map__73885__$1,new cljs.core.Keyword(null,"my","my",-1055703269));
-var map__73886 = new cljs.core.Keyword(null,"player","player",-97687400).cljs$core$IFn$_invoke$arity$1(state);
-var map__73886__$1 = ((((!((map__73886 == null)))?((((map__73886.cljs$lang$protocol_mask$partition0$ & (64))) || (map__73886.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__73886):map__73886);
-var px = cljs.core.get.call(null,map__73886__$1,new cljs.core.Keyword(null,"x","x",2099068185));
-var py = cljs.core.get.call(null,map__73886__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
-var ps = cljs.core.get.call(null,map__73886__$1,new cljs.core.Keyword(null,"size","size",1098693007));
+var map__26132 = event;
+var map__26132__$1 = ((((!((map__26132 == null)))?((((map__26132.cljs$lang$protocol_mask$partition0$ & (64))) || (map__26132.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__26132):map__26132);
+var mx = cljs.core.get.call(null,map__26132__$1,new cljs.core.Keyword(null,"mx","mx",-199887020));
+var my = cljs.core.get.call(null,map__26132__$1,new cljs.core.Keyword(null,"my","my",-1055703269));
+var map__26133 = new cljs.core.Keyword(null,"player","player",-97687400).cljs$core$IFn$_invoke$arity$1(state);
+var map__26133__$1 = ((((!((map__26133 == null)))?((((map__26133.cljs$lang$protocol_mask$partition0$ & (64))) || (map__26133.cljs$core$ISeq$))?true:false):false))?cljs.core.apply.call(null,cljs.core.hash_map,map__26133):map__26133);
+var px = cljs.core.get.call(null,map__26133__$1,new cljs.core.Keyword(null,"x","x",2099068185));
+var py = cljs.core.get.call(null,map__26133__$1,new cljs.core.Keyword(null,"y","y",-1757859776));
+var ps = cljs.core.get.call(null,map__26133__$1,new cljs.core.Keyword(null,"size","size",1098693007));
 var start = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [(px + (ps / (2))),(py + (ps / (2)))], null);
 var bullet = new cljs.core.PersistentArrayMap(null, 7, [new cljs.core.Keyword(null,"x","x",2099068185),cljs.core.get.call(null,start,(0)),new cljs.core.Keyword(null,"y","y",-1757859776),cljs.core.get.call(null,start,(1)),new cljs.core.Keyword(null,"start","start",-355208981),start,new cljs.core.Keyword(null,"goal","goal",-2073396501),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [mx,my], null),new cljs.core.Keyword(null,"speed","speed",1257663751),1.3,new cljs.core.Keyword(null,"size","size",1098693007),(2),new cljs.core.Keyword(null,"fired-by","fired-by",988297261),new cljs.core.Keyword(null,"player","player",-97687400).cljs$core$IFn$_invoke$arity$1(state)], null);
 return cljs.core.update_in.call(null,state,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"bullets","bullets",1734809024)], null),cljs.core.conj,bullet);
 });
 p3r50na.apps.bookof5rinds.client.game.engine.apply_events = (function p3r50na$apps$bookof5rinds$client$game$engine$apply_events(state,events){
 return cljs.core.reduce.call(null,(function (state__$1,event){
-var G__73890 = new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invoke$arity$1(event);
-switch (G__73890) {
+var G__26137 = new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invoke$arity$1(event);
+switch (G__26137) {
 case "player-fired-bullet":
 return p3r50na.apps.bookof5rinds.client.game.engine.player_fired_bullet.call(null,state__$1,event);
 

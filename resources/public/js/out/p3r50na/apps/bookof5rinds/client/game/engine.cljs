@@ -4,12 +4,14 @@
             [om.dom :as dom]
             [quil.core :as q :include-macros true]
             [quil.middleware :as m]
+            [wagjo.data.array :as arr]
             [cljs.core.async :refer [put! take! chan <! >! timeout]]
             [p3r50na.apps.bookof5rinds.client.game.collision :refer [rect-intersects-blocks? rect-intersects-boundary? intersects?]]
             [p3r50na.apps.bookof5rinds.client.game.map :refer [block-of-type walls]]
             [p3r50na.apps.bookof5rinds.client.game.maps.level1 :refer [level1]]))
 
 
+(def wallsm (memoize walls))
 
 (defn- apply-controlls [state controlls]
   (if (empty? controlls)
@@ -44,11 +46,10 @@
 
 (defn- update-bullets [state]
   (->> (:bullets state)
-       (map update-bullet-location)
-       (filter (fn [bullet]
-         (not (or (rect-intersects-blocks? bullet (walls (:map state)) (:blocksize (:map state)))
+       (mapv update-bullet-location)
+       (filterv (fn [bullet]
+         (not (or (rect-intersects-blocks? bullet (wallsm (:map state)) (:blocksize (:map state)))
                   (rect-intersects-boundary? bullet level1)))))))
-
 
 (defn- update-bullet-locations [state]
   (assoc state :bullets (update-bullets state)))
