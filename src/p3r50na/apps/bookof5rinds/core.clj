@@ -28,24 +28,24 @@
 
 (defn broadcast-event [name data sockets]
   (doseq [socket sockets]
-    (send! socket (write-str {:event name :data data}))))
+    (send! socket (write-str {:name name :data data}))))
 
 
-(defn handle-player-state-report [data socket]
+(defn handle-player-change [data socket]
   (let [{player :player} data]
     (doseq []
       (swap! server-state assoc-in [:clients socket] player)
-      (broadcast-event "player-update-state" player (sockets-except socket)))))
+      (broadcast-event "remote-player-change" {:player player} (sockets-except socket)))))
 
-(defn handle-player-fired-bullet [data socket]
+(defn handle-bullet-fired  [data socket]
   (let [{bullet :bullet} data]
     (doseq []
-      (broadcast-event "player-fired-bullet" bullet (sockets-except socket)))))
+      (broadcast-event "remote-bullet-fired" {:bullet bullet} (sockets-except socket)))))
 
 (defn handle-command [command data socket]
   (case command
-    "player-state-report"  (handle-player-state-report data socket)
-    "player-fired-bullet"  (handle-player-fired-bullet data socket)))
+    "player-change"        (handle-player-change data socket)
+    "bullet-fired"         (handle-bullet-fired data socket)))
 
 
 (defn router []
@@ -58,13 +58,12 @@
     (GET "/ws" [] (fn [req]
       (with-channel req socket
         (swap! server-state assoc-in [:clients socket] {})
-        (send! socket (write-str {:type "state" :state @server-state }))
         (on-close socket
           (fn [status]
             (println "channel closed")))
         (on-receive socket
           (fn [json-data]
             (let [data (read-str json-data :key-fn clojure.core/keyword)]
-              (handle-command (:command data) (:data data) socket)))))))
+              (handle-command (:update data) data socket)))))))
 
     ))

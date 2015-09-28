@@ -19,13 +19,23 @@
                         :d :right
                         :a :left })
 
-(def game-simulation (create-simulation { :player (new Player "gorillatron" 5 5 10 1)
+(def game-simulation (create-simulation { :player (new Player (str "gorilla" (rand 100)) 5 5 10 1)
                                           :map level1 }))
 
 (def next-frame (:next-frame game-simulation))
 (def controller (:controller game-simulation))
 (def add-event (:add-event game-simulation))
+(def update-channel (:update-channel game-simulation))
 
+(def socket (js/WebSocket. "ws://localhost:8080/book-of-5-rinds/ws"))
+
+(go (while true
+  (let [update (<! update-channel)]
+    (.send socket (js/JSON.stringify (clj->js update))))))
+
+(aset socket "onmessage" (fn [message]
+  (let [event (js->clj (js/JSON.parse (.-data message)) :keywordize-keys true)]
+    (add-event event))))
 
 (defn setup []
   (q/smooth)
