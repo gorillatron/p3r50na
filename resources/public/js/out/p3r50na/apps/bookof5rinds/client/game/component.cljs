@@ -53,11 +53,13 @@
 
     (if (< life 0)
 
+      ; GAME OVER
       (doseq []
         (q/background 230 40 40)
         (q/text-size 40)
         (q/text "GAME OVER" 100 100))
 
+      ; CONTINUE
       (doseq []
         (q/background 255)
 

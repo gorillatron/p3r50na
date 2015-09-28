@@ -10256,3 +10256,6 @@ notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\com
 [0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
 [32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.283 seconds.[0m
 notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.356 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
