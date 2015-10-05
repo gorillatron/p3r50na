@@ -21,8 +21,10 @@
 (defrecord Server [port]
   component/Lifecycle
   (start [component]
+    (println (str "component/starting -> " `Server))
     (assoc component :server (start-server (:routes (:router component)) port)))
   (stop [component]
+    (println (str "component/stopping -> " `Server))
     (stop-server (:server component))
     (dissoc component :server)))
 
