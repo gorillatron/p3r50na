@@ -19,9 +19,7 @@
                  [ring/ring-devel "1.4.0"]
                  [ring/ring-core "1.4.0"]
                  [reloaded.repl "0.1.0"]
-                 [com.wagjo/data-cljs "0.1.0-SNAPSHOT"]
-                 [hiccup "1.0.5"]
-                 [quil "2.2.6"]]
+                 [hiccup "1.0.5"]]
 
   :plugins []
 
@@ -38,12 +36,12 @@
                              [lein-figwheel "0.3.9"]]
                    :dependencies [[reloaded.repl "0.1.0"]]
                    :source-paths ["dev"]
-                   :cljsbuild {:builds [{:source-paths ["src" "dev"]
+                   :cljsbuild {:builds [{:source-paths ["src"]
                                          :figwheel true
-                                         :compiler {:output-to "resources/public/js/bookof5rinds.client.core.js"
+                                         :compiler {:output-to "resources/public/js/p3r50na.client.core.js"
                                                     :output-dir "resources/public/js/out"
                                                     :optimizations :none
-                                                    :main "p3r50na.apps.bookof5rinds.client.core"
+                                                    :main "p3r50na.client.core"
                                                     :asset-path "/js/out"
                                                     :recompile-dependents true
                                                     :source-map true}}]}}})

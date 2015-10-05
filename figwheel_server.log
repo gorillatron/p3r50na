@@ -10570,3 +10570,26 @@ notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\eng
 [0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
 [32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.432 seconds.[0m
 notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+Figwheel: focusing on build-ids (build_needs_id_910)
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.473 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\levels\level1.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\collision.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\component.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\level.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\core.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 1.016 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 1.053 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 1.064 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js
+[0mCompiling "resources/public/js/bookof5rinds.client.core.js" from ["src" "dev"]...
+[32mSuccessfully compiled "resources/public/js/bookof5rinds.client.core.js" in 0.716 seconds.[0m
+notifying browser that file changed:  \p3r50na\apps\bookof5rinds\client\game\engine.js

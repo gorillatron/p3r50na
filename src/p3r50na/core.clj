@@ -5,8 +5,7 @@
   (:require [compojure.core :refer :all]
             [compojure.route :as route]
             [com.stuartsierra.component :as component]
-            [ring.middleware.reload :as reload]
-            [p3r50na.apps.bookof5rinds.core :as bookof5rinds])
+            [ring.middleware.reload :as reload])
 
   (:use [compojure.route :only [files not-found]]
         [compojure.handler :only [site]] ; form, query params decode; cookie; session, etc
@@ -27,8 +26,6 @@
 
 (defroutes all-routes
   (GET "/" [] "show-landing-page yooo")
-  (context "/book-of-5-rinds" []
-    (bookof5rinds/router))
   (route/resources "/")
   (route/not-found "<p>Page not found.</p>")) ;; all other, return 404
 
