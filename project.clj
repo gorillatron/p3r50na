@@ -19,29 +19,28 @@
                  [ring/ring-devel "1.4.0"]
                  [ring/ring-core "1.4.0"]
                  [reloaded.repl "0.1.0"]
-                 [hiccup "1.0.5"]]
+                 [hiccup "1.0.5"]
+                 [figwheel-sidecar "0.4.0"]
+                 [lein-less "1.7.5"]
+                 [lein-cljsbuild "1.1.0"]
+                 [lein-npm "0.6.1"]]
 
   :plugins []
 
   :less {:source-paths ["src/p3r50na/less/"]
          :target-path "public/css/"}
 
-  :main p3r50na.core
-
   :target-path "target/%s"
 
-  :profiles {:dev {:plugins [[lein-less "1.7.5"]
-                             [lein-cljsbuild "1.1.0"]
-                             [lein-npm "0.6.1"]
-                             [lein-figwheel "0.3.9"]]
-                   :dependencies [[reloaded.repl "0.1.0"]]
-                   :source-paths ["dev"]
-                   :cljsbuild {:builds [{:source-paths ["src"]
-                                         :figwheel true
-                                         :compiler {:output-to "resources/public/js/p3r50na.client.core.js"
-                                                    :output-dir "resources/public/js/out"
-                                                    :optimizations :none
-                                                    :main "p3r50na.client.core"
-                                                    :asset-path "/js/out"
-                                                    :recompile-dependents true
-                                                    :source-map true}}]}}})
+  :cljsbuild {:builds [{:source-paths ["src"]
+                        :figwheel true
+                        :compiler {:output-to "resources/public/js/p3r50na.client.core.js"
+                                   :output-dir "resources/public/js/out"
+                                   :optimizations :none
+                                   :main "p3r50na.client.core"
+                                   :asset-path "/js/out"
+                                   :recompile-dependents true
+                                   :source-map true}}]}
+
+  :profiles {:dev {:plugins []
+                   :source-paths ["dev"]}})
