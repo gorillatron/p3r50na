@@ -33,7 +33,7 @@
 
   :target-path "target/%s"
 
-  :cljsbuild {:builds [{:source-paths ["src"]
+  :cljsbuild {:builds [{:source-paths ["src/p3r50na/client"]
                         :figwheel true
                         :compiler {:output-to "resources/public/js/p3r50na.client.core.js"
                                    :output-dir "resources/public/js/out"
