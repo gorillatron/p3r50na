@@ -12,8 +12,8 @@
 
 
 (defroutes all-routes
-           (route/resources "/resources")
-           (GET "/" [] "index")
+           (route/resources "/")
+           (GET "/" [] "<script src=\"/js/p3r50na.client.core.js\"></script>")
            (route/not-found "<p>Page not found.</p>"))
 
 
