@@ -15,6 +15,7 @@
            (route/resources "/")
            (route/not-found "<p>Page not found.</p>")) ;; all other, return 404
 
+
 (defrecord Router []
   component/Lifecycle
   (start [component]

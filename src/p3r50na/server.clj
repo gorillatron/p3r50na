@@ -1,7 +1,5 @@
 (ns p3r50na.server
 
-  (:gen-class)
-
   (:require [com.stuartsierra.component :as component]
             [ring.middleware.reload :as reload])
 
@@ -17,7 +15,7 @@
 
 (defn- stop-server [server]
   (when server
-    (server))) ;; run-server returns a fn that stops the server
+    (server)))
 
 
 (defrecord Server [port]

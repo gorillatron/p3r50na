@@ -23,6 +23,7 @@
                  [figwheel-sidecar "0.4.0"]
                  [lein-less "1.7.5"]
                  [lein-cljsbuild "1.1.0"]
+                 [environ "1.0.1"]
                  [lein-npm "0.6.1"]]
 
   :plugins []
