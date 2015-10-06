@@ -1,3 +1,6 @@
-(ns p3r50na.client.core)
+(ns p3r50na.client.core
+  (:require [rum.core :as rum]))
 
-(js/alert "Hello universes!")
+(enable-console-print!)
+(println (str 'p3r50na.client.core " begin ->"))
+

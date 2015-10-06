@@ -12,21 +12,24 @@
         org.httpkit.server))
 
 
+;; All the routes for the application
 (defroutes all-routes
            (route/resources "/")
            (GET "/" [] "<script src=\"/js/p3r50na.client.core.js\"></script>")
            (route/not-found "<p>Page not found.</p>"))
 
 
+;; Component record for the application router.
 (defrecord Router []
   component/Lifecycle
   (start [component]
     (log/info "component/starting -> " `Router)
-    (assoc component :routes all-routes))
+    (assoc component :routes #'all-routes))
   (stop [component]
     (log/info "component/stopping -> " `Router)
     (dissoc component :routes)))
 
 
+;; Helper factory function for Router component;
 (defn create-router []
   (map->Router nil))

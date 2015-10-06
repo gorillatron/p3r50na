@@ -1,1 +1,1 @@
-{"version":3,"file":"\/C:\/Users\/J\u00f8rnAndre\/progg\/p3r50na\/resources\/public\/js\/out\/p3r50na\/client\/core.js","sources":["core.cljs"],"lineCount":6,"mappings":";AAAA;;AAEA,MAAA,NAACA","names":["js\/alert"]}
+{"version":3,"file":"\/C:\/Users\/J\u00f8rnAndre\/progg\/p3r50na\/resources\/public\/js\/out\/p3r50na\/client\/core.js","sources":["core.cljs"],"lineCount":8,"mappings":";AAAA;;;AAGA,AAACA;AACD,AAACC,4BAAQ,eAAA,qGAAA","names":["cljs.core\/enable-console-print!","cljs.core\/println"]}
