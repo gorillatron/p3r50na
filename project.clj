@@ -11,6 +11,7 @@
                  [org.clojure/clojurescript "1.7.48"]
                  [org.clojure/core.async "0.1.346.0-17112a-alpha"]
                  [org.clojure/data.json "0.2.6"]
+                 [org.clojure/tools.logging "0.3.1"]
                  [org.omcljs/om "0.9.0"]
                  [com.stuartsierra/component "0.2.3"]
                  [http-kit "2.1.18"]
@@ -52,4 +53,5 @@
                                    :source-map true}}]}
 
   :profiles {:dev {:plugins []
+                   :main user
                    :source-paths ["dev"]}})

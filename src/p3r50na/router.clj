@@ -3,6 +3,7 @@
             [compojure.route :as route]
             [com.stuartsierra.component :as component]
             [ring.middleware.reload :as reload]
+            [clojure.tools.logging :as log]
             [clojure.core.async :refer [go chan <! <!! >!]])
 
   (:use [compojure.route :only [files not-found]]
@@ -20,10 +21,10 @@
 (defrecord Router []
   component/Lifecycle
   (start [component]
-    (println (str "component/starting -> " `Router))
+    (log/info "component/starting -> " `Router)
     (assoc component :routes all-routes))
   (stop [component]
-    (println (str "component/stopping -> " `Router))
+    (log/info "component/stopping -> " `Router)
     (dissoc component :routes)))
 
 
