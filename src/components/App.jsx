@@ -1,7 +1,7 @@
 
 
 import React          from 'react'
-import RouteHandler   from 'react-router'
+import {RouteHandler}   from 'react-router'
 
 
 export default class App extends React.Component {
@@ -10,7 +10,7 @@ export default class App extends React.Component {
     return (
       <div>
         App ->
-        <RouteHandler />
+        {this.props.children}
       </div>
     )
   }

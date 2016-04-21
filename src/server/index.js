@@ -1,9 +1,10 @@
 
-import Koa             from "koa"
-import React           from "react"
-import ReactRouter     from "react-router"
-import componentroutes from "../components/componentroutes"
-import ServerRendered  from "../containers/ServerRendered"
+import Koa                                from "koa"
+import React                              from "react"
+import {RouterContext, match}             from "react-router"
+import componentroutes                    from "../components/componentroutes"
+import ServerRendered                     from "../containers/ServerRendered"
+import {renderToString}                   from "react-dom/server"
 
 
 export async function spawn(config) {
@@ -12,30 +13,27 @@ export async function spawn(config) {
 
   server.use(function* (next) {
 
-    try {
+     yield new Promise((resolve, reject) => {
+      match({routes: componentroutes, location: this.originalUrl}, (error, redirectLocation, renderProps) => {
+        if (error) {
+          this.status = 500
+          this.body = error.message
+        } else if (redirectLocation) {
+          this.redirect(redirectLocation.pathname + redirectLocation.search)
+        } else if (renderProps) {
 
-      const html = yield (new Promise((resolve) => {
+          renderProps.ContainerComponent = ServerRendered
 
-        ReactRouter.run(componentroutes, this.originalUrl, (RootComponent) => {
+          this.status = 200
+          this.body = renderToString(<RouterContext {...renderProps} />)
+        } else {
+          this.status = 404
+          this.body = "404"
+        }
 
-          const html = React.renderToString(React.createElement(RootComponent, {
-            ContainerComponent: ServerRendered
-          }))
-          
-          resolve(html)
-        })
-
-      }))
-
-      this.body = html
-
-    }
-    catch(exception) {
-
-      console.debug("error", exception)
-      next(exception)
-
-    }
+        resolve()
+      })
+    })
 
   })
 
