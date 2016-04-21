@@ -21,9 +21,6 @@ export async function spawn(config) {
         } else if (redirectLocation) {
           this.redirect(redirectLocation.pathname + redirectLocation.search)
         } else if (renderProps) {
-
-          renderProps.ContainerComponent = ServerRendered
-
           this.status = 200
           this.body = renderToString(<RouterContext {...renderProps} />)
         } else {
