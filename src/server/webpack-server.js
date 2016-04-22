@@ -24,13 +24,30 @@ const compile = webpack({
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
-        query: {
-          "presets": ["react", "es2015-node5", "es2016-node5"]
-        }
-      }
+        include: /src/,
+        loader: "babel-loader"
+      },
+      {
+        test: /\.css$/,
+        exclude: /node_modules/,
+        include: /src/,
+        loaders: [
+          'style-loader',
+          'css-loader?modules&sourceMap&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
+          'postcss-loader'
+        ]
+      },
     ]
-  }
+  },
+
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
+        HOST: "client"
+      }
+    })
+]
 
 })
 

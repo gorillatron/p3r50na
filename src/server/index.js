@@ -1,4 +1,6 @@
 
+require('dotenv').config()
+
 import Koa                                    from "koa"
 import React                                  from "react"
 import {RouterContext, match}                 from "react-router"
