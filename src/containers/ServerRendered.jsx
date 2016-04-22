@@ -8,8 +8,8 @@ export default class ServerRendered extends React.Component {
 
     const {store, children} = this.props
 
-    // using react to render html as root fucks up checksums
-    // client root is the router
+    // TODO!: rewrite so that we just render react from to level Provider
+    //        so that client and server is in sync. Use static template for the layot.
 
     return (
       <html>

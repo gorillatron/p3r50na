@@ -2,7 +2,7 @@
 import path                  from "path"
 import webpack               from 'webpack'
 import { devMiddleware }     from 'koa-webpack-middleware'
-import rucksac               from 'rucksack-css'
+import rucksack              from 'rucksack-css'
 
 
 const compile = webpack({
