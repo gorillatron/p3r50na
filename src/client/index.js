@@ -1,17 +1,28 @@
 
-import Koa                from "koa"
-import React              from "react"
-import ReactRouter        from "react-router"
-import {HistoryLocation}  from "react-router"
-import componentroutes    from "../components/componentroutes"
-import Client             from "../containers/Client"
+import React                  from "react"
+import ReactDOM               from "react-dom"
+import {Router, match}        from "react-router"
+import createBrowserHistory   from "history/lib/createBrowserHistory"
+import {createStore}          from 'redux'
+import {renderToString}       from "react-dom/server"
+import reducers               from '../reducers'
+import componentroutes        from "../components/componentroutes.jsx"
+import ClientRendered         from "../containers/ClientRendered.jsx"
 
 
-ReactRouter.run(componentroutes, HistoryLocation, (RootComponent) => {
+const history = createBrowserHistory()
 
-  const html = React.renderToString(React.createElement(RootComponent, {
-    ContainerComponent: Client
-  }))
 
-  resolve(html)
-})
+match({ history, routes: componentroutes },
+  (error, redirectLocation, renderProps) => {
+
+    const mountNode = document.getElementById("app")
+    const store = createStore(reducers, window.STORE_STATE)
+
+    ReactDOM.render(
+      <ClientRendered store={store}>
+        <Router {...renderProps} />
+      </ClientRendered>
+    , mountNode)
+
+  })

@@ -1,6 +1,6 @@
 
 import React from 'react'
-import App   from './App'
+import App   from './App.jsx'
 
 
 export default class MainRouteHandler extends React.Component {

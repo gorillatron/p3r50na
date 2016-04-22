@@ -2,9 +2,9 @@
 import React              from 'react'
 import Router             from 'react-router'
 import {Route}            from 'react-router'
-import MainRouteHandler   from './MainRouteHandler'
-import About              from './static/About'
-import Text               from '../containers/Text'
+import MainRouteHandler   from './MainRouteHandler.jsx'
+import About              from './static/About.jsx'
+import Text               from '../containers/Text.jsx'
 
 
 export default (

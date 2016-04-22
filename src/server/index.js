@@ -1,35 +1,51 @@
 
 import Koa                                from "koa"
 import React                              from "react"
-import {RouterContext, match}             from "react-router"
+import {Router, match}                    from "react-router"
+import {createStore}                      from 'redux'
+import {renderToString}                   from "react-dom/server"
+import reducers                           from '../reducers'
 import componentroutes                    from "../components/componentroutes"
 import ServerRendered                     from "../containers/ServerRendered"
-import {renderToString}                   from "react-dom/server"
+import webpackServer                      from "./webpack-server"
+
 
 
 export async function spawn(config) {
 
-  const server = Koa()
+  const server = new Koa()
 
-  server.use(function* (next) {
+
+  if(config.env == 'development') {
+    webpackServer(server)
+  }
+
+  server.use(function* () {
+
+    if(this.originalUrl.match("assets")) {
+      return
+    }
+
+    // TODO!: pass history so that we can augment it with redux store
 
      yield new Promise((resolve, reject) => {
-      match({routes: componentroutes, location: this.originalUrl}, (error, redirectLocation, renderProps) => {
-        if (error) {
-          this.status = 500
-          this.body = error.message
-        } else if (redirectLocation) {
-          this.redirect(redirectLocation.pathname + redirectLocation.search)
-        } else if (renderProps) {
-          this.status = 200
-          this.body = renderToString(<RouterContext {...renderProps} />)
-        } else {
-          this.status = 404
-          this.body = "404"
-        }
+      match({routes: componentroutes, location: this.originalUrl},
+        (error, redirectLocation, renderProps) => {
 
-        resolve()
-      })
+          if(error) {
+            console.error(error)
+          }
+
+          const store = createStore(reducers)
+
+          this.body = renderToString(
+            <ServerRendered store={store}>
+              <Router {...renderProps} />
+            </ServerRendered>
+          )
+
+          resolve()
+        })
     })
 
   })

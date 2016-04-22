@@ -21,9 +21,7 @@ const component = ({text, onTextEnter}) => {
 
   return (
     <div>
-      <p contentEditable="true" onChange={textChange}>
-        {text}
-      </p>
+      <input onChange={textChange} value={text}/>
       <i>
         {text.length}
       </i>
