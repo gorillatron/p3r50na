@@ -1,5 +1,6 @@
 
 import {combineReducers} from 'redux'
+import {routerReducer as routing}   from 'react-router-redux'
 
 function text(state = "change me..", action) {
   switch (action.type) {
@@ -10,4 +11,7 @@ function text(state = "change me..", action) {
   }
 }
 
-export default combineReducers({text})
+export default combineReducers({
+  text,
+  routing
+})
