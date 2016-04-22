@@ -2,6 +2,7 @@
 require('dotenv').config()
 
 import Koa                                    from "koa"
+import serve                                  from "koa-static"
 import React                                  from "react"
 import {RouterContext, match}                 from "react-router"
 import {createStore,combineReducers}          from 'redux'
@@ -11,7 +12,6 @@ import {syncHistoryWithStore}                 from 'react-router-redux'
 import reducers                               from '../reducers'
 import componentroutes                        from "../components/componentroutes"
 import Client                                 from "../containers/Client"
-import webpackServer                          from "./webpack-server"
 import layout                                 from "./templates/layouts/default"
 
 
@@ -19,9 +19,7 @@ export async function spawn(config) {
 
   const server = new Koa()
 
-  if(config.env == 'development') {
-    webpackServer(server)
-  }
+  server.use(serve("./assets"));
 
   server.use(function* () {
 
