@@ -4,7 +4,8 @@
   "description": "Personal website of gorillatron",
   "scripts": {
     "start": "./node_modules/.bin/babel-node ./start-server.js --harmony",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress --colors"
   },
   "author": "Jørn Andr3 Tangen @gorillatron",
   "license": "MIT",

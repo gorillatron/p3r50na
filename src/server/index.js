@@ -18,7 +18,12 @@ export async function spawn(config) {
 
   const server = new Koa()
 
-  webpackServer(server)
+  if(process.env.NODE_ENV === "production") {
+    server.use(serve("assets/"))
+  }
+  else {
+    webpackServer(server)
+  }
 
   server.use(function* () {
 
