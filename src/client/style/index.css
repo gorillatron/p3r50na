@@ -1,4 +1,3 @@
 
-body {
-  
-}
+@import "./variables.css";
+@import "./structure.css";

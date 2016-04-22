@@ -1,7 +1,7 @@
 
 import path                  from "path"
 import webpack               from 'webpack'
-import webpackconfig         from '../../webpack'
+import webpackconfig         from '../../webpack.config'
 import { devMiddleware }     from 'koa-webpack-middleware'
 
 const compile = webpack(webpackconfig)

@@ -3,8 +3,12 @@ var webpack = require("webpack")
 var path = require("path")
 var rucksack = require("rucksack-css")
 var cssnesting = require("postcss-nesting")
+var cssmodules = require("postcss-modules")
+var cssvariables = require("postcss-css-variables")
 
 module.exports = {
+
+  devtool: 'source-map',
 
   entry: {
     client: path.join(__dirname, 'src/client/index.js'),
@@ -12,10 +16,9 @@ module.exports = {
 
   output: {
     filename: 'js/[name].js',
+    sourceMapFilename: "[name].js.map",
     path: path.join(__dirname, 'assets/')
   },
-
-  devtools: "sourcemaps",
 
   module: {
     loaders: [
@@ -35,14 +38,14 @@ module.exports = {
   },
 
   postcss: function () {
-    return [cssnesting, rucksack]
+    return [cssmodules, cssvariables, cssnesting, rucksack]
   },
 
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: process.env.NODE_ENV,
-        HOST: 'client'
+        "NODE_ENV": JSON.stringify(process.env.NODE_ENV),
+        "HOST": JSON.stringify("client")
       }
     })
   ]

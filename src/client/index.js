@@ -1,6 +1,4 @@
 
-require("./style/index.css")
-
 import React                  from "react"
 import ReactDOM               from "react-dom"
 import {Router, match}        from "react-router"
@@ -11,6 +9,7 @@ import {renderToString}       from "react-dom/server"
 import reducers               from '../reducers'
 import componentroutes        from "../components/componentroutes.jsx"
 import Client                 from "../containers/Client.jsx"
+import css                    from "./style/index.css"
 
 
 const store = createStore(reducers, window.STORE_STATE, window.devToolsExtension ? window.devToolsExtension() : f => f)
@@ -23,10 +22,8 @@ const history = syncHistoryWithStore(
 const mountNode = document.getElementById("app")
 
 
-
 match({ history, routes: componentroutes },
   (error, redirectLocation, renderProps) => {
-
     ReactDOM.render(
       <Client store={store}>
         <Router {...renderProps} />

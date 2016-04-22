@@ -1,6 +1,4 @@
 
-require('dotenv').config()
-
 import Koa                                    from "koa"
 import serve                                  from "koa-static"
 import React                                  from "react"
@@ -19,7 +17,7 @@ import layout                                 from "./templates/layouts/default"
 export async function spawn(config) {
 
   const server = new Koa()
-  
+
   webpackServer(server)
 
   server.use(function* () {
