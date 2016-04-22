@@ -7,7 +7,10 @@ export default class MainRouteHandler extends React.Component {
 
   render() {
     return (
-      <App {...this.props} />
+      <div>
+        <span>MainRouteHandler -></span>
+        <App {...this.props} />
+      </div>
     )
   }
 
