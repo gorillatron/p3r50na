@@ -9,13 +9,12 @@ export default (locals = {store_state: {}, content: ""}) => `
 
     <body>
 
-
       <div id="app">${locals.content}</div>
 
       <script>
         window.store_state = ${JSON.stringify(locals.store_state)}
       </script>
-      <script src="/js/client.js"></script>
+      <script src="/js/client-loader.js"></script>
 
     </body>
 

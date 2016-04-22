@@ -1,0 +1,11 @@
+
+.App {
+
+  transform: scale(1);
+  transition: transform 0.3s;
+
+  &.locked {
+    transform: scale(0.7);
+  }
+
+}

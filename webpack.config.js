@@ -11,7 +11,8 @@ module.exports = {
   devtool: 'source-map',
 
   entry: {
-    client: path.join(__dirname, 'src/client/index.js'),
+    'client-loader': path.join(__dirname, 'src/client/client-loader.js'),
+    'client': path.join(__dirname, 'src/client/client.js'),
   },
 
   output: {
