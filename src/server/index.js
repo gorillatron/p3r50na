@@ -10,11 +10,9 @@ import ServerRendered                     from "../containers/ServerRendered"
 import webpackServer                      from "./webpack-server"
 
 
-
 export async function spawn(config) {
 
   const server = new Koa()
-
 
   if(config.env == 'development') {
     webpackServer(server)
