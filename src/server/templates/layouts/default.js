@@ -5,7 +5,6 @@ export default (locals = {store_state: {}, content: ""}) => `
     <head>
       <meta charset="utf-8" />
       <title>Boilerplate</title>
-      <link rel="stylesheet" type="text/css" href="/css/index.css">
     </head>
 
     <body>

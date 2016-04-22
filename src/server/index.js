@@ -9,6 +9,7 @@ import {createStore,combineReducers}          from 'redux'
 import {renderToString}                       from "react-dom/server"
 import createHistory                          from 'history/lib/createMemoryHistory'
 import {syncHistoryWithStore}                 from 'react-router-redux'
+import webpackServer                          from './webpack-server'
 import reducers                               from '../reducers'
 import componentroutes                        from "../components/componentroutes"
 import Client                                 from "../containers/Client"
@@ -19,7 +20,7 @@ export async function spawn(config) {
 
   const server = new Koa()
 
-  server.use(serve("./assets"));
+  webpackServer(server)
 
   server.use(function* () {
 
