@@ -7,7 +7,7 @@ import {createStore}          from 'redux'
 import {renderToString}       from "react-dom/server"
 import reducers               from '../reducers'
 import componentroutes        from "../components/componentroutes.jsx"
-import ClientRendered         from "../containers/ClientRendered.jsx"
+import Client                 from "../containers/Client.jsx"
 
 
 const history = createBrowserHistory()
@@ -20,9 +20,9 @@ match({ history, routes: componentroutes },
     const store = createStore(reducers, window.STORE_STATE)
 
     ReactDOM.render(
-      <ClientRendered store={store}>
+      <Client store={store}>
         <Router {...renderProps} />
-      </ClientRendered>
+      </Client>
     , mountNode)
 
   })

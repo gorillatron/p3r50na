@@ -1,13 +1,15 @@
 
 import Koa                                from "koa"
 import React                              from "react"
-import {Router, match}                    from "react-router"
+import {RouterContext, match}             from "react-router"
 import {createStore}                      from 'redux'
 import {renderToString}                   from "react-dom/server"
+import createHistory                      from 'history/lib/createMemoryHistory'
 import reducers                           from '../reducers'
 import componentroutes                    from "../components/componentroutes"
-import ServerRendered                     from "../containers/ServerRendered"
+import Client                             from "../containers/Client"
 import webpackServer                      from "./webpack-server"
+import layout                             from "./templates/layouts/default"
 
 
 export async function spawn(config) {
@@ -20,14 +22,10 @@ export async function spawn(config) {
 
   server.use(function* () {
 
-    if(this.originalUrl.match("assets")) {
-      return
-    }
+    const history = createHistory(this.originalUrl)
 
-    // TODO!: pass history so that we can augment it with redux store
-
-     yield new Promise((resolve, reject) => {
-      match({routes: componentroutes, location: this.originalUrl},
+    yield new Promise((resolve, reject) => {
+      match({routes: componentroutes, history: history},
         (error, redirectLocation, renderProps) => {
 
           if(error) {
@@ -35,12 +33,15 @@ export async function spawn(config) {
           }
 
           const store = createStore(reducers)
+          const store_state = store.getState()
 
-          this.body = renderToString(
-            <ServerRendered store={store}>
-              <Router {...renderProps} />
-            </ServerRendered>
+          const content = renderToString(
+            <Client store={store}>
+              <RouterContext {...renderProps} />
+            </Client>
           )
+
+          this.body = layout({content, store_state})
 
           resolve()
         })
