@@ -11,7 +11,7 @@ import componentroutes        from "../components/componentroutes.jsx"
 import Client                 from "../containers/Client.jsx"
 
 
-const store = createStore(reducers, window.STORE_STATE, window.devToolsExtension ? window.devToolsExtension() : f => f)
+const stores = createStore(reducers, window.STORE_STATE, window.devToolsExtension ? window.devToolsExtension() : f => f)
 
 const history = syncHistoryWithStore(
   createBrowserHistory(),
