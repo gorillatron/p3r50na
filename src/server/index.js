@@ -19,7 +19,7 @@ import layout                                 from "./templates/layouts/default"
 export async function spawn(config) {
 
   const server = new Koa()
-
+  
   webpackServer(server)
 
   server.use(function* () {

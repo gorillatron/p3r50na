@@ -1,7 +1,8 @@
 
+var webpack = require("webpack")
 var path = require("path")
-
-console.log(path.join(__dirname, 'assets/'))
+var rucksack = require("rucksack-css")
+var cssnesting = require("postcss-nesting")
 
 module.exports = {
 
@@ -25,8 +26,25 @@ module.exports = {
         query: {
           "presets": ["react", "es2015-node5", "es2016-node5"]
         }
+      },
+      {
+        test:   /\.css$/,
+        loader: "style-loader!css-loader!postcss-loader"
       }
     ]
-  }
+  },
+
+  postcss: function () {
+    return [cssnesting, rucksack]
+  },
+
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: process.env.NODE_ENV,
+        HOST: 'client'
+      }
+    })
+  ]
 
 }

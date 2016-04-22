@@ -1,4 +1,6 @@
 
+require("./style/index.css")
+
 import React                  from "react"
 import ReactDOM               from "react-dom"
 import {Router, match}        from "react-router"
@@ -19,6 +21,7 @@ const history = syncHistoryWithStore(
 )
 
 const mountNode = document.getElementById("app")
+
 
 
 match({ history, routes: componentroutes },
