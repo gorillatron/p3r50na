@@ -2,7 +2,6 @@
 import path                  from "path"
 import webpack               from 'webpack'
 import { devMiddleware }     from 'koa-webpack-middleware'
-import rucksack              from 'rucksack-css'
 
 
 const compile = webpack({
@@ -29,24 +28,9 @@ const compile = webpack({
         query: {
           "presets": ["react", "es2015-node5", "es2016-node5"]
         }
-      },
-      {
-        test: /\.css$/,
-        include: './src/client',
-        loaders: [
-          'style-loader',
-          'css-loader?modules&sourceMap&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
-          'postcss-loader'
-        ]
-      },
+      }
     ]
-  },
-
-  postcss: [
-    rucksack({
-      autoprefixer: true
-    })
-  ]
+  }
 
 })
 
