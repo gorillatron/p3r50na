@@ -1,6 +1,6 @@
 
 // Import CSS
-import css                    from "./style/index.css"
+import css                    from "../style/index.css"
 
 // Import Modules
 import React                  from "react"
