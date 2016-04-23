@@ -14,14 +14,9 @@ import css                    from "./style/index.css"
 
 
 const store = createStore(reducers, window.STORE_STATE, window.devToolsExtension ? window.devToolsExtension() : f => f)
-
-const history = syncHistoryWithStore(
-  createBrowserHistory(),
-  store
-)
+const history = syncHistoryWithStore(createBrowserHistory(),store)
 
 const mountNode = document.getElementById("app")
-
 
 match({ history, routes: componentroutes },
   (error, redirectLocation, renderProps) => {
@@ -32,7 +27,7 @@ match({ history, routes: componentroutes },
     , mountNode)
   })
 
-
+//Expose a global public app API
 window.p3r50na = {
   unlock: () => {
     store.dispatch(unlockApp())
