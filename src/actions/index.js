@@ -1,19 +1,5 @@
 
-export const unlockApp = () => {
-  return {
-    type: 'UNLOCK_APP'
-  }
-}
+// Export all actions form sub modules
 
-export const lockApp = () => {
-  return {
-    type: 'LOCK_APP'
-  }
-}
-
-export const setText = (text) => {
-  return {
-    type: 'SET_TEXT',
-    text
-  }
-}
+export * from "./app"
+export * from "./text"
