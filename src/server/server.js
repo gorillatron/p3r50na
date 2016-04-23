@@ -13,7 +13,7 @@ export async function start(config) {
     server.use(serve("assets/"))
   }
   if(process.env.NODE_ENV === "development") {
-    webpackServer(server)
+    webpackServer(server) //TODO! fix
   }
 
   server.use(reactRender)
