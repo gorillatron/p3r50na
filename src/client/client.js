@@ -7,8 +7,9 @@ import {syncHistoryWithStore} from 'react-router-redux'
 import {createStore}          from 'redux'
 import {renderToString}       from "react-dom/server"
 import reducers               from '../reducers'
+import {unlockApp}            from '../actions'
 import componentroutes        from "../components/componentroutes.jsx"
-import Client                 from "../containers/Client.jsx"
+import Root                   from "../components/Root.jsx"
 import css                    from "./style/index.css"
 
 
@@ -25,9 +26,15 @@ const mountNode = document.getElementById("app")
 match({ history, routes: componentroutes },
   (error, redirectLocation, renderProps) => {
     ReactDOM.render(
-      <Client store={store}>
+      <Root store={store}>
         <Router {...renderProps} />
-      </Client>
+      </Root>
     , mountNode)
-
   })
+
+
+window.p3r50na = {
+  unlock: () => {
+    store.dispatch(unlockApp())
+  }
+}

@@ -1,11 +1,26 @@
 
 .App {
 
-  transform: scale(1);
-  transition: transform 0.3s;
-
   &.locked {
-    transform: scale(0.7);
+
   }
 
+  & .lockscreen {
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+}
+
+.callout {
+	&-image {}
+
+	&-image + &-title {
+		margin-top: 15px;
+	}
 }

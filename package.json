@@ -20,6 +20,7 @@
     "babel-preset-es2016-node5": "^1.1.2",
     "babel-preset-react": "^6.5.0",
     "babel-register": "^6.7.2",
+    "classnames": "^2.2.3",
     "history": "^2.1.0",
     "koa": "^2.0.0",
     "koa-static": "^2.0.0",

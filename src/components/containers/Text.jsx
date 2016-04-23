@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { setText } from '../actions'
+import { setText } from '../../actions'
 
 
 const mapStateToProps = (state) => ({text: state.text})

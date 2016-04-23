@@ -5,6 +5,7 @@ var rucksack = require("rucksack-css")
 var cssnesting = require("postcss-nesting")
 var cssmodules = require("postcss-modules")
 var cssvariables = require("postcss-css-variables")
+var cssimports = require("postcss-import")
 
 module.exports = {
 
@@ -38,8 +39,15 @@ module.exports = {
     ]
   },
 
-  postcss: function () {
-    return [cssmodules, cssvariables, cssnesting, rucksack]
+  postcss: function (webpack) {
+    return [
+      cssimports({
+        addDependencyTo: webpack
+      }),
+      cssvariables(),
+      cssnesting(),
+      rucksack()
+    ]
   },
 
   plugins: [

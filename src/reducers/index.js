@@ -11,7 +11,19 @@ function text(state = "change me..", action) {
   }
 }
 
+function locked(state = true, action) {
+  switch (action.type) {
+    case 'UNLOCK_APP':
+      return false
+    case 'LOCK_APP':
+      return true
+    default:
+      return state
+  }
+}
+
 export default combineReducers({
   text,
+  locked,
   routing
 })

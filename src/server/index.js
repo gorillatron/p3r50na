@@ -10,7 +10,7 @@ import {syncHistoryWithStore}                 from 'react-router-redux'
 import webpackServer                          from './webpack-server'
 import reducers                               from '../reducers'
 import componentroutes                        from "../components/componentroutes"
-import Client                                 from "../containers/Client"
+import Root                                   from "../components/Root"
 import layout                                 from "./templates/layouts/default"
 
 
@@ -45,9 +45,9 @@ export async function spawn(config) {
           const store_state = store.getState()
 
           const content = renderToString(
-            <Client store={store}>
+            <Root store={store}>
               <RouterContext {...renderProps} />
-            </Client>
+            </Root>
           )
 
           this.body = layout({content, store_state})
