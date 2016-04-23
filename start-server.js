@@ -4,7 +4,7 @@ require("dotenv").load()
 require("babel-register")
 require("babel-polyfill")
 
-var server = require("./src/server")
+var server = require("./src/server/server")
 
 server.spawn({
   port: 3000
