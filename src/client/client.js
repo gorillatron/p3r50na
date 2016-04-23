@@ -12,7 +12,7 @@ import {createStore}          from 'redux'
 import {renderToString}       from "react-dom/server"
 import reducers               from '../reducers'
 import {unlockApp}            from '../actions'
-import componentroutes        from "../components/componentroutes.jsx"
+import routes                 from "../routes/index.jsx"
 import Root                   from "../components/Root.jsx"
 
 // Set up store and sync router with store state
@@ -28,7 +28,7 @@ const mountNode = document.getElementById("app")
 // Set up the router to listen to browser history
 // Render on matched route
 
-match({ history, routes: componentroutes },
+match({history, routes},
   (error, redirectLocation, renderProps) => {
     ReactDOM.render(
       <Root store={store}>

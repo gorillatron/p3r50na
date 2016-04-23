@@ -6,7 +6,7 @@ require("babel-polyfill")
 
 var server = require("./src/server/server")
 
-server.spawn({
+server.start({
   port: 3000
 })
 
