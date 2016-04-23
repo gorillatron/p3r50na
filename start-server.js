@@ -4,11 +4,15 @@ require("dotenv").load()
 require("babel-register")
 require("babel-polyfill")
 
-var server = require("./src/server/server")
+var path    = require("path")
+var monfig  = require("monfig")
+var server  = require("./src/server/server")
 
-server.start({
-  port: 3000
-})
+console.log(process.env.NODE_ENV)
+var configPath = path.join(__dirname, "/config")
+
+monfig.build({basePath: configPath, env: process.env.NODE_ENV})
+  .then(config => server.start(config))
 
 
 //TODO!: Implement logging for uncaught rejections and exceptions
