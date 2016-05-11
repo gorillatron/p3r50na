@@ -3,7 +3,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import classNames from 'classnames'
-import { setText } from '../../actions'
 
 
 class App extends React.Component {
@@ -17,10 +16,6 @@ class App extends React.Component {
 
     return (
       <div className={className}>
-
-        {/* Show lock screen if app is locked */
-         this.props.state.locked &&
-          <div className="lockscreen"></div>}
 
         {this.props.children}
       </div>

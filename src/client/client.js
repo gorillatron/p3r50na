@@ -7,41 +7,39 @@ import React                  from "react"
 import ReactDOM               from "react-dom"
 import {Router, match}        from "react-router"
 import createBrowserHistory   from "history/lib/createBrowserHistory"
-import {syncHistoryWithStore} from 'react-router-redux'
-import {createStore}          from 'redux'
 import {renderToString}       from "react-dom/server"
-import reducers               from '../reducers'
-import {unlockApp}            from '../actions'
+import {storeFactory}         from "../core/store"
 import routes                 from "../routes/index.jsx"
 import Root                   from "../components/Root.jsx"
 
-// Set up store and sync router with store state
 
-const store = createStore(reducers, window.STORE_STATE, window.devToolsExtension ? window.devToolsExtension() : f => f)
-const history = syncHistoryWithStore(createBrowserHistory(), store)
-
-
-// Mount the app to this node
-const mountNode = document.getElementById("app")
+!(async function() {
+  
+  // Set up store and sync router with store state
+  const store = await storeFactory({initialState: window.STORE_STATE})
+  const history = createBrowserHistory()
 
 
-// Set up the router to listen to browser history
-// Render on matched route
-
-match({history, routes},
-  (error, redirectLocation, renderProps) => {
-    ReactDOM.render(
-      <Root store={store}>
-        <Router {...renderProps} />
-      </Root>
-    , mountNode)
-  })
+  // Mount the app to this node
+  const mountNode = document.getElementById("app")
 
 
-//Expose a global public app API
+  // Set up the router to listen to browser history
+  // Render on matched route
 
-window.app = {
-  unlock() {
-    store.dispatch(unlockApp())
-  }
-}
+  match({history, routes},
+    (error, redirectLocation, renderProps) => {
+      ReactDOM.render(
+        <Root store={store}>
+          <Router {...renderProps} />
+        </Root>
+      , mountNode)
+    })
+
+
+  //Expose a global public app API
+
+  window.app = {}
+  
+})();
+
