@@ -3,8 +3,8 @@ import React              from 'react'
 import Router             from 'react-router'
 import {Route}            from 'react-router'
 import MainRouteHandler   from '../components/MainRouteHandler.jsx'
-import About              from '../components/static/About.jsx'
-import Todos              from '../components/containers/Todos.jsx'
+import About              from '../components/About.jsx'
+import Todos              from '../components/todos/Container.jsx'
 
 
 export default (

@@ -27,8 +27,7 @@ import Root                   from "../components/Root.jsx"
   // Set up the router to listen to browser history
   // Render on matched route
 
-  match({history, routes},
-    (error, redirectLocation, renderProps) => {
+  match({history, routes}, (error, redirectLocation, renderProps) => {
       ReactDOM.render(
         <Root store={store}>
           <Router {...renderProps} />

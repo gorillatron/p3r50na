@@ -1,17 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo, updateTodo } from '../../core/domain/todos'
-
-
-const mapStateToProps = (state) => state.todos
-
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    addTodo: text => dispatch(addTodo({text})),
-    updateTodo: (todo, update) => dispatch(updateTodo(todo, update))
-  }
-}
+import Todo from './Todo'
 
 
 const component = ({todos, addTodo, updateTodo}) => {
@@ -37,24 +27,17 @@ const component = ({todos, addTodo, updateTodo}) => {
 }
 
 
-const Todo = ({todo, updateTodo}) => {
-  
-  const todoToggleDone = event => updateTodo(todo, {done: event.target.checked})
-  
-  return (
-    <li key={Math.random()}>
-      <input name="done" type="checkbox" checked={todo.done} onChange={todoToggleDone}/>
-      {todo.text}
-    </li>
-  ) 
-}
+const mapStateToProps = (state) => state.todos
 
+const mapDispatchToProps = (dispatch) => ({
+  addTodo: text => dispatch(addTodo({text})),
+  updateTodo: (todo, update) => dispatch(updateTodo(todo, update))
+})
 
-const Todos = connect(
+const Container = connect(
   mapStateToProps,
   mapDispatchToProps)
   (component)
 
 
-
-export default Todos
+export default Container

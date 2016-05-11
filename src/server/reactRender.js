@@ -30,6 +30,7 @@ function route(history, store, routes) {
 
         if(error) {
           console.error(error)
+          return reject(error)
         }
 
         const store_state = store.getState()
