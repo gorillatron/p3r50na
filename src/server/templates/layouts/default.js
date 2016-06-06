@@ -14,7 +14,8 @@ export default (locals = {store_state: {}, content: ""}) => `
       <script>
         window.store_state = ${JSON.stringify(locals.store_state)}
       </script>
-      <script src="/js/client-loader.js"></script>
+      
+      <script src="/assets/js/client.js"></script>
 
     </body>
 

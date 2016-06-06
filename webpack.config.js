@@ -1,29 +1,34 @@
 
 var webpack = require("webpack")
 var path = require("path")
-var rucksack = require("rucksack-css")
-var cssnesting = require("postcss-nesting")
-var cssmodules = require("postcss-modules")
-var cssvariables = require("postcss-css-variables")
-var cssimports = require("postcss-import")
 
 module.exports = {
 
+
   devtool: 'source-map',
 
+
   entry: {
-    'client-loader': path.join(__dirname, 'src/client/client-loader.js'),
     'client': path.join(__dirname, 'src/client/client.js'),
   },
+
 
   output: {
     filename: 'js/[name].js',
     sourceMapFilename: "[name].js.map",
-    path: path.join(__dirname, 'assets/')
+    path: path.join(__dirname, 'assets/'),
+    publicPath: "/assets/"
   },
 
+
   module: {
+    
     loaders: [
+      {
+        test: /\.less$/,
+        loader: "style!css!less"
+      },
+      
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
@@ -31,32 +36,20 @@ module.exports = {
         query: {
           "presets": ["react", "es2015-node5", "es2016-node5"]
         }
-      },
-      {
-        test:   /\.css$/,
-        loader: "style-loader!css-loader!postcss-loader"
       }
     ]
-  },
-
-  postcss: function (webpack) {
-    return [
-      cssimports({
-        addDependencyTo: webpack
-      }),
-      cssvariables(),
-      cssnesting(),
-      rucksack()
-    ]
+    
   },
 
   plugins: [
+    
     new webpack.DefinePlugin({
       'process.env': {
         "NODE_ENV": JSON.stringify(process.env.NODE_ENV),
         "HOST": JSON.stringify("client")
       }
     })
+    
   ]
 
 }

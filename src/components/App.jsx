@@ -10,6 +10,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        asdss
         {this.props.children}
       </div>
     )
@@ -17,7 +18,7 @@ class App extends React.Component {
 
 }
 
-const mapStateToProps = (state) => ({state})
+const mapStateToProps = state => state
 
 const AppContainer = connect(
   mapStateToProps)

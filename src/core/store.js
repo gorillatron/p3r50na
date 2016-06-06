@@ -1,10 +1,12 @@
 
 import {createStore, applyMiddleware, compose} from 'redux'
+import promiseMiddleware from 'redux-promise'
 import reducer from './reducer'
 
 
 export async function storeFactory({initialState}) {
-  const enhancer = compose(devTools())
+  const middleware = applyMiddleware(promiseMiddleware)
+  const enhancer = compose(middleware, devTools())
   const store = createStore(reducer, initialState, enhancer)
   return store
 }
