@@ -2,7 +2,7 @@
 import React from "react"
 import {Router, match} from "react-router"
 import {renderToString} from "react-dom/server"
-import createMemoryHistory from 'history/lib/createMemoryHistory'
+import createHistory from 'history/lib/createMemoryHistory'
 import {storeFactory} from '../core/store'
 import routes from "../routes"
 import Root from "../components/Root"
@@ -12,7 +12,7 @@ import layout from "./templates/layouts/default"
 export default async function reactRender(ctx, next) {
 
   const store = await storeFactory({})
-  const history = createMemoryHistory(ctx.req.url)
+  const history = createHistory(ctx.req.url)
 
   const data = await route(history, store, routes)
 
@@ -37,7 +37,7 @@ function route(history, store, routes) {
 
         const content = renderToString(
           <Root store={store}>
-            <Router {...renderProps} />
+            <Router {...renderProps} history={history}/>
           </Root>
         )
 
